@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">            <!-- Establece el juego de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+    <title>Agregar Empleados</title>  <!-- Título de la página -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <!-- Contenedor principal de la página -->
+    <div class="container">
+        <h1>Agregar Nuevo Empleado</h1> <!-- Título en la parte superior -->
+        
+        <!-- Formulario para agregar un nuevo empleado -->
+        <form method="POST" action="/agregar_empleado">  <!-- Método POST para enviar los datos al servidor -->
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+            <input type="text" id="nombre" name="nombre" required>  <!-- Campo de entrada para el nombre del empleado -->
+            
+            <label for="correo">Correo:</label> <!-- Etiqueta para el campo de correo -->
+            <input type="email" id="correo" name="correo" required>  <!-- Campo de entrada para el correo del empleado -->
+            
+            <button type="submit">Agregar Empleado</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </div>
+</body>
+</html>

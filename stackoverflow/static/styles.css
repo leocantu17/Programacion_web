@@ -1,0 +1,61 @@
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;  /* Define la fuente para el texto */
+    background-color: #f4f4f9;      /* Color de fondo de la página */
+    margin: 0;                       /* Elimina márgenes predeterminados */
+    padding: 0;                      /* Elimina relleno predeterminado */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    max-width: 600px;               /* Máximo ancho de la caja */
+    margin: 50px auto;              /* Centra el contenedor en la pantalla */
+    padding: 20px;                  /* Añade espacio interior al contenedor */
+    background-color: white;        /* Fondo blanco para el contenedor */
+    border-radius: 10px;            /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo del encabezado */
+h1 {
+    text-align: center;             /* Centra el texto */
+    color: #333;                    /* Color gris oscuro para el texto */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;                  /* Utiliza flexbox para el formulario */
+    flex-direction: column;         /* Organiza los elementos de forma vertical */
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+    margin-bottom: 5px;             /* Espacio debajo de las etiquetas */
+    font-weight: bold;              /* Hace el texto en negrita */
+    color: #333;                    /* Color gris oscuro para las etiquetas */
+}
+
+/* Estilo de los campos de entrada */
+input {
+    margin-bottom: 20px;            /* Espacio debajo de los campos */
+    padding: 10px;                  /* Añade relleno dentro de los campos */
+    border: 1px solid #ccc;         /* Borde gris claro */
+    border-radius: 5px;             /* Bordes redondeados */
+    font-size: 1rem;                /* Tamaño de fuente de los campos */
+}
+
+/* Estilo del botón de envío */
+button {
+    padding: 10px 20px;             /* Relleno dentro del botón */
+    background-color: #007bff;      /* Color de fondo azul */
+    color: white;                   /* Color de texto blanco */
+    border: none;                   /* Elimina el borde predeterminado */
+    border-radius: 5px;             /* Bordes redondeados */
+    font-size: 1rem;                /* Tamaño de fuente */
+    cursor: pointer;                /* Cambia el cursor a mano cuando se pasa por encima */
+}
+
+/* Estilo cuando el botón es hover (cuando el usuario pasa el ratón encima) */
+button:hover {
+    background-color: #0056b3;      /* Cambia el color de fondo a un azul más oscuro */
+}
