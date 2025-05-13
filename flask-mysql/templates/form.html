@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!-- Formulario que envía los datos a la ruta /login mediante el método POST -->
+    <form action="/login" method="POST"> 
+      
+      <!-- Campo para ingresar el nombre -->
+      <p>name <input type="text" name="name" /></p>
+      
+      <!-- Campo para ingresar la edad. Se ha corregido el tipo de entrada a "number" en lugar de "integer" -->
+      <p>age <input type="number" name="age" /></p> <!-- 'number' es el tipo adecuado para edades o cualquier número -->
+      
+      <!-- Botón para enviar el formulario -->
+      <p><input type="submit" value="Submit" /></p>
+  </body>
+</html>
