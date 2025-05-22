@@ -1,90 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Editar Usuario</title>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <title>Editar Usuario</title> <!-- Título que se muestra en la pestaña del navegador -->
     <style>
+        /* Estilo general del cuerpo de la página */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f6fa;
+            font-family: Arial, sans-serif; /* Fuente principal */
+            background-color: #f5f6fa; /* Color de fondo claro */
             margin: 0;
             padding: 20px;
         }
 
+        /* Contenedor principal del formulario */
         .container {
-            background-color: #fff;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff; /* Fondo blanco */
+            max-width: 500px; /* Ancho máximo */
+            margin: 50px auto; /* Centrado vertical y horizontal */
+            padding: 30px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
         }
 
+        /* Estilo para el título */
         h1 {
-            text-align: center;
-            color: #333;
+            text-align: center; /* Centra el texto */
+            color: #333; /* Color de texto oscuro */
         }
 
+        /* Estilo para las etiquetas de los campos */
         label {
-            display: block;
-            margin-top: 15px;
-            color: #555;
+            display: block; /* Cada etiqueta en una nueva línea */
+            margin-top: 15px; /* Espacio superior */
+            color: #555; /* Color de texto gris oscuro */
         }
 
+        /* Estilo para los campos de texto y correo */
         input[type="text"],
         input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            width: 100%; /* Ocupar todo el ancho disponible */
+            padding: 10px; /* Espaciado interno */
+            margin-top: 5px; /* Espacio encima del campo */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 5px; /* Bordes redondeados */
         }
 
+        /* Contenedor de los botones */
         .buttons {
-            margin-top: 20px;
-            text-align: center;
+            margin-top: 20px; /* Espacio superior */
+            text-align: center; /* Centra los botones */
         }
 
+        /* Estilo base para todos los botones */
         .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            margin: 5px;
+            padding: 10px 20px; /* Espaciado interno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar */
+            font-weight: bold; /* Texto en negrita */
+            margin: 5px; /* Espaciado entre botones */
         }
 
+        /* Estilo del botón de actualizar */
         .btn-update {
-            background-color: #27ae60;
-            color: white;
+            background-color: #27ae60; /* Verde */
+            color: white; /* Texto blanco */
         }
 
+        /* Estilo del botón de cancelar */
         .btn-cancel {
-            background-color: #e74c3c;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
+            background-color: #e74c3c; /* Rojo */
+            color: white; /* Texto blanco */
+            text-decoration: none; /* Quita subrayado de enlace */
+            display: inline-block; /* Comportamiento de bloque en línea */
         }
 
+        /* Efecto hover para todos los botones */
         .btn:hover {
-            opacity: 0.9;
+            opacity: 0.9; /* Reduce la opacidad al pasar el mouse */
         }
     </style>
 </head>
 <body>
+    <!-- Contenedor principal -->
     <div class="container">
         <h1>Editar Usuario</h1>
+
+        <!-- Formulario para actualizar los datos del usuario -->
+        <!-- La acción apunta a la función 'update' del backend usando Flask -->
         <form action="{{ url_for('update') }}" method="POST">
+            
+            <!-- Campo oculto para enviar el email anterior del usuario -->
             <input type="hidden" name="viejo_email" value="{{ usuario.email }}">
             
+            <!-- Campo para el nombre -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" value="{{ usuario.nombre }}" required>
             
+            <!-- Campo para el email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="{{ usuario.email }}" required>
             
+            <!-- Sección de botones -->
             <div class="buttons">
+                <!-- Botón para enviar el formulario y actualizar los datos -->
                 <input type="submit" class="btn btn-update" value="Actualizar">
+
+                <!-- Botón de cancelación que redirige al índice -->
                 <a href="{{ url_for('index') }}" class="btn btn-cancel">Cancelar</a>
             </div>
         </form>

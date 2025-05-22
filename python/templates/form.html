@@ -1,50 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Idioma configurado en español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad en móviles -->
+    <title>Formulario de Registro</title> <!-- Título en la pestaña del navegador -->
+
+    <!-- Enlace al archivo de estilos CSS alojado en la carpeta static -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <!-- Contenedor principal -->
     <div>
         <h1>Formulario de Registro</h1>
+
+        <!-- Formulario para registrar un nuevo usuario -->
+        <!-- Se envía mediante POST al endpoint /submit -->
         <form action="/submit" method="POST">
+            <!-- Campo de entrada para el nombre -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br>
             
+            <!-- Campo de entrada para el email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
             
+            <!-- Botón para enviar el formulario -->
             <input type="submit" value="Enviar">
         </form>
 
+        <!-- Título de la sección donde se muestran los usuarios registrados -->
         <h2>Usuarios Registrados</h2>
+
+        <!-- Tabla para mostrar los usuarios -->
         <table>
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Editar</th>
-                    <th>Borrar</th>
+                    <th>Nombre</th> <!-- Encabezado de columna para nombre -->
+                    <th>Email</th> <!-- Encabezado de columna para email -->
+                    <th>Editar</th> <!-- Encabezado para la acción de editar -->
+                    <th>Borrar</th> <!-- Encabezado para la acción de borrar -->
                 </tr>
             </thead>
             <tbody>
-    {% for usuario in usuarios %}
-        <tr>
-            <td>{{ usuario.nombre }}</td>
-            <td>{{ usuario.email }}</td>
-            <td>
-                <a href="{{ url_for('edit', email=usuario.email) }}">Editar</a> 
-
-            </td>
-            <td>
-                                <a href="{{ url_for('delete', email=usuario.email) }}" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">Eliminar</a>
-            </td>
-        </tr>
-    {% endfor %}
-</tbody>
-
+                <!-- Inicio del bucle Jinja2 para recorrer la lista de usuarios -->
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{ usuario.nombre }}</td> <!-- Nombre del usuario -->
+                    <td>{{ usuario.email }}</td> <!-- Email del usuario -->
+                    <td>
+                        <!-- Enlace para editar, pasando el email como parámetro -->
+                        <a href="{{ url_for('edit', email=usuario.email) }}">Editar</a> 
+                    </td>
+                    <td>
+                        <!-- Enlace para borrar con confirmación mediante JavaScript -->
+                        <a href="{{ url_for('delete', email=usuario.email) }}" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                <!-- Fin del bucle -->
+            </tbody>
         </table>
     </div>
 </body>
