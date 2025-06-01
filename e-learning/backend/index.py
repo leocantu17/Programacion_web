@@ -16,10 +16,17 @@ app = Flask(__name__)
 
 # Usar variables de entorno para datos sensibles
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "your-secret-key-here")
+
 SMTP_EMAIL = os.getenv("SMTP_EMAIL", "your-email@gmail.com")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "your-app-password")
 
-CORS(app)
+# CORS configurado para permitir credenciales y sólo el frontend React
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])  # Modificado
+app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
+app.config["JWT_COOKIE_SECURE"] = False  # True solo en producción con HTTPS
+app.config["JWT_ACCESS_COOKIE_NAME"] = "access_token_cookie"
+app.config["JWT_COOKIE_CSRF_PROTECT"] = False  # puedes activar esto si manejas CSRF tokens
+
 jwt = JWTManager(app)
 
 def slugify(text):
@@ -87,27 +94,22 @@ def register():
     try:
         data = request.get_json()
         
-        # Validar datos requeridos
         if not all(k in data for k in ('name', 'email', 'password')):
             return jsonify({"message": "Datos incompletos"}), 400
         
-        # Validar formato de email
         if not re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', data['email']):
             return jsonify({"message": "Email inválido"}), 400
         
         conn = get_connection()
         cursor = conn.cursor()
 
-        # Verificar si el email ya existe
         cursor.execute("SELECT * FROM users WHERE email = %s", (data['email'],))
         if cursor.fetchone():
             conn.close()
             return jsonify({"message": "Correo ya registrado"}), 409
 
-        # Generar código de 4 dígitos
         code = str(random.randint(1000, 9999))
         
-        # Hash de la contraseña
         hashed_password = generate_password_hash(data['password'])
 
         cursor.execute(
@@ -117,7 +119,6 @@ def register():
         conn.commit()
         conn.close()
 
-        # Enviar email de verificación
         if send_verification_email(data['email'], code):
             return jsonify({"message": "Registro exitoso. Revisa tu correo para verificar la cuenta."}), 201
         else:
@@ -170,25 +171,23 @@ def login():
         cursor.execute("SELECT * FROM users WHERE email = %s", (data['email'],))
         user = cursor.fetchone()
         conn.close()
-        print(user['password'], data['password'])
+
         if user and check_password_hash(user['password'], data['password']):
-            # Verificar si la cuenta está verificada
             if not user['is_verified']:
                 return jsonify({"message": "Cuenta no verificada. Revisa tu correo."}), 403
             
-            # Crear token JWT
             access_token = create_access_token(
-                identity=user['id'],
-                additional_claims={"email": user['email']}
-            )
+    identity=str(user['id']),  # ✅ Convertimos el ID a string
+    additional_claims={"email": user['email']}
+)
 
-            # Remover datos sensibles
+
             user_data = {k: v for k, v in user.items() if k not in ('password', 'verification_code')}
 
             response = make_response(jsonify({
                 "message": "Login exitoso", 
-                "user": user_data,
-                "access_token": access_token
+                "user": user_data
+                # No envías token en body para que solo esté en cookie
             }))
             
             response.set_cookie(
@@ -197,7 +196,7 @@ def login():
                 httponly=True,
                 secure=False,  # Cambiar a True en producción con HTTPS
                 samesite="Lax",
-                max_age=60*60*2  # 2 horas
+                max_age=60*60*2
             )
             return response
         else:
@@ -205,6 +204,13 @@ def login():
             
     except Exception as e:
         return jsonify({"message": "Error en el login", "error": str(e)}), 500
+
+# Endpoint agregado para validar sesión usando cookie JWT
+@app.route('/me', methods=['GET'])
+@jwt_required()
+def me():
+    user_id = get_jwt_identity()
+    return jsonify({"message": "Usuario autenticado", "user_id": user_id})
 
 @app.route('/progress/update', methods=['POST'])
 @jwt_required()
@@ -236,10 +242,16 @@ def update_progress():
 
 @app.route('/logout', methods=['POST'])
 def logout():
-    """Endpoint para logout"""
     response = make_response(jsonify({"message": "Logout exitoso"}))
     response.set_cookie('access_token_cookie', '', expires=0)
     return response
+
+@app.route('/session', methods=['GET'])
+@jwt_required()
+def check_session():
+    user_id = get_jwt_identity()
+    return jsonify({"message": "Sesión activa", "user_id": user_id}), 200
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
