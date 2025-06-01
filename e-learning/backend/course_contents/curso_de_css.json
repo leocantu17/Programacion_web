@@ -1,0 +1,423 @@
+{
+  "courseInfo": {
+    "title": "Curso Completo de CSS",
+    "description": "Aprende CSS desde lo básico hasta técnicas avanzadas para crear sitios web modernos y responsivos",
+    "duration": "8-10 semanas",
+    "level": "Principiante a Intermedio",
+    "prerequisites": ["Conocimientos básicos de HTML", "Editor de código", "Navegador web moderno"]
+  },
+  "chapters": [
+    {
+      "title": "Introducción a CSS",
+      "description": "Sintaxis básica, selectores y formas de aplicar estilos a HTML.",
+      "video": "https://www.youtube.com/embed/1Rs2ND1ryYc",
+      "duration": "45 minutos",
+      "topics": [
+        "¿Qué es CSS y para qué sirve?",
+        "Sintaxis de CSS: selectores, propiedades y valores",
+        "Tres formas de aplicar CSS: inline, interno y externo",
+        "Selectores básicos: elemento, clase e ID",
+        "Cascada y especificidad"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS",
+        "https://www.w3schools.com/css/css_intro.asp",
+        "https://css-tricks.com/almanac/"
+      ],
+      "exercises": [
+        "Crear un archivo CSS externo y enlazarlo a HTML",
+        "Cambiar colores y fuentes de una página HTML",
+        "Aplicar estilos a clases e IDs específicos",
+        "Experimentar con diferentes selectores básicos"
+      ],
+      "keyPoints": [
+        "CSS significa Cascading Style Sheets",
+        "La especificidad determina qué estilos se aplican",
+        "Separar contenido (HTML) de presentación (CSS) es una buena práctica"
+      ]
+    },
+    {
+      "title": "Selectores Avanzados y Pseudo-clases",
+      "description": "Selectores complejos, pseudo-clases y pseudo-elementos para un control preciso.",
+      "video": "https://www.youtube.com/embed/Bcr70LIJcOk",
+      "duration": "50 minutos",
+      "topics": [
+        "Selectores descendientes y combinadores",
+        "Selectores de atributos",
+        "Pseudo-clases: :hover, :active, :focus, :nth-child",
+        "Pseudo-elementos: ::before, ::after, ::first-letter",
+        "Selectores de negación y universales"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors",
+        "https://css-tricks.com/almanac/selectors/",
+        "https://specificity.keegan.st/"
+      ],
+      "exercises": [
+        "Crear efectos hover en botones y enlaces",
+        "Usar pseudo-elementos para decoraciones",
+        "Aplicar estilos a elementos pares e impares en listas",
+        "Crear un menú de navegación interactivo"
+      ]
+    },
+    {
+      "title": "Modelo de Caja y Posicionamiento",
+      "description": "Comprende el box model, márgenes, padding y diferentes tipos de posicionamiento.",
+      "video": "https://www.youtube.com/embed/rIO5326FgPE",
+      "duration": "55 minutos",
+      "topics": [
+        "Box model: content, padding, border, margin",
+        "box-sizing: border-box vs content-box",
+        "Posicionamiento: static, relative, absolute, fixed, sticky",
+        "Z-index y contextos de apilamiento",
+        "Display: block, inline, inline-block"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model",
+        "https://css-tricks.com/the-css-box-model/",
+        "https://developer.mozilla.org/es/docs/Web/CSS/position"
+      ],
+      "exercises": [
+        "Crear cajas con diferentes paddings y margins",
+        "Posicionar elementos de forma absoluta y relativa",
+        "Crear un header fijo que permanezca en la parte superior",
+        "Experimentar con z-index para superponer elementos"
+      ]
+    },
+    {
+      "title": "Flexbox - Layout Flexible",
+      "description": "Domina Flexbox para crear layouts flexibles y responsivos de una dimensión.",
+      "video": "https://www.youtube.com/embed/JJSoEo8JSnc",
+      "duration": "60 minutos",
+      "topics": [
+        "Conceptos básicos: flex container y flex items",
+        "Propiedades del contenedor: justify-content, align-items, flex-direction",
+        "Propiedades de los items: flex-grow, flex-shrink, flex-basis",
+        "Alineación y distribución de espacio",
+        "Casos de uso comunes y patrones"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout",
+        "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+        "https://flexboxfroggy.com/#es",
+        "https://flexbox.malven.co/"
+      ],
+      "exercises": [
+        "Diseñar una galería de imágenes usando Flexbox",
+        "Crear un layout de navigation bar responsivo",
+        "Centrar contenido vertical y horizontalmente",
+        "Construir un footer con elementos distribuidos uniformemente"
+      ]
+    },
+    {
+      "title": "CSS Grid - Layout Bidimensional",
+      "description": "Aprende CSS Grid para crear layouts complejos de dos dimensiones.",
+      "video": "https://www.youtube.com/embed/jV8B24rSN5o",
+      "duration": "65 minutos",
+      "topics": [
+        "Grid container y grid items",
+        "Definir filas y columnas: grid-template-rows/columns",
+        "Grid areas y template areas",
+        "Gap, alineación y justificación en Grid",
+        "Grid implícito vs explícito",
+        "Responsive design con Grid"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout",
+        "https://css-tricks.com/snippets/css/complete-guide-grid/",
+        "https://cssgridgarden.com/#es",
+        "https://grid.malven.co/"
+      ],
+      "exercises": [
+        "Crear un layout de 3 columnas con Grid",
+        "Diseñar una página completa usando grid-template-areas",
+        "Construir un dashboard con diferentes secciones",
+        "Crear una galería de imágenes con grid auto-fit"
+      ]
+    },
+    {
+      "title": "Diseño Responsivo y Media Queries",
+      "description": "Técnicas para crear sitios web que se adapten a diferentes dispositivos.",
+      "video": "https://www.youtube.com/embed/2KL-z9A56SQ",
+      "duration": "50 minutos",
+      "topics": [
+        "Conceptos de diseño responsivo",
+        "Viewport y meta tag viewport",
+        "Media queries: sintaxis y breakpoints comunes",
+        "Mobile-first vs Desktop-first approach",
+        "Unidades responsivas: %, vw, vh, rem, em",
+        "Imágenes responsivas"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries",
+        "https://css-tricks.com/a-complete-guide-to-css-media-queries/",
+        "https://www.w3schools.com/css/css_rwd_intro.asp"
+      ],
+      "exercises": [
+        "Convertir un layout fijo a responsivo",
+        "Crear un menú hamburguesa para móviles",
+        "Adaptar una galería para diferentes tamaños de pantalla",
+        "Implementar tipografía responsiva"
+      ]
+    },
+    {
+      "title": "Animaciones y Transiciones",
+      "description": "Añade vida a tus diseños con transiciones suaves y animaciones CSS.",
+      "video": "https://www.youtube.com/embed/zHUpx90NerM",
+      "duration": "45 minutos",
+      "topics": [
+        "CSS Transitions: propiedades y timing functions",
+        "CSS Animations y @keyframes",
+        "Propiedades animables y performance",
+        "Transform: translate, rotate, scale, skew",
+        "Animation timing y easing functions",
+        "Mejores prácticas para animaciones web"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Animations",
+        "https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions",
+        "https://cubic-bezier.com/",
+        "https://animista.net/"
+      ],
+      "exercises": [
+        "Crear botones con efectos hover animados",
+        "Diseñar un loading spinner con CSS puro",
+        "Animar la entrada de elementos en scroll",
+        "Crear una galería con transiciones suaves"
+      ]
+    },
+    {
+      "title": "CSS Moderno y Metodologías",
+      "description": "Variables CSS, metodologías como BEM y técnicas avanzadas.",
+      "video": "https://www.youtube.com/embed/Nt0NViCfwNs",
+      "duration": "55 minutos",
+      "topics": [
+        "Custom Properties (Variables CSS)",
+        "Metodología BEM para organizar CSS",
+        "CSS Modules y CSS-in-JS conceptos",
+        "Preprocesadores: introducción a Sass/SCSS",
+        "PostCSS y autoprefixer",
+        "CSS arquitectura y mantenibilidad"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties",
+        "http://getbem.com/introduction/",
+        "https://sass-lang.com/guide",
+        "https://css-tricks.com/bem-101/"
+      ],
+      "exercises": [
+        "Refactorizar CSS usando variables personalizadas",
+        "Aplicar metodología BEM a un proyecto existente",
+        "Crear un sistema de colores con custom properties",
+        "Organizar CSS siguiendo principios de arquitectura"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Proyecto 1: Landing Page Personal",
+      "description": "Crear una página personal responsiva aplicando flexbox, grid y animaciones.",
+      "requirements": [
+        "Header con navegación",
+        "Sección hero con call-to-action",
+        "Galería de proyectos usando Grid",
+        "Footer con información de contacto",
+        "Completamente responsivo",
+        "Animaciones sutiles"
+      ],
+      "duration": "1-2 semanas"
+    },
+    {
+      "title": "Proyecto 2: Dashboard Administrativo",
+      "description": "Diseñar un dashboard complejo usando CSS Grid y técnicas avanzadas.",
+      "requirements": [
+        "Sidebar de navegación",
+        "Grid layout para widgets",
+        "Gráficos y tarjetas de estadísticas",
+        "Tema claro/oscuro con variables CSS",
+        "Adaptable a tablet y móvil"
+      ],
+      "duration": "2-3 semanas"
+    }
+  ],
+  "exam": {
+    "title": "Examen Final de CSS",
+    "description": "Evaluación completa de conocimientos de CSS desde básico hasta intermedio",
+    "duration": "90 minutos",
+    "totalQuestions": 25,
+    "passingScore": "70%",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cómo se enlaza un archivo CSS externo en HTML?",
+        "type": "multiple-choice",
+        "options": [
+          "<link rel=\"stylesheet\" href=\"styles.css\">",
+          "<script src=\"styles.css\"></script>",
+          "<style src=\"styles.css\"></style>",
+          "<css href=\"styles.css\"></css>"
+        ],
+        "answer": "<link rel=\"stylesheet\" href=\"styles.css\">",
+        "explanation": "La etiqueta <link> con rel='stylesheet' es la forma correcta de enlazar CSS externo."
+      },
+      {
+        "id": 2,
+        "question": "¿Qué propiedad se usa para cambiar el color de fondo?",
+        "type": "multiple-choice",
+        "options": [
+          "background-color",
+          "color",
+          "font-size",
+          "background"
+        ],
+        "answer": "background-color",
+        "explanation": "background-color establece específicamente el color de fondo de un elemento."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es la diferencia entre margin y padding?",
+        "type": "multiple-choice",
+        "options": [
+          "Margin es espacio interno, padding es espacio externo",
+          "Margin es espacio externo, padding es espacio interno",
+          "No hay diferencia, son sinónimos",
+          "Margin se usa solo en divs, padding en todos los elementos"
+        ],
+        "answer": "Margin es espacio externo, padding es espacio interno",
+        "explanation": "Margin crea espacio fuera del elemento, padding crea espacio dentro del elemento."
+      },
+      {
+        "id": 4,
+        "question": "Para centrar un flex item tanto horizontal como verticalmente, usas:",
+        "type": "multiple-choice",
+        "options": [
+          "justify-content: center; align-items: center;",
+          "text-align: center; vertical-align: middle;",
+          "margin: auto; padding: auto;",
+          "center: both;"
+        ],
+        "answer": "justify-content: center; align-items: center;",
+        "explanation": "En flexbox, justify-content centra horizontalmente y align-items centra verticalmente."
+      },
+      {
+        "id": 5,
+        "question": "¿Qué selector tiene mayor especificidad?",
+        "type": "multiple-choice",
+        "options": [
+          ".clase",
+          "#id",
+          "elemento",
+          "*"
+        ],
+        "answer": "#id",
+        "explanation": "Los selectores de ID tienen mayor especificidad que clases, elementos o selector universal."
+      },
+      {
+        "id": 6,
+        "question": "Para crear una grilla de 3 columnas iguales en CSS Grid:",
+        "type": "multiple-choice",
+        "options": [
+          "grid-template-columns: 1fr 1fr 1fr;",
+          "grid-columns: 3;",
+          "columns: 3;",
+          "grid-template: 3;"
+        ],
+        "answer": "grid-template-columns: 1fr 1fr 1fr;",
+        "explanation": "grid-template-columns con 1fr 1fr 1fr crea tres columnas de igual tamaño."
+      },
+      {
+        "id": 7,
+        "question": "¿Cuál es la sintaxis correcta para una media query?",
+        "type": "multiple-choice",
+        "options": [
+          "@media (max-width: 768px) { /* estilos */ }",
+          "@responsive (max-width: 768px) { /* estilos */ }",
+          "@screen (max-width: 768px) { /* estilos */ }",
+          "@breakpoint (max-width: 768px) { /* estilos */ }"
+        ],
+        "answer": "@media (max-width: 768px) { /* estilos */ }",
+        "explanation": "@media es la regla at-rule correcta para media queries en CSS."
+      },
+      {
+        "id": 8,
+        "question": "Para aplicar una transición suave de 0.3 segundos a todas las propiedades:",
+        "type": "multiple-choice",
+        "options": [
+          "transition: all 0.3s;",
+          "animate: all 0.3s;",
+          "transform: all 0.3s;",
+          "transition-duration: 0.3s;"
+        ],
+        "answer": "transition: all 0.3s;",
+        "explanation": "transition: all 0.3s aplica una transición de 0.3 segundos a todas las propiedades que cambien."
+      },
+      {
+        "id": 9,
+        "question": "¿Qué hace 'box-sizing: border-box'?",
+        "type": "multiple-choice",
+        "options": [
+          "Incluye padding y border en el ancho total del elemento",
+          "Excluye padding y border del ancho del elemento",
+          "Solo afecta al border del elemento",
+          "Cambia el elemento a display: block"
+        ],
+        "answer": "Incluye padding y border en el ancho total del elemento",
+        "explanation": "border-box hace que el ancho incluya padding y border, facilitando el cálculo de tamaños."
+      },
+      {
+        "id": 10,
+        "question": "Una variable CSS se define con:",
+        "type": "multiple-choice",
+        "options": [
+          "--nombre-variable: valor;",
+          "$nombre-variable: valor;",
+          "var(nombre-variable): valor;",
+          "@variable nombre-variable: valor;"
+        ],
+        "answer": "--nombre-variable: valor;",
+        "explanation": "Las custom properties (variables CSS) se definen con -- seguido del nombre."
+      }
+    ]
+  },
+  "additionalResources": {
+    "books": [
+      "CSS: The Definitive Guide by Eric Meyer",
+      "CSS Secrets by Lea Verou",
+      "Every Layout by Andy Bell & Heydon Pickering"
+    ],
+    "tools": [
+      "Visual Studio Code con extensiones CSS",
+      "Chrome DevTools para debugging CSS",
+      "Figma o Adobe XD para diseño",
+      "Can I Use para compatibilidad de navegadores"
+    ],
+    "practiceWebsites": [
+      "CSS Diner - Selectores CSS",
+      "Flexbox Froggy - Práctica de Flexbox",
+      "Grid Garden - Práctica de CSS Grid",
+      "CSS Battle - Desafíos de CSS"
+    ],
+    "communities": [
+      "CSS-Tricks",
+      "MDN Web Docs",
+      "Stack Overflow",
+      "Reddit r/css"
+    ]
+  },
+  "assessmentCriteria": {
+    "participation": "10%",
+    "exercises": "40%",
+    "projects": "35%",
+    "finalExam": "15%"
+  },
+  "nextSteps": {
+    "title": "Después de completar este curso",
+    "suggestions": [
+      "Aprender un preprocesador CSS como Sass o Less",
+      "Explorar frameworks CSS como Bootstrap o Tailwind",
+      "Profundizar en CSS-in-JS para React",
+      "Estudiar design systems y tokens de diseño",
+      "Practicar con proyectos reales y complejos"
+    ]
+  }
+}

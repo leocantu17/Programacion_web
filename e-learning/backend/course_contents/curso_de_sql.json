@@ -1,0 +1,48 @@
+{
+  "chapters": [
+    {
+      "title": "Introducción a SQL",
+      "description": "Conceptos básicos y tipos de bases de datos.",
+      "video": "https://www.youtube.com/embed/HXV3zeQKqGY",
+      "resources": [
+        "https://www.w3schools.com/sql/"
+      ],
+      "exercises": [
+        "Crea una base de datos y una tabla simple.",
+        "Inserta datos y realiza consultas básicas."
+      ]
+    },
+    {
+      "title": "Consultas y filtros",
+      "description": "SELECT, WHERE, ORDER BY y funciones básicas.",
+      "video": "https://www.youtube.com/embed/7S_tz1z_5bA",
+      "resources": [],
+      "exercises": [
+        "Consulta registros con filtros.",
+        "Ordena resultados y usa funciones agregadas."
+      ]
+    }
+  ],
+  "exam": {
+    "questions": [
+      {
+        "question": "¿Qué comando se usa para seleccionar datos?",
+        "options": [
+          "SELECT",
+          "INSERT",
+          "UPDATE"
+        ],
+        "answer": "SELECT"
+      },
+      {
+        "question": "¿Para qué sirve WHERE?",
+        "options": [
+          "Para filtrar resultados",
+          "Para insertar datos",
+          "Para eliminar tablas"
+        ],
+        "answer": "Para filtrar resultados"
+      }
+    ]
+  }
+}

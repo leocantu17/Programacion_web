@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+.course-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #007acc;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-list li:hover {
+  background-color: #005fa3;
+}
+
+.sidebar-list li.active {
+  background-color: #004d82;
+  font-weight: bold;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: white;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+  color: #007acc;
+}
+
+.video-wrapper iframe {
+  border-radius: 6px;
+  border: none;
+}
+
+.resources-list {
+  margin-left: 1.5rem;
+}
+
+.resources-list li a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.resources-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Exam */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.options-list li {
+  margin-bottom: 0.8rem;
+}
+
+.option-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid #007acc;
+  background-color: white;
+  color: #007acc;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.option-button:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.feedback.correct {
+  color: green;
+}
+
+.feedback.incorrect {
+  color: #d9534f;
+}
+
+/* Loading/Error */
+.loading,
+.error {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #d9534f;
+}
+
+.exam-completed {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #28a745;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  .content {
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard";
+import "../styles/style.css";
+import axios from "axios";
 
 const Home = () => {
-  const courses = [
-    { id: 1, title: "Curso de Java", description: "Aprende Java desde cero" },
-    { id: 2, title: "Curso de JavaScript", description: "Domina JS moderno" },
-    { id: 3, title: "Curso de HTML", description: "Fundamentos de HTML" },
-    { id: 4, title: "Curso de CSS", description: "Estiliza tus páginas web" },
-    { id: 5, title: "Curso de React", description: "Framework frontend popular" },
-    { id: 6, title: "Curso de Python", description: "Automatiza con Python" },
-    { id: 7, title: "Curso de SQL", description: "Maneja bases de datos" },
-  ];
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/courses")
+      .then(response => {
+        setCourses(response.data);
+      })
+      .catch(error => {
+        console.error("Error al obtener los cursos:", error);
+      });
+  }, []);
 
   return (
     <div className="home-container">
-      <h1>Cursos Disponibles</h1>
+      <h1 className="home-title">Explora Nuestros Cursos</h1>
+      <p className="home-subtitle">Aprende a tu ritmo con los mejores contenidos online</p>
       <div className="course-grid">
         {courses.map(course => (
           <CourseCard key={course.id} {...course} />

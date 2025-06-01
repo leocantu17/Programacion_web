@@ -1,0 +1,605 @@
+{
+  "courseInfo": {
+    "title": "Curso Completo de JavaScript",
+    "description": "Aprende JavaScript desde los fundamentos hasta técnicas avanzadas para desarrollo web moderno",
+    "duration": "10-12 semanas",
+    "level": "Principiante a Avanzado",
+    "prerequisites": ["Conocimientos básicos de HTML y CSS", "Lógica de programación básica", "Editor de código"],
+    "objectives": [
+      "Dominar la sintaxis y conceptos fundamentales de JavaScript",
+      "Manipular el DOM y crear interfaces interactivas",
+      "Trabajar con APIs y datos asíncronos",
+      "Implementar programación orientada a objetos",
+      "Desarrollar aplicaciones web modernas",
+      "Aplicar mejores prácticas y patrones de diseño"
+    ]
+  },
+  "chapters": [
+    {
+      "title": "Introducción a JavaScript",
+      "description": "Historia, evolución y fundamentos de JavaScript en el desarrollo web moderno.",
+      "video": "https://www.youtube.com/embed/W6NZfCO5SIk",
+      "duration": "50 minutos",
+      "topics": [
+        "Historia y evolución de JavaScript",
+        "JavaScript vs ECMAScript",
+        "Configuración del entorno de desarrollo",
+        "Consola del navegador y herramientas de desarrollo",
+        "Primer programa: Hello World",
+        "Sintaxis básica y estructura del código",
+        "Comentarios y buenas prácticas"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide",
+        "https://javascript.info/",
+        "https://www.ecma-international.org/ecma-262/",
+        "https://caniuse.com/"
+      ],
+      "exercises": [
+        "Configurar entorno de desarrollo con VS Code",
+        "Imprimir mensajes en la consola usando console.log()",
+        "Crear tu primer archivo JavaScript",
+        "Experimentar con diferentes tipos de comentarios",
+        "Ejecutar JavaScript en el navegador y Node.js"
+      ],
+      "keyPoints": [
+        "JavaScript es un lenguaje interpretado y dinámico",
+        "Se ejecuta tanto en navegadores como en servidores (Node.js)",
+        "Es case-sensitive y usa camelCase por convención",
+        "Las declaraciones terminan con punto y coma (opcional pero recomendado)"
+      ]
+    },
+    {
+      "title": "Variables, Tipos de Datos y Operadores",
+      "description": "Declaración de variables, tipos primitivos y operadores fundamentales.",
+      "video": "https://www.youtube.com/embed/9emXNzqCKyg",
+      "duration": "55 minutos",
+      "topics": [
+        "Declaración de variables: var, let, const",
+        "Tipos primitivos: string, number, boolean, undefined, null",
+        "Símbolos y BigInt",
+        "Operadores aritméticos, de comparación y lógicos",
+        "Coerción de tipos y conversiones",
+        "Scope de variables y hoisting",
+        "Template literals y interpolación"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures",
+        "https://javascript.info/variables",
+        "https://www.w3schools.com/js/js_datatypes.asp"
+      ],
+      "exercises": [
+        "Declarar variables y funciones básicas",
+        "Experimentar con diferentes tipos de datos",
+        "Crear calculadora básica con operadores",
+        "Practicar conversiones de tipos",
+        "Usar template literals para formatear strings"
+      ]
+    },
+    {
+      "title": "Estructuras de Control",
+      "description": "Condicionales, bucles y control de flujo del programa.",
+      "video": "https://www.youtube.com/embed/IsG4Xd6LlsM",
+      "duration": "45 minutos",
+      "topics": [
+        "Condicionales: if, else if, else",
+        "Operador ternario",
+        "Switch statement",
+        "Bucles: for, while, do-while",
+        "for...in y for...of",
+        "Break y continue",
+        "Estructuras anidadas"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+        "https://javascript.info/ifelse",
+        "https://javascript.info/while-for"
+      ],
+      "exercises": [
+        "Crear sistema de calificaciones con condicionales",
+        "Implementar diferentes tipos de bucles",
+        "Construir menú interactivo con switch",
+        "Crear juego de adivinanza de números",
+        "Validar formularios con estructuras de control"
+      ]
+    },
+    {
+      "title": "Funciones y Scope",
+      "description": "Declaración de funciones, parámetros, retorno de valores y alcance de variables.",
+      "video": "https://www.youtube.com/embed/N8ap4k_1QEQ",
+      "duration": "60 minutos",
+      "topics": [
+        "Declaración de funciones: function declaration vs expression",
+        "Arrow functions (funciones flecha)",
+        "Parámetros y argumentos",
+        "Return statements",
+        "Scope: global, function, block",
+        "Closures (clausuras)",
+        "Higher-order functions",
+        "Recursión básica"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions",
+        "https://javascript.info/function-basics",
+        "https://eloquentjavascript.net/03_functions.html"
+      ],
+      "exercises": [
+        "Crear biblioteca de funciones matemáticas",
+        "Implementar funciones con diferentes tipos de parámetros",
+        "Practicar con arrow functions",
+        "Crear funciones que retornen otras funciones",
+        "Resolver problemas usando recursión"
+      ]
+    },
+    {
+      "title": "Arrays y Métodos de Array",
+      "description": "Trabajar con arrays, métodos de manipulación y iteración.",
+      "video": "https://www.youtube.com/embed/R8rmfD9Y5-c",
+      "duration": "65 minutos",
+      "topics": [
+        "Creación y acceso a arrays",
+        "Métodos básicos: push, pop, shift, unshift",
+        "Métodos de iteración: forEach, map, filter, reduce",
+        "find, findIndex, some, every",
+        "sort, reverse, slice, splice",
+        "Arrays multidimensionales",
+        "Destructuring de arrays",
+        "Spread operator con arrays"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array",
+        "https://javascript.info/array",
+        "https://javascript.info/array-methods"
+      ],
+      "exercises": [
+        "Crear sistema de gestión de tareas con arrays",
+        "Implementar filtros y búsquedas en listas",
+        "Procesar datos usando map, filter y reduce",
+        "Crear funciones de ordenamiento personalizado",
+        "Trabajar con arrays de objetos complejos"
+      ]
+    },
+    {
+      "title": "Objetos y Programación Orientada a Objetos",
+      "description": "Creación de objetos, propiedades, métodos y conceptos de POO.",
+      "video": "https://www.youtube.com/embed/PFmuCDHHpwk",
+      "duration": "70 minutos",
+      "topics": [
+        "Creación de objetos: literal, constructor, Object.create",
+        "Propiedades y métodos",
+        "this keyword",
+        "Prototipos y herencia prototípica",
+        "Clases ES6",
+        "Herencia con extends",
+        "Métodos estáticos",
+        "Getters y setters",
+        "Destructuring de objetos"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects",
+        "https://javascript.info/object",
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes"
+      ],
+      "exercises": [
+        "Crear sistema de gestión de usuarios con objetos",
+        "Implementar clases para un juego simple",
+        "Practicar herencia con diferentes tipos de vehículos",
+        "Crear biblioteca de utilidades orientada a objetos",
+        "Implementar patrón de diseño básico"
+      ]
+    },
+    {
+      "title": "Manipulación del DOM",
+      "description": "Interacción con elementos HTML, eventos y creación de interfaces dinámicas.",
+      "video": "https://www.youtube.com/embed/0ik6X4DJKCc",
+      "duration": "75 minutos",
+      "topics": [
+        "Selección de elementos: getElementById, querySelector",
+        "Modificación de contenido: innerHTML, textContent",
+        "Manipulación de atributos y clases",
+        "Creación y eliminación de elementos",
+        "Event listeners y tipos de eventos",
+        "Event object y propagación",
+        "Formularios y validación",
+        "Delegación de eventos"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model",
+        "https://javascript.info/document",
+        "https://www.w3schools.com/js/js_htmldom.asp"
+      ],
+      "exercises": [
+        "Cambiar texto y estilos de elementos dinámicamente",
+        "Agregar botones interactivos que cambien el color de fondo",
+        "Crear lista de tareas (To-Do List) interactiva",
+        "Implementar formulario con validación en tiempo real",
+        "Construir galería de imágenes con eventos"
+      ]
+    },
+    {
+      "title": "Asincronía: Callbacks, Promises y Async/Await",
+      "description": "Programación asíncrona, manejo de APIs y operaciones no bloqueantes.",
+      "video": "https://www.youtube.com/embed/PoRJizFvM7s",
+      "duration": "80 minutos",
+      "topics": [
+        "Concepto de asincronía en JavaScript",
+        "Callbacks y callback hell",
+        "Promises: creación y consumo",
+        "then, catch, finally",
+        "async/await syntax",
+        "Fetch API para peticiones HTTP",
+        "Manejo de errores asincrónos",
+        "Promise.all, Promise.race"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+        "https://javascript.info/async",
+        "https://developer.mozilla.org/es/docs/Web/API/Fetch_API"
+      ],
+      "exercises": [
+        "Crear simulador de operaciones asíncronas",
+        "Consumir API pública con fetch",
+        "Implementar sistema de carga de datos",
+        "Crear aplicación del clima con API externa",
+        "Manejar múltiples peticiones concurrentes"
+      ]
+    },
+    {
+      "title": "Módulos y Organización de Código",
+      "description": "Organización del código usando módulos ES6, imports y exports.",
+      "video": "https://www.youtube.com/embed/cRHQNNcYf6s",
+      "duration": "50 minutos",
+      "topics": [
+        "Módulos ES6: export e import",
+        "Default exports vs named exports",
+        "Importación dinámica",
+        "Organización de proyecto en archivos",
+        "Namespacing y encapsulación",
+        "Module bundlers (introducción)",
+        "CommonJS vs ES Modules"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Modules",
+        "https://javascript.info/modules-intro",
+        "https://es6-features.org/#ModuleExportsImports"
+      ],
+      "exercises": [
+        "Crear biblioteca de utilidades modular",
+        "Refactorizar proyecto grande usando módulos",
+        "Implementar sistema de plugins",
+        "Crear calculadora modular",
+        "Organizar aplicación web en módulos"
+      ]
+    },
+    {
+      "title": "JavaScript Avanzado y Mejores Prácticas",
+      "description": "Conceptos avanzados, optimización y patrones de diseño.",
+      "video": "https://www.youtube.com/embed/Mus_vwhTCq0",
+      "duration": "70 minutos",
+      "topics": [
+        "Event loop y call stack",
+        "Debouncing y throttling",
+        "Design patterns: Module, Observer, Factory",
+        "Error handling avanzado",
+        "Performance optimization",
+        "Memory management",
+        "Testing básico con Jest",
+        "Linting con ESLint",
+        "Modern JavaScript features (ES2020+)"
+      ],
+      "resources": [
+        "https://javascript.info/event-loop",
+        "https://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+        "https://eslint.org/docs/user-guide/getting-started"
+      ],
+      "exercises": [
+        "Implementar diferentes patrones de diseño",
+        "Optimizar aplicación para mejor performance",
+        "Crear sistema de manejo de errores robusto",
+        "Implementar debouncing en buscador",
+        "Escribir tests para funciones principales"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Proyecto 1: Calculadora Interactiva",
+      "description": "Desarrollar una calculadora completa con interfaz web.",
+      "requirements": [
+        "Interfaz visual atractiva",
+        "Operaciones básicas y avanzadas",
+        "Historial de operaciones",
+        "Validación de entrada",
+        "Responsive design",
+        "Manejo de errores"
+      ],
+      "duration": "1-2 semanas",
+      "skills": ["DOM manipulation", "Event handling", "Functions", "Error handling"]
+    },
+    {
+      "title": "Proyecto 2: Aplicación de Gestión de Tareas",
+      "description": "Sistema completo de To-Do List con persistencia local.",
+      "requirements": [
+        "CRUD completo de tareas",
+        "Categorización y filtros",
+        "LocalStorage para persistencia",
+        "Drag & drop para reordenar",
+        "Búsqueda y ordenamiento",
+        "Exportar/importar datos",
+        "Modo oscuro/claro"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["Objects", "Arrays", "DOM", "LocalStorage", "Event delegation"]
+    },
+    {
+      "title": "Proyecto 3: Dashboard del Clima",
+      "description": "Aplicación que consume APIs meteorológicas.",
+      "requirements": [
+        "Integración con API del clima",
+        "Geolocalización del usuario",
+        "Múltiples ciudades",
+        "Gráficos de temperatura",
+        "Pronóstico extendido",
+        "Caching de datos",
+        "Manejo offline básico"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["Async/await", "Fetch API", "Promises", "Error handling", "Data visualization"]
+    },
+    {
+      "title": "Proyecto 4: E-commerce SPA",
+      "description": "Single Page Application de tienda online.",
+      "requirements": [
+        "Catálogo de productos",
+        "Carrito de compras",
+        "Sistema de filtros",
+        "Routing básico",
+        "Simulación de checkout",
+        "Gestión de estado",
+        "Arquitectura modular",
+        "Performance optimizado"
+      ],
+      "duration": "3-4 semanas",
+      "skills": ["Modules", "OOP", "State management", "Routing", "Advanced DOM"]
+    }
+  ],
+  "exam": {
+    "title": "Examen Integral de JavaScript",
+    "description": "Evaluación completa desde fundamentos hasta conceptos avanzados",
+    "duration": "90 minutos",
+    "totalQuestions": 25,
+    "passingScore": "75%",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Qué función sirve para mostrar mensajes en la consola del navegador?",
+        "type": "multiple-choice",
+        "options": [
+          "console.log()",
+          "alert()",
+          "print()",
+          "document.write()"
+        ],
+        "answer": "console.log()",
+        "explanation": "console.log() es el método estándar para imprimir mensajes en la consola del navegador."
+      },
+      {
+        "id": 2,
+        "question": "¿Cómo se selecciona un elemento HTML por su ID usando JavaScript?",
+        "type": "multiple-choice",
+        "options": [
+          "document.getElementById()",
+          "document.querySelectorAll()",
+          "document.getElementsByClassName()",
+          "document.querySelector()"
+        ],
+        "answer": "document.getElementById()",
+        "explanation": "document.getElementById() es el método específico para seleccionar un elemento por su ID único."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es la diferencia entre 'let' y 'var'?",
+        "type": "multiple-choice",
+        "options": [
+          "'let' tiene block scope, 'var' tiene function scope",
+          "'var' tiene block scope, 'let' tiene function scope",
+          "No hay diferencia",
+          "'let' es más rápido que 'var'"
+        ],
+        "answer": "'let' tiene block scope, 'var' tiene function scope",
+        "explanation": "'let' respeta el scope de bloque, mientras que 'var' solo respeta el scope de función."
+      },
+      {
+        "id": 4,
+        "question": "¿Qué devuelve el siguiente código: typeof null?",
+        "type": "multiple-choice",
+        "options": [
+          "'object'",
+          "'null'",
+          "'undefined'",
+          "'string'"
+        ],
+        "answer": "'object'",
+        "explanation": "Es un bug histórico de JavaScript. typeof null devuelve 'object' aunque null no sea un objeto."
+      },
+      {
+        "id": 5,
+        "question": "¿Cuál es la sintaxis correcta para una arrow function?",
+        "type": "multiple-choice",
+        "options": [
+          "(param) => { return param * 2; }",
+          "function(param) => { return param * 2; }",
+          "(param) -> { return param * 2; }",
+          "param => return param * 2;"
+        ],
+        "answer": "(param) => { return param * 2; }",
+        "explanation": "Las arrow functions usan la sintaxis => y pueden omitir return en expresiones simples."
+      },
+      {
+        "id": 6,
+        "question": "¿Qué método de array NO modifica el array original?",
+        "type": "multiple-choice",
+        "options": [
+          "map()",
+          "push()",
+          "splice()",
+          "sort()"
+        ],
+        "answer": "map()",
+        "explanation": "map() devuelve un nuevo array sin modificar el original, mientras que los otros métodos sí lo modifican."
+      },
+      {
+        "id": 7,
+        "question": "¿Qué es un Promise en JavaScript?",
+        "type": "multiple-choice",
+        "options": [
+          "Un objeto que representa una operación asíncrona",
+          "Una función que se ejecuta inmediatamente",
+          "Un tipo de variable",
+          "Un método para crear objetos"
+        ],
+        "answer": "Un objeto que representa una operación asíncrona",
+        "explanation": "Los Promises representan el resultado eventual de una operación asíncrona."
+      },
+      {
+        "id": 8,
+        "question": "¿Cuál es la diferencia entre '==' y '==='?",
+        "type": "multiple-choice",
+        "options": [
+          "'===' compara valor y tipo, '==' solo valor",
+          "'==' compara valor y tipo, '===' solo valor",
+          "No hay diferencia",
+          "'===' es más lento que '=='"
+        ],
+        "answer": "'===' compara valor y tipo, '==' solo valor",
+        "explanation": "'===' es comparación estricta (valor y tipo), '==' hace coerción de tipos."
+      },
+      {
+        "id": 9,
+        "question": "¿Cómo se previene la propagación de un evento?",
+        "type": "multiple-choice",
+        "options": [
+          "event.stopPropagation()",
+          "event.preventDefault()",
+          "event.stopEvent()",
+          "event.cancel()"
+        ],
+        "answer": "event.stopPropagation()",
+        "explanation": "stopPropagation() detiene la propagación del evento hacia otros elementos."
+      },
+      {
+        "id": 10,
+        "question": "¿Qué keyword se usa para crear una clase en ES6?",
+        "type": "multiple-choice",
+        "options": [
+          "class",
+          "function",
+          "object",
+          "constructor"
+        ],
+        "answer": "class",
+        "explanation": "ES6 introdujo la palabra clave 'class' para crear clases de forma más clara."
+      }
+    ]
+  },
+  "practicalAssessment": {
+    "title": "Evaluación Práctica Final",
+    "description": "Desarrollar una aplicación web completa que demuestre dominio de JavaScript",
+    "requirements": [
+      "Aplicación Single Page (SPA) funcional",
+      "Manipulación dinámica del DOM",
+      "Consumo de al menos una API externa",
+      "Implementación de programación asíncrona",
+      "Uso de módulos ES6",
+      "Manejo de eventos y formularios",
+      "Implementación de al menos un patrón de diseño",
+      "Código limpio y bien documentado",
+      "Manejo de errores apropiado",
+      "Responsive design básico"
+    ],
+    "timeLimit": "6 horas",
+    "evaluationCriteria": {
+      "functionality": "30%",
+      "codeQuality": "25%",
+      "asynchronousHandling": "20%",
+      "domManipulation": "15%",
+      "errorHandling": "10%"
+    }
+  },
+  "additionalResources": {
+    "documentation": [
+      "MDN Web Docs - JavaScript",
+      "JavaScript.info",
+      "ECMAScript Specification",
+      "Can I Use (compatibility)"
+    ],
+    "tools": [
+      "Visual Studio Code con extensiones JS",
+      "Chrome DevTools",
+      "Node.js para desarrollo",
+      "ESLint para linting",
+      "Prettier para formateo",
+      "Jest para testing"
+    ],
+    "practiceWebsites": [
+      "freeCodeCamp JavaScript sections",
+      "Codecademy JavaScript course",
+      "LeetCode (algoritmos)",
+      "HackerRank JavaScript domain",
+      "Codewars",
+      "JavaScript30.com"
+    ],
+    "libraries": [
+      "Lodash (utilidades)",
+      "Axios (HTTP requests)",
+      "Moment.js (fechas)",
+      "Chart.js (gráficos)",
+      "D3.js (visualización de datos)"
+    ],
+    "frameworks": [
+      "React.js",
+      "Vue.js",
+      "Angular",
+      "Node.js para backend",
+      "Express.js"
+    ]
+  },
+  "assessmentCriteria": {
+    "participation": "10%",
+    "exercises": "30%",
+    "projects": "45%",
+    "finalExam": "15%"
+  },
+  "roadmap": {
+    "week1-2": "Fundamentos: variables, funciones, estructuras de control",
+    "week3-4": "Arrays, objetos y programación orientada a objetos",
+    "week5-6": "DOM manipulation y eventos",
+    "week7-8": "Asincronía: Promises, async/await, APIs",
+    "week9-10": "Módulos, patrones de diseño y mejores prácticas",
+    "week11-12": "Proyectos finales y evaluación"
+  },
+  "careerPaths": {
+    "frontendDeveloper": {
+      "nextSteps": ["React/Vue/Angular", "TypeScript", "State Management", "Testing"],
+      "timeline": "3-6 meses adicionales"
+    },
+    "backendDeveloper": {
+      "nextSteps": ["Node.js", "Express.js", "Databases", "APIs REST"],
+      "timeline": "4-6 meses adicionales"
+    },
+    "fullStackDeveloper": {
+      "nextSteps": ["Framework frontend + backend", "DevOps básico", "Cloud services"],
+      "timeline": "6-12 meses adicionales"
+    }
+  },
+  "certificationPath": {
+    "basicLevel": "JavaScript Fundamentals Certificate",
+    "intermediateLevel": "DOM & Async JavaScript Certificate", 
+    "advancedLevel": "JavaScript Expert Certificate",
+    "requirements": {
+      "basicLevel": "Completar primeros 5 capítulos + proyecto 1 + examen >70%",
+      "intermediateLevel": "Completar hasta capítulo 8 + proyectos 1-2 + examen >75%",
+      "advancedLevel": "Completar curso completo + todos los proyectos + examen >85%"
+    }
+  }
+}

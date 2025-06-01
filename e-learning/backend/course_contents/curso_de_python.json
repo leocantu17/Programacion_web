@@ -1,0 +1,629 @@
+{
+  "courseInfo": {
+    "title": "Curso Completo de Python para Principiantes",
+    "description": "Aprende Python desde los fundamentos hasta técnicas avanzadas para desarrollo de aplicaciones modernas",
+    "duration": "10-12 semanas",
+    "level": "Principiante a Intermedio",
+    "prerequisites": ["Conocimientos básicos de computación", "Lógica básica de resolución de problemas", "Editor de código o IDE"],
+    "objectives": [
+      "Dominar la sintaxis y conceptos fundamentales de Python",
+      "Manipular estructuras de datos y crear algoritmos eficientes",
+      "Trabajar con archivos, APIs y datos externos",
+      "Implementar programación orientada a objetos",
+      "Desarrollar aplicaciones de escritorio y web básicas",
+      "Aplicar mejores prácticas y patrones de programación"
+    ]
+  },
+  "chapters": [
+    {
+      "title": "Introducción a Python",
+      "description": "Historia, filosofía y configuración del entorno de desarrollo Python.",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "duration": "55 minutos",
+      "topics": [
+        "Historia y filosofía de Python (Zen of Python)",
+        "Python vs otros lenguajes de programación",
+        "Instalación de Python y configuración del PATH",
+        "IDEs y editores: IDLE, PyCharm, VS Code",
+        "Configuración de entornos virtuales",
+        "Intérprete interactivo de Python",
+        "Tu primer programa: Hello World",
+        "PEP 8: Guía de estilo de Python"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/",
+        "https://realpython.com/installing-python/",
+        "https://peps.python.org/pep-0008/",
+        "https://python.org/dev/peps/pep-0020/"
+      ],
+      "exercises": [
+        "Instalar Python y configurar entorno virtual",
+        "Configurar IDE con extensiones de Python",
+        "Ejecutar código en el intérprete interactivo",
+        "Crear y ejecutar tu primer script .py",
+        "Explorar funciones built-in: help(), dir(), type()"
+      ],
+      "keyPoints": [
+        "Python es un lenguaje interpretado y de alto nivel",
+        "Enfatiza la legibilidad y simplicidad del código",
+        "Usa indentación para definir bloques de código",
+        "Es multiplataforma y de código abierto"
+      ]
+    },
+    {
+      "title": "Variables, Tipos de Datos y Operadores",
+      "description": "Tipos básicos, asignaciones, operaciones y conversiones de datos.",
+      "video": "https://www.youtube.com/embed/rfscVS0vtbw",
+      "duration": "60 minutos",
+      "topics": [
+        "Variables y nomenclatura (snake_case)",
+        "Tipos numéricos: int, float, complex",
+        "Strings: creación, métodos y formateo",
+        "Booleanos y valores de verdad",
+        "Tipo None",
+        "Conversiones de tipos (casting)",
+        "Operadores aritméticos, comparación y lógicos",
+        "Operadores de asignación compuesta",
+        "F-strings y formateo de cadenas"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/library/stdtypes.html",
+        "https://realpython.com/python-data-types/",
+        "https://realpython.com/python-f-strings/"
+      ],
+      "exercises": [
+        "Crear calculadora básica con diferentes operadores",
+        "Programa de conversión de unidades (temperatura, distancia)",
+        "Analizador de texto (contar caracteres, palabras, vocales)",
+        "Validador de datos con conversiones de tipo",
+        "Formatear salidas usando diferentes métodos de strings"
+      ]
+    },
+    {
+      "title": "Estructuras de Control",
+      "description": "Condicionales, bucles y control de flujo del programa.",
+      "video": "https://www.youtube.com/embed/DZwmZ8Usvnk",
+      "duration": "50 minutos",
+      "topics": [
+        "Condicionales: if, elif, else",
+        "Operadores lógicos: and, or, not",
+        "Operadores de pertenencia: in, not in",
+        "Bucle while y control con break/continue",
+        "Bucle for y función range()",
+        "Iteración sobre secuencias",
+        "Bucles anidados",
+        "Expresiones condicionales (operador ternario)",
+        "pass statement"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/controlflow.html",
+        "https://realpython.com/python-conditional-statements/",
+        "https://realpython.com/python-for-loop/"
+      ],
+      "exercises": [
+        "Sistema de calificaciones con múltiples condiciones",
+        "Juego de adivinanza de números con intentos limitados",
+        "Generador de patrones visuales con bucles anidados",
+        "Validador de contraseñas con múltiples criterios",
+        "Menú interactivo con bucle principal"
+      ]
+    },
+    {
+      "title": "Estructuras de Datos: Listas y Tuplas",
+      "description": "Trabajar con listas, tuplas y sus métodos de manipulación.",
+      "video": "https://www.youtube.com/embed/W8KRzm-HUcc",
+      "duration": "65 minutos",
+      "topics": [
+        "Listas: creación, acceso e indexación",
+        "Métodos de listas: append, insert, remove, pop",
+        "Slicing (rebanado) de listas",
+        "List comprehensions básicas",
+        "Listas anidadas (matrices)",
+        "Tuplas: inmutabilidad y casos de uso",
+        "Empaquetado y desempaquetado de tuplas",
+        "Operaciones comunes: len, max, min, sum",
+        "Ordenamiento con sorted() y sort()"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/datastructures.html",
+        "https://realpython.com/python-lists-tuples/",
+        "https://realpython.com/list-comprehension-python/"
+      ],
+      "exercises": [
+        "Sistema de gestión de inventario con listas",
+        "Procesador de calificaciones estudiantiles",
+        "Generador de estadísticas de listas numéricas",
+        "Juego de cartas básico usando listas",
+        "Matriz de operaciones matemáticas"
+      ]
+    },
+    {
+      "title": "Estructuras de Datos: Diccionarios y Conjuntos",
+      "description": "Diccionarios, conjuntos y operaciones avanzadas con estructuras de datos.",
+      "video": "https://www.youtube.com/embed/daefaLgNkw0",
+      "duration": "60 minutos",
+      "topics": [
+        "Diccionarios: creación y acceso a elementos",
+        "Métodos de diccionarios: keys(), values(), items()",
+        "Actualización y eliminación en diccionarios",
+        "Dictionary comprehensions",
+        "Diccionarios anidados",
+        "Conjuntos (sets): creación y operaciones",
+        "Operaciones matemáticas con conjuntos",
+        "frozenset para conjuntos inmutables",
+        "Cuándo usar cada estructura de datos"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/datastructures.html#dictionaries",
+        "https://realpython.com/python-dicts/",
+        "https://realpython.com/python-sets/"
+      ],
+      "exercises": [
+        "Sistema de gestión de contactos con diccionarios",
+        "Contador de frecuencia de palabras en texto",
+        "Base de datos de estudiantes con calificaciones",
+        "Analizador de logs con diccionarios anidados",
+        "Operaciones de conjuntos para análisis de datos"
+      ]
+    },
+    {
+      "title": "Funciones y Programación Modular",
+      "description": "Definición de funciones, parámetros, scope y programación modular.",
+      "video": "https://www.youtube.com/embed/9Os0o3wzS_I",
+      "duration": "70 minutos",
+      "topics": [
+        "Definición y llamada de funciones",
+        "Parámetros posicionales y por palabra clave",
+        "Valores por defecto en parámetros",
+        "*args y **kwargs",
+        "Scope: local, global y nonlocal",
+        "Funciones como objetos de primera clase",
+        "Funciones lambda (anónimas)",
+        "Decoradores básicos",
+        "Generadores con yield",
+        "Documentación de funciones (docstrings)"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/controlflow.html#defining-functions",
+        "https://realpython.com/defining-your-own-python-function/",
+        "https://realpython.com/python-lambda/"
+      ],
+      "exercises": [
+        "Biblioteca de funciones matemáticas personalizadas",
+        "Sistema de validación con funciones especializadas",
+        "Generador de reportes con funciones auxiliares",
+        "Decorador para medir tiempo de ejecución",
+        "Calculadora avanzada con funciones modulares"
+      ]
+    },
+    {
+      "title": "Programación Orientada a Objetos",
+      "description": "Clases, objetos, herencia y principios de POO en Python.",
+      "video": "https://www.youtube.com/embed/ZDa-Z5JzLYM",
+      "duration": "75 minutos",
+      "topics": [
+        "Conceptos fundamentales de POO",
+        "Definición de clases y creación de objetos",
+        "Método constructor __init__",
+        "Atributos de instancia y de clase",
+        "Métodos de instancia, clase y estáticos",
+        "Encapsulación: atributos privados y protegidos",
+        "Herencia: simple y múltiple",
+        "Polimorfismo y métodos especiales",
+        "Propiedades con @property",
+        "Métodos mágicos (__str__, __repr__, etc.)"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/classes.html",
+        "https://realpython.com/python3-object-oriented-programming/",
+        "https://realpython.com/python-super/"
+      ],
+      "exercises": [
+        "Sistema de gestión de biblioteca (libros, usuarios, préstamos)",
+        "Jerarquía de vehículos con herencia",
+        "Simulador de cuenta bancaria con encapsulación",
+        "Sistema de empleados con polimorfismo",
+        "Juego RPG básico con clases de personajes"
+      ]
+    },
+    {
+      "title": "Manejo de Archivos y Excepciones",
+      "description": "Lectura/escritura de archivos, manejo de errores y debugging.",
+      "video": "https://www.youtube.com/embed/Uh2ebFW8OYM",
+      "duration": "65 minutos",
+      "topics": [
+        "Apertura y cierre de archivos",
+        "Modos de apertura de archivos",
+        "Context managers (with statement)",
+        "Lectura: read(), readline(), readlines()",
+        "Escritura: write(), writelines()",
+        "Trabajo con archivos CSV y JSON",
+        "Manejo de excepciones: try, except, else, finally",
+        "Tipos comunes de excepciones",
+        "Creación de excepciones personalizadas",
+        "Debugging y logging básico"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/inputoutput.html#reading-and-writing-files",
+        "https://realpython.com/working-with-files-in-python/",
+        "https://docs.python.org/es/3/tutorial/errors.html"
+      ],
+      "exercises": [
+        "Procesador de archivos de texto con estadísticas",
+        "Sistema de logs con diferentes niveles",
+        "Conversor de formatos de datos (CSV a JSON)",
+        "Respaldo automático de archivos",
+        "Analizador de archivos de configuración"
+      ]
+    },
+    {
+      "title": "Módulos, Paquetes y Bibliotecas",
+      "description": "Organización de código, importación de módulos y uso de bibliotecas.",
+      "video": "https://www.youtube.com/embed/CqvZ3vGoGs0",
+      "duration": "55 minutos",
+      "topics": [
+        "Creación e importación de módulos",
+        "Diferentes formas de import",
+        "Paquetes y __init__.py",
+        "Biblioteca estándar de Python",
+        "pip y gestión de paquetes",
+        "Entornos virtuales con venv",
+        "requirements.txt",
+        "Módulos útiles: os, sys, datetime, random",
+        "Introducción a bibliotecas populares",
+        "Estructura de proyectos Python"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/tutorial/modules.html",
+        "https://realpython.com/python-modules-packages/",
+        "https://packaging.python.org/tutorials/installing-packages/"
+      ],
+      "exercises": [
+        "Crear biblioteca de utilidades personalizada",
+        "Proyecto multi-módulo con estructura organizada",
+        "Explorador de módulos de la biblioteca estándar",
+        "Instalación y uso de paquetes externos",
+        "Script de automatización usando múltiples módulos"
+      ]
+    },
+    {
+      "title": "Conceptos Avanzados y Mejores Prácticas",
+      "description": "Iteradores, generadores, decoradores avanzados y optimización.",
+      "video": "https://www.youtube.com/embed/bD05uGo_sVI",
+      "duration": "70 minutos",
+      "topics": [
+        "Iteradores y protocolo de iteración",
+        "Generadores avanzados y expresiones generadoras",
+        "Decoradores con parámetros",
+        "Context managers personalizados",
+        "Metaclases (introducción)",
+        "Programación funcional: map, filter, reduce",
+        "Optimización de código y profiling",
+        "Testing con unittest y pytest",
+        "Documentación con docstrings",
+        "Code style y herramientas (black, flake8)"
+      ],
+      "resources": [
+        "https://docs.python.org/es/3/library/itertools.html",
+        "https://realpython.com/python-iterators-iterables/",
+        "https://realpython.com/python-testing/"
+      ],
+      "exercises": [
+        "Implementar iteradores personalizados",
+        "Crear decoradores para diferentes propósitos",
+        "Sistema de caché con context managers",
+        "Suite de tests para funciones principales",
+        "Optimizar algoritmos con profiling"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Proyecto 1: Calculadora Científica",
+      "description": "Desarrollar una calculadora completa con interfaz de línea de comandos.",
+      "requirements": [
+        "Operaciones básicas y científicas",
+        "Historial de cálculos",
+        "Manejo de errores matemáticos",
+        "Interfaz de usuario intuitiva",
+        "Guardado/carga de sesiones",
+        "Funciones trigonométricas y logarítmicas"
+      ],
+      "duration": "1-2 semanas",
+      "skills": ["Functions", "Error handling", "File I/O", "Math operations", "User interface"]
+    },
+    {
+      "title": "Proyecto 2: Sistema de Gestión de Estudiantes",
+      "description": "Aplicación completa para gestionar información estudiantil.",
+      "requirements": [
+        "CRUD completo de estudiantes",
+        "Sistema de calificaciones",
+        "Generación de reportes",
+        "Persistencia en archivos",
+        "Búsqueda y filtrado",
+        "Estadísticas y análisis",
+        "Validación de datos",
+        "Interfaz de menús"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["OOP", "File handling", "Data structures", "Exception handling", "Data validation"]
+    },
+    {
+      "title": "Proyecto 3: Analizador de Datos CSV",
+      "description": "Herramienta para procesar y analizar archivos de datos.",
+      "requirements": [
+        "Lectura de múltiples formatos (CSV, JSON)",
+        "Limpieza y procesamiento de datos",
+        "Estadísticas descriptivas",
+        "Visualización básica con texto",
+        "Exportación de resultados",
+        "Manejo de datos faltantes",
+        "Filtros y agrupaciones"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["File processing", "Data analysis", "Libraries", "Error handling", "Statistics"]
+    },
+    {
+      "title": "Proyecto 4: Sistema de Automatización",
+      "description": "Conjunto de herramientas para automatizar tareas comunes.",
+      "requirements": [
+        "Organizador de archivos por extensión",
+        "Respaldo automático de directorios",
+        "Renombrador masivo de archivos",
+        "Monitor de sistema básico",
+        "Programador de tareas",
+        "Logs de actividades",
+        "Configuración externa",
+        "Interfaz de línea de comandos"
+      ],
+      "duration": "3-4 semanas",
+      "skills": ["Modules", "OS operations", "Scheduling", "Configuration", "Logging"]
+    }
+  ],
+  "exam": {
+    "title": "Examen Integral de Python",
+    "description": "Evaluación completa desde fundamentos hasta conceptos intermedios",
+    "duration": "90 minutos",
+    "totalQuestions": 25,
+    "passingScore": "75%",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Cómo se comenta una línea en Python?",
+        "type": "multiple-choice",
+        "options": [
+          "Con #",
+          "Con //",
+          "Con /* */",
+          "Con --"
+        ],
+        "answer": "Con #",
+        "explanation": "En Python se usa # para comentarios de una línea y ''' o \"\"\" para comentarios multilínea."
+      },
+      {
+        "id": 2,
+        "question": "¿Qué función se usa para mostrar información en pantalla?",
+        "type": "multiple-choice",
+        "options": [
+          "print()",
+          "echo()",
+          "console.log()",
+          "display()"
+        ],
+        "answer": "print()",
+        "explanation": "La función print() es la forma estándar de mostrar información en la consola en Python."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el resultado de len([1, 2, [3, 4]])?",
+        "type": "multiple-choice",
+        "options": [
+          "4",
+          "3",
+          "2",
+          "Error"
+        ],
+        "answer": "3",
+        "explanation": "len() cuenta los elementos del primer nivel. La lista anidada [3, 4] cuenta como un solo elemento."
+      },
+      {
+        "id": 4,
+        "question": "¿Qué palabra clave se usa para definir una función?",
+        "type": "multiple-choice",
+        "options": [
+          "function",
+          "def",
+          "func",
+          "define"
+        ],
+        "answer": "def",
+        "explanation": "La palabra clave 'def' se usa para definir funciones en Python."
+      },
+      {
+        "id": 5,
+        "question": "¿Cuál es la diferencia entre '==' y 'is'?",
+        "type": "multiple-choice",
+        "options": [
+          "'==' compara valores, 'is' compara identidad de objetos",
+          "'is' compara valores, '==' compara identidad",
+          "No hay diferencia",
+          "'is' es más rápido que '=='"
+        ],
+        "answer": "'==' compara valores, 'is' compara identidad de objetos",
+        "explanation": "'==' compara si los valores son iguales, 'is' compara si son el mismo objeto en memoria."
+      },
+      {
+        "id": 6,
+        "question": "¿Qué método NO modifica la lista original?",
+        "type": "multiple-choice",
+        "options": [
+          "sorted(lista)",
+          "lista.append()",
+          "lista.remove()",
+          "lista.sort()"
+        ],
+        "answer": "sorted(lista)",
+        "explanation": "sorted() devuelve una nueva lista ordenada sin modificar la original."
+      },
+      {
+        "id": 7,
+        "question": "¿Cuál es la sintaxis correcta para una list comprehension?",
+        "type": "multiple-choice",
+        "options": [
+          "[x**2 for x in range(5)]",
+          "[x**2 | x in range(5)]",
+          "[for x in range(5) x**2]",
+          "[x**2 where x in range(5)]"
+        ],
+        "answer": "[x**2 for x in range(5)]",
+        "explanation": "La sintaxis es [expresión for elemento in iterable]."
+      },
+      {
+        "id": 8,
+        "question": "¿Qué hace el método 'strip()' en strings?",
+        "type": "multiple-choice",
+        "options": [
+          "Elimina espacios al inicio y final",
+          "Divide el string en partes",
+          "Convierte a mayúsculas",
+          "Invierte el string"
+        ],
+        "answer": "Elimina espacios al inicio y final",
+        "explanation": "strip() elimina espacios en blanco (y otros caracteres especificados) del inicio y final del string."
+      },
+      {
+        "id": 9,
+        "question": "¿Cuál es la forma correcta de abrir un archivo para lectura?",
+        "type": "multiple-choice",
+        "options": [
+          "with open('archivo.txt', 'r') as f:",
+          "open('archivo.txt').read()",
+          "file('archivo.txt', 'r')",
+          "read_file('archivo.txt')"
+        ],
+        "answer": "with open('archivo.txt', 'r') as f:",
+        "explanation": "Using 'with' statement ensures proper file handling and automatic closure."
+      },
+      {
+        "id": 10,
+        "question": "¿Qué palabra clave se usa para crear una clase?",
+        "type": "multiple-choice",
+        "options": [
+          "class",
+          "object",
+          "struct",
+          "type"
+        ],
+        "answer": "class",
+        "explanation": "La palabra clave 'class' se usa para definir clases en Python."
+      }
+    ]
+  },
+  "practicalAssessment": {
+    "title": "Evaluación Práctica Final",
+    "description": "Desarrollar una aplicación completa que demuestre dominio de Python",
+    "requirements": [
+      "Aplicación de línea de comandos funcional",
+      "Uso de programación orientada a objetos",
+      "Manejo de archivos y persistencia de datos",
+      "Implementación de manejo de excepciones",
+      "Uso de módulos y organización del código",
+      "Documentación apropiada del código",
+      "Al menos una biblioteca externa",
+      "Tests básicos para funciones principales",
+      "Interfaz de usuario intuitiva",
+      "Código limpio siguiendo PEP 8"
+    ],
+    "timeLimit": "6 horas",
+    "evaluationCriteria": {
+      "functionality": "30%",
+      "codeQuality": "25%",
+      "oopImplementation": "20%",
+      "errorHandling": "15%",
+      "documentation": "10%"
+    }
+  },
+  "additionalResources": {
+    "documentation": [
+      "Python.org Official Documentation",
+      "Real Python Tutorials",
+      "Python Enhancement Proposals (PEPs)",
+      "Python Module of the Week (PyMOTW)"
+    ],
+    "tools": [
+      "PyCharm Community Edition",
+      "Visual Studio Code con Python Extension",
+      "Jupyter Notebooks",
+      "pip package manager",
+      "virtualenv/venv",
+      "pytest para testing",
+      "black para formateo",
+      "flake8 para linting"
+    ],
+    "practiceWebsites": [
+      "HackerRank Python Domain",
+      "LeetCode Python Problems",
+      "Codewars Python Kata",
+      "Python Challenge",
+      "Exercism Python Track",
+      "Project Euler"
+    ],
+    "libraries": [
+      "requests (HTTP requests)",
+      "pandas (data analysis)",
+      "matplotlib (plotting)",
+      "numpy (numerical computing)",
+      "BeautifulSoup (web scraping)",
+      "tkinter (GUI development)"
+    ],
+    "frameworks": [
+      "Django (web development)",
+      "Flask (micro web framework)",
+      "FastAPI (modern web APIs)",
+      "Kivy (mobile apps)",
+      "PyQt/Tkinter (desktop apps)"
+    ]
+  },
+  "assessmentCriteria": {
+    "participation": "10%",
+    "exercises": "30%",
+    "projects": "45%",
+    "finalExam": "15%"
+  },
+  "roadmap": {
+    "week1-2": "Fundamentos: variables, tipos de datos, estructuras de control",
+    "week3-4": "Estructuras de datos: listas, tuplas, diccionarios, conjuntos",
+    "week5-6": "Funciones y programación modular",
+    "week7-8": "Programación orientada a objetos",
+    "week9-10": "Archivos, excepciones y módulos",
+    "week11-12": "Conceptos avanzados y proyectos finales"
+  },
+  "careerPaths": {
+    "dataScientist": {
+      "nextSteps": ["NumPy/Pandas", "Matplotlib/Seaborn", "Scikit-learn", "Jupyter"],
+      "timeline": "4-6 meses adicionales"
+    },
+    "webDeveloper": {
+      "nextSteps": ["Django/Flask", "HTML/CSS/JavaScript", "Databases", "REST APIs"],
+      "timeline": "3-6 meses adicionales"
+    },
+    "automationEngineer": {
+      "nextSteps": ["Selenium", "APIs", "DevOps tools", "Cloud platforms"],
+      "timeline": "3-5 meses adicionales"
+    },
+    "softwareDeveloper": {
+      "nextSteps": ["Advanced OOP", "Design Patterns", "Testing", "Databases"],
+      "timeline": "4-8 meses adicionales"
+    }
+  },
+  "certificationPath": {
+    "basicLevel": "Python Fundamentals Certificate",
+    "intermediateLevel": "Python Programming Certificate",
+    "advancedLevel": "Python Expert Certificate",
+    "requirements": {
+      "basicLevel": "Completar primeros 5 capítulos + proyecto 1 + examen >70%",
+      "intermediateLevel": "Completar hasta capítulo 8 + proyectos 1-2 + examen >75%",
+      "advancedLevel": "Completar curso completo + todos los proyectos + examen >85%"
+    }
+  }
+}

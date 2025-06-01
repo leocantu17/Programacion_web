@@ -1,0 +1,711 @@
+{
+  "courseInfo": {
+    "title": "Curso Completo de React para Desarrolladores Modernos",
+    "description": "Domina React desde los fundamentos hasta técnicas avanzadas para crear aplicaciones web profesionales",
+    "duration": "12-16 semanas",
+    "level": "Principiante a Avanzado",
+    "prerequisites": [
+      "HTML, CSS y JavaScript intermedio",
+      "ES6+ features (arrow functions, destructuring, modules)",
+      "Conocimientos básicos de npm/yarn",
+      "Editor de código (VS Code recomendado)"
+    ],
+    "objectives": [
+      "Dominar los conceptos fundamentales de React y el ecosistema",
+      "Crear componentes reutilizables y aplicaciones escalables",
+      "Manejar estado complejo con hooks y context",
+      "Implementar routing y navegación en SPAs",
+      "Integrar APIs y manejar datos asincrónicos",
+      "Aplicar testing y mejores prácticas de desarrollo",
+      "Desplegar aplicaciones React en producción"
+    ]
+  },
+  "chapters": [
+    {
+      "title": "Introducción a React y Fundamentos",
+      "description": "Historia, filosofía, configuración del entorno y conceptos básicos de React.",
+      "video": "https://www.youtube.com/embed/Ke90Tje7VS0",
+      "duration": "75 minutos",
+      "topics": [
+        "¿Qué es React y por qué usarlo?",
+        "Virtual DOM y reconciliación",
+        "Create React App vs Vite",
+        "Estructura de proyectos React",
+        "JSX: sintaxis y reglas",
+        "Componentes funcionales vs de clase",
+        "Props: pasando datos entre componentes",
+        "Renderizado condicional",
+        "Listas y keys",
+        "Eventos sintéticos"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/getting-started.html",
+        "https://vitejs.dev/guide/",
+        "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
+        "https://es.reactjs.org/docs/introducing-jsx.html"
+      ],
+      "exercises": [
+        "Crear proyecto React con Vite",
+        "Componente de bienvenida con props personalizadas",
+        "Lista de tareas básica con renderizado condicional",
+        "Componente de tarjeta de usuario con información dinámica",
+        "Manejo de eventos: botones y formularios simples"
+      ],
+      "keyPoints": [
+        "React es una biblioteca para interfaces de usuario",
+        "JSX combina JavaScript y HTML de forma declarativa",
+        "Los componentes son bloques de construcción reutilizables",
+        "Props fluyen hacia abajo (unidirectional data flow)"
+      ]
+    },
+    {
+      "title": "Estado y Hooks Fundamentales",
+      "description": "Manejo de estado local, efectos secundarios y hooks básicos.",
+      "video": "https://www.youtube.com/embed/O6P86uwfdR0",
+      "duration": "80 minutos",
+      "topics": [
+        "useState: estado local en componentes funcionales",
+        "useEffect: efectos secundarios y ciclo de vida",
+        "Dependencias en useEffect",
+        "Cleanup functions",
+        "useRef: referencias a elementos DOM",
+        "Formularios controlados vs no controlados",
+        "Validación básica de formularios",
+        "Patrones de actualización de estado",
+        "Lifting state up",
+        "Comunicación entre componentes hermanos"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/hooks-state.html",
+        "https://es.reactjs.org/docs/hooks-effect.html",
+        "https://es.reactjs.org/docs/forms.html",
+        "https://es.reactjs.org/docs/lifting-state-up.html"
+      ],
+      "exercises": [
+        "Contador con incremento/decremento",
+        "Formulario de contacto con validación",
+        "Timer/cronómetro con useEffect",
+        "Toggle de tema claro/oscuro",
+        "Lista de tareas con CRUD completo"
+      ]
+    },
+    {
+      "title": "Componentes Avanzados y Composición",
+      "description": "Patrones de componentes, children, render props y composición.",
+      "video": "https://www.youtube.com/embed/3XaXKiXtNjw",
+      "duration": "70 minutos",
+      "topics": [
+        "Props.children y composición",
+        "Render props pattern",
+        "Higher-Order Components (HOCs)",
+        "Compound components",
+        "Forwarding refs",
+        "PropTypes y validación de props",
+        "Default props",
+        "Memoización con React.memo",
+        "useMemo y useCallback",
+        "Lazy loading y React.Suspense"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/composition-vs-inheritance.html",
+        "https://es.reactjs.org/docs/render-props.html",
+        "https://es.reactjs.org/docs/higher-order-components.html",
+        "https://es.reactjs.org/docs/react-api.html#reactmemo"
+      ],
+      "exercises": [
+        "Modal reutilizable con composición",
+        "HOC para autenticación",
+        "Componente de acordeón compound",
+        "Sistema de tabs personalizable",
+        "Optimización de rendimiento con memoización"
+      ]
+    },
+    {
+      "title": "Gestión de Estado Global con Context",
+      "description": "Context API, useReducer y patrones de estado global.",
+      "video": "https://www.youtube.com/embed/35lXWvCuM8o",
+      "duration": "85 minutos",
+      "topics": [
+        "Limitaciones del prop drilling",
+        "Context API: createContext y useContext",
+        "Provider pattern",
+        "useReducer para estado complejo",
+        "Combinando useReducer con Context",
+        "Múltiples contexts",
+        "Context optimization patterns",
+        "Cuándo usar Context vs props",
+        "Custom hooks para context",
+        "Comparación con Redux"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/context.html",
+        "https://es.reactjs.org/docs/hooks-reference.html#usereducer",
+        "https://kentcdodds.com/blog/how-to-use-react-context-effectively"
+      ],
+      "exercises": [
+        "Sistema de autenticación con Context",
+        "Carrito de compras global",
+        "Theme provider personalizado",
+        "Estado de notificaciones centralizadas",
+        "Multi-step form con estado compartido"
+      ]
+    },
+    {
+      "title": "React Router y Navegación",
+      "description": "Enrutamiento, navegación programática y parámetros de ruta.",
+      "video": "https://www.youtube.com/embed/Law7wfdg_ls",
+      "duration": "75 minutos",
+      "topics": [
+        "SPA vs MPA: conceptos de enrutamiento",
+        "Instalación y configuración de React Router",
+        "BrowserRouter, Routes y Route",
+        "Navegación con Link y NavLink",
+        "Parámetros de ruta dinámicos",
+        "Query parameters y useSearchParams",
+        "Navegación programática con useNavigate",
+        "Rutas anidadas",
+        "Rutas protegidas y guards",
+        "Lazy loading de rutas"
+      ],
+      "resources": [
+        "https://reactrouter.com/en/main",
+        "https://reactrouter.com/en/main/start/tutorial",
+        "https://reactrouter.com/en/main/hooks/use-navigate"
+      ],
+      "exercises": [
+        "SPA básica con múltiples páginas",
+        "Blog con rutas dinámicas para posts",
+        "Dashboard con rutas anidadas",
+        "Sistema de autenticación con rutas protegidas",
+        "E-commerce con navegación compleja"
+      ]
+    },
+    {
+      "title": "Manejo de Datos y APIs",
+      "description": "Fetch, axios, manejo de estados de carga y error handling.",
+      "video": "https://www.youtube.com/embed/VenLRGHx3D4",
+      "duration": "90 minutos",
+      "topics": [
+        "Fetch API vs bibliotecas HTTP",
+        "Axios: configuración e interceptores",
+        "Patrones de manejo de datos asincrónicos",
+        "Estados de loading, success y error",
+        "Custom hooks para API calls",
+        "Caching básico de datos",
+        "Optimistic updates",
+        "Paginación y scroll infinito",
+        "Debouncing y throttling",
+        "Error boundaries para manejo de errores"
+      ],
+      "resources": [
+        "https://developer.mozilla.org/es/docs/Web/API/Fetch_API",
+        "https://axios-http.com/docs/intro",
+        "https://es.reactjs.org/docs/error-boundaries.html",
+        "https://swr.vercel.app/"
+      ],
+      "exercises": [
+        "Lista de usuarios desde API externa",
+        "Buscador con debouncing",
+        "CRUD completo con API REST",
+        "Sistema de paginación avanzada",
+        "Dashboard con múltiples fuentes de datos"
+      ]
+    },
+    {
+      "title": "Formularios Avanzados y Validación",
+      "description": "React Hook Form, validación compleja y UX de formularios.",
+      "video": "https://www.youtube.com/embed/bU_eq8qyjic",
+      "duration": "85 minutos",
+      "topics": [
+        "Limitaciones de formularios nativos en React",
+        "React Hook Form: setup y configuración",
+        "Register, handleSubmit y formState",
+        "Validación con esquemas (Yup, Zod)",
+        "Mensajes de error personalizados",
+        "Formularios dinámicos y campos condicionales",
+        "File uploads y previews",
+        "Formularios multi-step",
+        "Integración con componentes de UI",
+        "Performance optimization"
+      ],
+      "resources": [
+        "https://react-hook-form.com/",
+        "https://github.com/jquense/yup",
+        "https://zod.dev/",
+        "https://react-hook-form.com/advanced-usage"
+      ],
+      "exercises": [
+        "Formulario de registro con validación completa",
+        "Form wizard multi-paso",
+        "Upload de archivos con preview",
+        "Formulario dinámico basado en configuración",
+        "Integración con sistema de autenticación"
+      ]
+    },
+    {
+      "title": "Styling y CSS-in-JS",
+      "description": "Diferentes enfoques de estilos: CSS Modules, Styled Components, Tailwind.",
+      "video": "https://www.youtube.com/embed/ouncVBiye_M",
+      "duration": "70 minutos",
+      "topics": [
+        "CSS tradicional vs CSS-in-JS",
+        "CSS Modules: scoped styles",
+        "Styled Components: fundamentos",
+        "Theming y design systems",
+        "Styled Components avanzado",
+        "Tailwind CSS con React",
+        "Emotion vs Styled Components",
+        "CSS custom properties con React",
+        "Responsive design patterns",
+        "Performance de styling"
+      ],
+      "resources": [
+        "https://styled-components.com/",
+        "https://github.com/css-modules/css-modules",
+        "https://tailwindcss.com/docs/guides/create-react-app",
+        "https://emotion.sh/docs/introduction"
+      ],
+      "exercises": [
+        "Componente de botón con variantes",
+        "Sistema de tema claro/oscuro",
+        "Layout responsivo completo",
+        "Biblioteca de componentes básica",
+        "Animaciones y transiciones"
+      ]
+    },
+    {
+      "title": "Testing en React",
+      "description": "Jest, Testing Library, mocking y estrategias de testing.",
+      "video": "https://www.youtube.com/embed/8Xwq35cPwYg",
+      "duration": "95 minutos",
+      "topics": [
+        "Importancia del testing en React",
+        "Jest: configuración y matchers",
+        "React Testing Library: filosofía",
+        "Queries y assertions",
+        "Testing de eventos de usuario",
+        "Mocking de módulos y APIs",
+        "Testing de hooks personalizados",
+        "Testing de Context y estado global",
+        "Snapshot testing",
+        "Coverage y métricas de calidad"
+      ],
+      "resources": [
+        "https://testing-library.com/docs/react-testing-library/intro/",
+        "https://jestjs.io/docs/getting-started",
+        "https://kentcdodds.com/blog/common-mistakes-with-react-testing-library"
+      ],
+      "exercises": [
+        "Tests unitarios para componentes básicos",
+        "Testing de formularios con validación",
+        "Mocking de API calls",
+        "Testing de rutas y navegación",
+        "Suite completa de tests para proyecto"
+      ]
+    },
+    {
+      "title": "Performance y Optimización",
+      "description": "Profiling, lazy loading, code splitting y mejores prácticas.",
+      "video": "https://www.youtube.com/embed/00O4sP73-h4",
+      "duration": "80 minutos",
+      "topics": [
+        "React DevTools Profiler",
+        "Identificando bottlenecks de performance",
+        "React.memo y optimización de re-renders",
+        "useMemo y useCallback efectivos",
+        "Code splitting con React.lazy",
+        "Bundle analysis y optimización",
+        "Image optimization",
+        "Virtual scrolling para listas grandes",
+        "Web Vitals y métricas",
+        "Server-side rendering (introducción)"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/optimizing-performance.html",
+        "https://web.dev/vitals/",
+        "https://react.dev/reference/react/memo",
+        "https://webpack.js.org/guides/code-splitting/"
+      ],
+      "exercises": [
+        "Optimización de lista con muchos elementos",
+        "Implementar lazy loading de componentes",
+        "Análisis y optimización de bundle",
+        "Performance audit completo",
+        "Dashboard optimizado para producción"
+      ]
+    },
+    {
+      "title": "Hooks Personalizados y Patrones Avanzados",
+      "description": "Creación de hooks reutilizables y patrones de arquitectura.",
+      "video": "https://www.youtube.com/embed/J-g9ZJha8FE",
+      "duration": "85 minutos",
+      "topics": [
+        "Cuándo crear hooks personalizados",
+        "Hooks para manejo de estado local",
+        "Hooks para API calls",
+        "Hooks para localStorage/sessionStorage",
+        "Hooks para event listeners",
+        "Compound components pattern",
+        "Render props con hooks",
+        "State machines con XState",
+        "Error handling patterns",
+        "Testing de hooks personalizados"
+      ],
+      "resources": [
+        "https://es.reactjs.org/docs/hooks-custom.html",
+        "https://usehooks.com/",
+        "https://xstate.js.org/docs/packages/xstate-react/",
+        "https://github.com/streamich/react-use"
+      ],
+      "exercises": [
+        "Hook para manejo de formularios",
+        "Hook para fetch con cache",
+        "Hook para detección de dispositivo",
+        "Hook para manejo de modales",
+        "Biblioteca de hooks reutilizables"
+      ]
+    },
+    {
+      "title": "Herramientas de Desarrollo y Deploy",
+      "description": "Build tools, DevTools, CI/CD y deployment strategies.",
+      "video": "https://www.youtube.com/embed/Zn7BzUn5cDw",
+      "duration": "75 minutos",
+      "topics": [
+        "Vite vs Create React App vs Next.js",
+        "ESLint y Prettier configuración",
+        "Husky y pre-commit hooks",
+        "Environment variables",
+        "Build para producción",
+        "Deployment en Netlify/Vercel",
+        "Docker para aplicaciones React",
+        "CI/CD con GitHub Actions",
+        "Monitoring y analytics",
+        "SEO para SPAs"
+      ],
+      "resources": [
+        "https://vitejs.dev/",
+        "https://docs.netlify.com/",
+        "https://vercel.com/docs",
+        "https://docs.github.com/en/actions"
+      ],
+      "exercises": [
+        "Configurar pipeline de desarrollo completo",
+        "Deploy automático con CI/CD",
+        "Configurar monitoreo de errores",
+        "Optimizar SEO de SPA",
+        "Setup de desarrollo en equipo"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Proyecto 1: Todo App Avanzada",
+      "description": "Aplicación de tareas completa con persistencia y filtros.",
+      "requirements": [
+        "CRUD completo de tareas",
+        "Filtros por estado y categoría",
+        "Drag & Drop para reordenar",
+        "Persistencia en localStorage",
+        "Modo claro/oscuro",
+        "Responsive design",
+        "Validación de formularios",
+        "Animaciones suaves"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["State management", "Local storage", "Event handling", "CSS styling", "Form validation"]
+    },
+    {
+      "title": "Proyecto 2: Dashboard de Weather",
+      "description": "Dashboard meteorológico con múltiples ciudades y gráficos.",
+      "requirements": [
+        "Integración con API meteorológica",
+        "Búsqueda de ciudades",
+        "Favoritos persistentes",
+        "Gráficos de temperatura",
+        "Geolocalización automática",
+        "Pronóstico extendido",
+        "Manejo de errores robusto",
+        "Loading states elegantes"
+      ],
+      "duration": "3-4 semanas",
+      "skills": ["API integration", "Charts", "Geolocation", "Error handling", "Data visualization"]
+    },
+    {
+      "title": "Proyecto 3: E-commerce Frontend",
+      "description": "Tienda online completa con carrito y checkout.",
+      "requirements": [
+        "Catálogo de productos con filtros",
+        "Carrito de compras persistente",
+        "Sistema de autenticación",
+        "Proceso de checkout",
+        "Historial de pedidos",
+        "Responsive e interactivo",
+        "Optimización de performance",
+        "Tests unitarios"
+      ],
+      "duration": "4-5 semanas",
+      "skills": ["Complex state", "Authentication", "E-commerce flows", "Performance", "Testing"]
+    },
+    {
+      "title": "Proyecto 4: Social Media Dashboard",
+      "description": "Dashboard para gestión de redes sociales con analytics.",
+      "requirements": [
+        "Múltiples vistas y secciones",
+        "Gráficos y métricas en tiempo real",
+        "Sistema de notificaciones",
+        "Gestión de posts programados",
+        "Filtros y búsquedas avanzadas",
+        "Exportación de reportes",
+        "Real-time updates",
+        "Arquitectura escalable"
+      ],
+      "duration": "5-6 semanas",
+      "skills": ["Advanced architecture", "Real-time data", "Complex UI", "Data export", "Scalability"]
+    }
+  ],
+  "exam": {
+    "title": "Examen Integral de React",
+    "description": "Evaluación completa desde fundamentos hasta conceptos avanzados",
+    "duration": "120 minutos",
+    "totalQuestions": 30,
+    "passingScore": "80%",
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Qué es JSX?",
+        "type": "multiple-choice",
+        "options": [
+          "Una extensión de JavaScript que permite escribir HTML dentro de JS",
+          "Un lenguaje de programación independiente",
+          "Una base de datos para React",
+          "Un framework de CSS"
+        ],
+        "answer": "Una extensión de JavaScript que permite escribir HTML dentro de JS",
+        "explanation": "JSX es una extensión de sintaxis para JavaScript que permite escribir elementos similares a HTML dentro del código JavaScript."
+      },
+      {
+        "id": 2,
+        "question": "¿Para qué sirve useState?",
+        "type": "multiple-choice",
+        "options": [
+          "Para manejar el estado local en componentes funcionales",
+          "Para realizar llamadas HTTP",
+          "Para gestionar rutas",
+          "Para crear componentes de clase"
+        ],
+        "answer": "Para manejar el estado local en componentes funcionales",
+        "explanation": "useState es un hook que permite agregar estado local a componentes funcionales."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es la diferencia entre props y state?",
+        "type": "multiple-choice",
+        "options": [
+          "Props son inmutables y state es mutable",
+          "Props son mutables y state es inmutable",
+          "No hay diferencia",
+          "Props son solo para componentes de clase"
+        ],
+        "answer": "Props son inmutables y state es mutable",
+        "explanation": "Props son datos que se pasan al componente y no deben modificarse, mientras que state es local y puede cambiar."
+      },
+      {
+        "id": 4,
+        "question": "¿Qué hace useEffect?",
+        "type": "multiple-choice",
+        "options": [
+          "Maneja efectos secundarios en componentes funcionales",
+          "Crea estado local",
+          "Renderiza componentes",
+          "Maneja rutas"
+        ],
+        "answer": "Maneja efectos secundarios en componentes funcionales",
+        "explanation": "useEffect permite realizar efectos secundarios como llamadas API, suscripciones, etc."
+      },
+      {
+        "id": 5,
+        "question": "¿Cuándo se ejecuta useEffect sin dependencias?",
+        "type": "multiple-choice",
+        "options": [
+          "En cada render",
+          "Solo al montar el componente",
+          "Solo al desmontar",
+          "Nunca"
+        ],
+        "answer": "En cada render",
+        "explanation": "useEffect sin array de dependencias se ejecuta después de cada render."
+      },
+      {
+        "id": 6,
+        "question": "¿Qué es el Virtual DOM?",
+        "type": "multiple-choice",
+        "options": [
+          "Una representación en memoria del DOM real",
+          "Un tipo de base de datos",
+          "Un framework de CSS",
+          "Una biblioteca de JavaScript"
+        ],
+        "answer": "Una representación en memoria del DOM real",
+        "explanation": "El Virtual DOM es una representación ligera del DOM real que React usa para optimizar updates."
+      },
+      {
+        "id": 7,
+        "question": "¿Para qué sirve la prop 'key' en listas?",
+        "type": "multiple-choice",
+        "options": [
+          "Para ayudar a React a identificar elementos únicos",
+          "Para estilizar elementos",
+          "Para pasar datos",
+          "Para crear eventos"
+        ],
+        "answer": "Para ayudar a React a identificar elementos únicos",
+        "explanation": "Las keys ayudan a React a identificar qué elementos han cambiado, agregado o eliminado."
+      },
+      {
+        "id": 8,
+        "question": "¿Qué es Context en React?",
+        "type": "multiple-choice",
+        "options": [
+          "Una forma de pasar datos através del árbol de componentes",
+          "Un tipo de componente",
+          "Una biblioteca externa",
+          "Un método de estado"
+        ],
+        "answer": "Una forma de pasar datos através del árbol de componentes",
+        "explanation": "Context permite pasar datos através del árbol de componentes sin tener que pasar props manualmente."
+      },
+      {
+        "id": 9,
+        "question": "¿Qué hace React.memo?",
+        "type": "multiple-choice",
+        "options": [
+          "Memoriza un componente para evitar re-renders innecesarios",
+          "Crea memoria para el componente",
+          "Guarda el estado del componente",
+          "Elimina el componente de memoria"
+        ],
+        "answer": "Memoriza un componente para evitar re-renders innecesarios",
+        "explanation": "React.memo es un HOC que memoriza el resultado y solo re-renderiza si las props cambian."
+      },
+      {
+        "id": 10,
+        "question": "¿Cuál es la sintaxis correcta para un componente funcional?",
+        "type": "multiple-choice",
+        "options": [
+          "function Component() { return <div></div>; }",
+          "class Component extends React.Component { }",
+          "const Component = React.createClass({ });",
+          "Component() => <div></div>"
+        ],
+        "answer": "function Component() { return <div></div>; }",
+        "explanation": "Los componentes funcionales se definen como funciones que retornan JSX."
+      }
+    ]
+  },
+  "practicalAssessment": {
+    "title": "Evaluación Práctica Final - React",
+    "description": "Desarrollar una aplicación React completa que demuestre dominio del framework",
+    "requirements": [
+      "SPA completa con múltiples rutas",
+      "Manejo de estado global con Context o Redux",
+      "Integración con al menos 2 APIs externas",
+      "Formularios complejos con validación",
+      "Autenticación y rutas protegidas",
+      "Responsive design y accesibilidad",
+      "Testing unitario de componentes críticos",
+      "Optimización de performance",
+      "Deploy funcional en producción",
+      "Código limpio y bien documentado"
+    ],
+    "timeLimit": "8 horas",
+    "evaluationCriteria": {
+      "functionality": "25%",
+      "codeQuality": "20%",
+      "architecture": "20%",
+      "userExperience": "15%",
+      "performance": "10%",
+      "testing": "10%"
+    }
+  },
+  "additionalResources": {
+    "documentation": [
+      "React Official Documentation",
+      "React DevTools Browser Extension",
+      "Create React App Documentation",
+      "Vite Documentation"
+    ],
+    "tools": [
+      "Visual Studio Code con React Extensions",
+      "React Developer Tools",
+      "Storybook para componentes",
+      "Jest y React Testing Library",
+      "ESLint y Prettier",
+      "Bundle Analyzer tools"
+    ],
+    "practiceWebsites": [
+      "React Challenges",
+      "Frontend Mentor React Projects",
+      "Scrimba React Course",
+      "FreeCodeCamp React Curriculum",
+      "React Patterns Website"
+    ],
+    "libraries": [
+      "React Router (routing)",
+      "React Hook Form (forms)",
+      "Material-UI / Ant Design (UI components)",
+      "Styled Components (CSS-in-JS)",
+      "Axios (HTTP client)",
+      "React Query (data fetching)",
+      "Framer Motion (animations)"
+    ],
+    "frameworks": [
+      "Next.js (full-stack React)",
+      "Gatsby (static site generator)",
+      "React Native (mobile apps)",
+      "Electron (desktop apps)"
+    ]
+  },
+  "assessmentCriteria": {
+    "participation": "10%",
+    "exercises": "25%",
+    "projects": "50%",
+    "finalExam": "15%"
+  },
+  "roadmap": {
+    "week1-2": "Fundamentos: JSX, componentes, props, estado básico",
+    "week3-4": "Hooks esenciales: useState, useEffect, formularios",
+    "week5-6": "Componentes avanzados, Context API, patrones",
+    "week7-8": "Routing, navegación, manejo de datos",
+    "week9-10": "Formularios avanzados, styling, testing",
+    "week11-12": "Performance, hooks personalizados, deploy",
+    "week13-16": "Proyectos finales y evaluación práctica"
+  },
+  "careerPaths": {
+    "frontendDeveloper": {
+      "nextSteps": ["TypeScript", "Next.js", "State Management (Redux/Zustand)", "Testing avanzado"],
+      "timeline": "4-6 meses adicionales"
+    },
+    "fullstackDeveloper": {
+      "nextSteps": ["Node.js/Express", "Databases", "APIs REST/GraphQL", "DevOps básico"],
+      "timeline": "6-8 meses adicionales"
+    },
+    "mobileAppDeveloper": {
+      "nextSteps": ["React Native", "Expo", "Mobile-specific patterns", "App Store deployment"],
+      "timeline": "3-5 meses adicionales"
+    },
+    "uiUxDeveloper": {
+      "nextSteps": ["Design Systems", "Figma", "Advanced CSS", "Accessibility", "User Research"],
+      "timeline": "3-6 meses adicionales"
+    }
+  },
+  "certificationPath": {
+    "basicLevel": "React Fundamentals Certificate",
+    "intermediateLevel": "React Developer Certificate",
+    "advancedLevel": "React Expert Certificate",
+    "requirements": {
+      "basicLevel": "Completar primeros 4 capítulos + proyecto 1 + examen >75%",
+      "intermediateLevel": "Completar hasta capítulo 8 + proyectos 1-2 + examen >80%",
+      "advancedLevel": "Completar curso completo + todos los proyectos + examen >85% + evaluación práctica"
+    }
+  }
+}
