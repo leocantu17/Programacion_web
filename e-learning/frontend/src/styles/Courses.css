@@ -126,8 +126,7 @@ h2, h3, h4 {
 }
 
 /* Loading/Error */
-.loading,
-.error {
+.loading, .error {
   padding: 2rem;
   text-align: center;
   font-size: 1.2rem;
@@ -160,5 +159,228 @@ h2, h3, h4 {
     padding: 1rem;
     border-radius: 0;
     box-shadow: none;
+  }
+}
+
+/* === NUEVOS ESTILOS PARA EL PROGRESO VISUAL === */
+
+/* Progress indicator */
+.progress-indicator {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-header h4 {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.progress-percentage {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007acc;
+  background: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-stats p {
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+}
+
+.course-completed {
+  color: #90EE90 !important;
+  font-weight: bold;
+}
+
+/* Sidebar navigation mejorado */
+.sidebar-nav h4 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.sidebar-item {
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.sidebar-item.completed {
+  background-color: rgba(40, 167, 69, 0.2);
+  border-left: 3px solid #28a745;
+}
+
+.sidebar-item.pending {
+  background-color: rgba(255, 193, 7, 0.2);
+  border-left: 3px solid #ffc107;
+}
+
+.sidebar-item.locked {
+  background-color: rgba(220, 53, 69, 0.2);
+  border-left: 3px solid #dc3545;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.chapter-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chapter-status {
+  font-size: 16px;
+  min-width: 20px;
+}
+
+.chapter-title {
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.chapter-meta {
+  margin-top: 3px;
+}
+
+.status-text {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Exam divider */
+.exam-divider {
+  margin: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.exam-divider hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 8px 0;
+}
+
+.divider-text {
+  background-color: #007acc;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Content header */
+.content-header {
+  background: linear-gradient(135deg, #007acc 0%, #005fa3 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.content-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  color: white;
+}
+
+.progress-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.progress-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.progress-details p {
+  margin: 3px 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.completion-message {
+  color: #90EE90 !important;
+  font-weight: bold;
+}
+
+.remaining-message {
+  color: #FFE4B5 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .progress-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .progress-circle {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .progress-text {
+    font-size: 14px;
+  }
+  
+  .content-header {
+    padding: 15px;
+  }
+  
+  .content-header h1 {
+    font-size: 20px;
   }
 }

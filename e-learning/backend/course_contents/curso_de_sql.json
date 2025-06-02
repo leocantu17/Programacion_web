@@ -1,48 +1,633 @@
 {
+  "courseInfo": {
+    "title": "Curso Completo de SQL para Principiantes",
+    "description": "Aprende SQL desde los fundamentos hasta técnicas avanzadas para gestión y análisis de bases de datos",
+    "duration": "8-10 semanas",
+    "level": "Principiante a Intermedio",
+    "prerequisites": ["Conocimientos básicos de computación", "Lógica básica de resolución de problemas", "Conceptos básicos de tablas y datos"],
+    "objectives": [
+      "Dominar la sintaxis y comandos fundamentales de SQL",
+      "Diseñar y crear bases de datos relacionales eficientes",
+      "Realizar consultas complejas y análisis de datos",
+      "Implementar procedimientos almacenados y funciones",
+      "Optimizar consultas y mejorar rendimiento",
+      "Aplicar mejores prácticas en administración de bases de datos"
+    ]
+  },
   "chapters": [
     {
-      "title": "Introducción a SQL",
-      "description": "Conceptos básicos y tipos de bases de datos.",
+      "title": "Introducción a Bases de Datos y SQL",
+      "description": "Conceptos fundamentales de bases de datos relacionales y el lenguaje SQL.",
       "video": "https://www.youtube.com/embed/HXV3zeQKqGY",
+      "duration": "50 minutos",
+      "topics": [
+        "¿Qué son las bases de datos relacionales?",
+        "Historia y evolución de SQL",
+        "Sistemas de gestión de bases de datos (SGBD)",
+        "Modelo relacional: tablas, filas y columnas",
+        "Claves primarias y foráneas",
+        "Integridad referencial",
+        "Instalación de MySQL/PostgreSQL/SQLite",
+        "Herramientas de administración (phpMyAdmin, pgAdmin)",
+        "Introducción a la sintaxis SQL"
+      ],
       "resources": [
-        "https://www.w3schools.com/sql/"
+        "https://www.w3schools.com/sql/",
+        "https://sqlbolt.com/",
+        "https://www.mysqltutorial.org/",
+        "https://www.postgresql.org/docs/"
       ],
       "exercises": [
-        "Crea una base de datos y una tabla simple.",
-        "Inserta datos y realiza consultas básicas."
+        "Instalar un SGBD y herramientas de administración",
+        "Crear tu primera base de datos",
+        "Explorar bases de datos de ejemplo",
+        "Identificar componentes en esquemas existentes",
+        "Ejecutar comandos SQL básicos en el shell"
+      ],
+      "keyPoints": [
+        "SQL es un lenguaje estándar para bases de datos relacionales",
+        "Las tablas son la estructura fundamental de datos",
+        "Las claves establecen relaciones entre tablas",
+        "La integridad de datos es crucial en diseño de BD"
       ]
     },
     {
-      "title": "Consultas y filtros",
-      "description": "SELECT, WHERE, ORDER BY y funciones básicas.",
+      "title": "Creación y Gestión de Bases de Datos y Tablas",
+      "description": "DDL (Data Definition Language) para crear y modificar estructuras de datos.",
       "video": "https://www.youtube.com/embed/7S_tz1z_5bA",
-      "resources": [],
+      "duration": "55 minutos",
+      "topics": [
+        "CREATE DATABASE y DROP DATABASE",
+        "Tipos de datos: VARCHAR, INT, DATE, DECIMAL, etc.",
+        "CREATE TABLE con restricciones",
+        "Claves primarias: PRIMARY KEY",
+        "Claves foráneas: FOREIGN KEY",
+        "Restricciones: NOT NULL, UNIQUE, CHECK",
+        "ALTER TABLE: agregar, modificar, eliminar columnas",
+        "Índices básicos: CREATE INDEX",
+        "DROP TABLE y TRUNCATE TABLE"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_create_db.asp",
+        "https://dev.mysql.com/doc/refman/8.0/en/data-types.html",
+        "https://www.postgresql.org/docs/current/ddl.html"
+      ],
       "exercises": [
-        "Consulta registros con filtros.",
-        "Ordena resultados y usa funciones agregadas."
+        "Diseñar esquema para sistema de biblioteca",
+        "Crear tablas con diferentes tipos de datos",
+        "Implementar relaciones entre tablas",
+        "Modificar estructura de tablas existentes",
+        "Crear índices para mejorar rendimiento"
+      ]
+    },
+    {
+      "title": "Consultas Básicas y Filtrado de Datos",
+      "description": "SELECT, WHERE, ORDER BY y operadores de comparación.",
+      "video": "https://www.youtube.com/embed/33hoj-zWbS0",
+      "duration": "60 minutos",
+      "topics": [
+        "SELECT: selección de columnas específicas",
+        "FROM: especificar tablas fuente",
+        "WHERE: filtrado con condiciones",
+        "Operadores de comparación: =, <>, <, >, <=, >=",
+        "Operadores lógicos: AND, OR, NOT",
+        "BETWEEN para rangos de valores",
+        "IN y NOT IN para listas de valores",
+        "LIKE y wildcards (%, _) para patrones",
+        "IS NULL e IS NOT NULL",
+        "ORDER BY: ordenamiento ASC y DESC",
+        "LIMIT/TOP para limitar resultados"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_select.asp",
+        "https://www.w3schools.com/sql/sql_where.asp",
+        "https://sqlzoo.net/wiki/SELECT_basics"
+      ],
+      "exercises": [
+        "Consultas de selección en base de datos de empleados",
+        "Filtrar productos por categoría y precio",
+        "Buscar clientes por patrones en nombres",
+        "Ordenar ventas por fecha y monto",
+        "Combinar múltiples condiciones de filtrado"
+      ]
+    },
+    {
+      "title": "Inserción, Actualización y Eliminación de Datos",
+      "description": "DML (Data Manipulation Language) para modificar datos en tablas.",
+      "video": "https://www.youtube.com/embed/p3qvj9hO_Bo",
+      "duration": "50 minutos",
+      "topics": [
+        "INSERT INTO: inserción de registros",
+        "INSERT con valores específicos",
+        "INSERT con SELECT (inserción masiva)",
+        "UPDATE: actualización de registros existentes",
+        "UPDATE con WHERE para actualizaciones selectivas",
+        "DELETE: eliminación de registros",
+        "DELETE con condiciones específicas",
+        "TRUNCATE vs DELETE",
+        "Transacciones básicas: BEGIN, COMMIT, ROLLBACK",
+        "Backup antes de modificaciones importantes"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_insert.asp",
+        "https://www.w3schools.com/sql/sql_update.asp",
+        "https://www.w3schools.com/sql/sql_delete.asp"
+      ],
+      "exercises": [
+        "Insertar datos de prueba en múltiples tablas",
+        "Actualizar precios de productos por categoría",
+        "Eliminar registros antiguos o inválidos",
+        "Realizar operaciones con transacciones",
+        "Migración de datos entre tablas"
+      ]
+    },
+    {
+      "title": "Funciones y Operadores SQL",
+      "description": "Funciones integradas para manipulación y cálculo de datos.",
+      "video": "https://www.youtube.com/embed/qfyynHBFOsM",
+      "duration": "65 minutos",
+      "topics": [
+        "Funciones de cadena: CONCAT, SUBSTRING, LENGTH, UPPER, LOWER",
+        "Funciones numéricas: ROUND, ABS, CEIL, FLOOR",
+        "Funciones de fecha: NOW(), DATE(), YEAR(), MONTH(), DAY()",
+        "Funciones de conversión: CAST, CONVERT",
+        "Funciones condicionales: CASE WHEN, IF, COALESCE",
+        "Funciones de agregación: COUNT, SUM, AVG, MAX, MIN",
+        "Operadores aritméticos en consultas",
+        "Expresiones calculadas en SELECT",
+        "Alias para columnas y tablas"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_functions.asp",
+        "https://dev.mysql.com/doc/refman/8.0/en/functions.html",
+        "https://www.postgresql.org/docs/current/functions.html"
+      ],
+      "exercises": [
+        "Crear reportes con cálculos de edad a partir de fechas",
+        "Formatear nombres y textos con funciones de cadena",
+        "Calcular estadísticas básicas de ventas",
+        "Implementar lógica condicional en consultas",
+        "Crear campos calculados para reportes"
+      ]
+    },
+    {
+      "title": "Agrupación y Funciones de Agregación",
+      "description": "GROUP BY, HAVING y análisis estadístico de datos.",
+      "video": "https://www.youtube.com/embed/BMJxkHd2qgE",
+      "duration": "60 minutos",
+      "topics": [
+        "GROUP BY: agrupación de registros",
+        "Funciones de agregación con GROUP BY",
+        "HAVING: filtrado de grupos",
+        "Diferencias entre WHERE y HAVING",
+        "Agrupación por múltiples columnas",
+        "Orden de ejecución en consultas SQL",
+        "Subconsultas con agregaciones",
+        "Rollup y análisis multidimensional básico",
+        "Estadísticas descriptivas con SQL"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_groupby.asp",
+        "https://www.w3schools.com/sql/sql_having.asp",
+        "https://mode.com/sql-tutorial/sql-group-by/"
+      ],
+      "exercises": [
+        "Análisis de ventas por mes y vendedor",
+        "Estadísticas de productos más vendidos",
+        "Reporte de clientes por región y segmento",
+        "Análisis de rendimiento de empleados",
+        "Dashboard básico con métricas clave"
+      ]
+    },
+    {
+      "title": "Consultas con Múltiples Tablas (JOINS)",
+      "description": "Combinación de datos de diferentes tablas mediante JOIN.",
+      "video": "https://www.youtube.com/embed/9yeOJ0ZMUYw",
+      "duration": "70 minutos",
+      "topics": [
+        "Concepto de JOIN y relaciones entre tablas",
+        "INNER JOIN: registros coincidentes",
+        "LEFT JOIN (LEFT OUTER JOIN): todos los registros de la tabla izquierda",
+        "RIGHT JOIN (RIGHT OUTER JOIN): todos los registros de la tabla derecha",
+        "FULL OUTER JOIN: todos los registros de ambas tablas",
+        "CROSS JOIN: producto cartesiano",
+        "SELF JOIN: unir tabla consigo misma",
+        "Múltiples JOINs en una consulta",
+        "Optimización de consultas con JOIN",
+        "Alias de tablas para simplificar sintaxis"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_join.asp",
+        "https://joins.spathon.com/",
+        "https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/"
+      ],
+      "exercises": [
+        "Consultar información completa de pedidos con clientes",
+        "Análisis de productos sin ventas (LEFT JOIN)",
+        "Reporte de empleados con sus supervisores",
+        "Consultas complejas con múltiples JOINs",
+        "Optimizar consultas lentas con JOINs"
+      ]
+    },
+    {
+      "title": "Subconsultas y Consultas Avanzadas",
+      "description": "Subconsultas, CTEs y técnicas avanzadas de consulta.",
+      "video": "https://www.youtube.com/embed/m1KcNV-Zhmc",
+      "duration": "65 minutos",
+      "topics": [
+        "Subconsultas en SELECT, FROM y WHERE",
+        "Subconsultas correlacionadas vs no correlacionadas",
+        "EXISTS y NOT EXISTS",
+        "IN con subconsultas",
+        "ALL, ANY y SOME con subconsultas",
+        "Common Table Expressions (CTE) con WITH",
+        "CTEs recursivas para jerarquías",
+        "Window Functions: ROW_NUMBER, RANK, DENSE_RANK",
+        "PARTITION BY en funciones de ventana",
+        "Optimización de subconsultas"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_subqueries.asp",
+        "https://www.postgresql.org/docs/current/queries-with.html",
+        "https://mode.com/sql-tutorial/sql-window-functions/"
+      ],
+      "exercises": [
+        "Encontrar empleados con salario mayor al promedio",
+        "Clientes que han comprado productos específicos",
+        "Ranking de productos por ventas usando window functions",
+        "Análisis de jerarquías organizacionales con CTEs",
+        "Consultas complejas para business intelligence"
+      ]
+    },
+    {
+      "title": "Índices, Vistas y Optimización",
+      "description": "Performance, vistas materializadas y optimización de consultas.",
+      "video": "https://www.youtube.com/embed/HubezKbFL7E",
+      "duration": "60 minutos",
+      "topics": [
+        "Tipos de índices: B-tree, Hash, Bitmap",
+        "CREATE INDEX y DROP INDEX",
+        "Índices compuestos y de columna única",
+        "Análisis de planes de ejecución (EXPLAIN)",
+        "Vistas: CREATE VIEW y DROP VIEW",
+        "Vistas materializadas",
+        "Optimización de consultas SELECT",
+        "Estadísticas de base de datos",
+        "Particionamiento básico de tablas",
+        "Mantenimiento de índices"
+      ],
+      "resources": [
+        "https://use-the-index-luke.com/",
+        "https://www.postgresql.org/docs/current/performance-tips.html",
+        "https://dev.mysql.com/doc/refman/8.0/en/optimization.html"
+      ],
+      "exercises": [
+        "Crear índices para mejorar consultas lentas",
+        "Analizar planes de ejecución de consultas complejas",
+        "Desarrollar vistas para reportes frecuentes",
+        "Optimizar base de datos de ejemplo",
+        "Monitorear rendimiento de consultas"
+      ]
+    },
+    {
+      "title": "Procedimientos Almacenados y Funciones",
+      "description": "Programación en SQL con stored procedures y functions.",
+      "video": "https://www.youtube.com/embed/Sggdhot-MoM",
+      "duration": "70 minutos",
+      "topics": [
+        "Procedimientos almacenados: CREATE PROCEDURE",
+        "Parámetros de entrada y salida",
+        "Variables locales y DECLARE",
+        "Estructuras de control: IF, WHILE, FOR",
+        "Manejo de excepciones: TRY-CATCH",
+        "Funciones definidas por el usuario",
+        "Triggers: BEFORE, AFTER, INSTEAD OF",
+        "Cursores para procesamiento fila por fila",
+        "Transacciones en procedimientos",
+        "Debugging y testing de procedimientos"
+      ],
+      "resources": [
+        "https://www.w3schools.com/sql/sql_stored_procedures.asp",
+        "https://dev.mysql.com/doc/refman/8.0/en/stored-programs.html",
+        "https://www.postgresql.org/docs/current/plpgsql.html"
+      ],
+      "exercises": [
+        "Crear procedimiento para procesamiento de pedidos",
+        "Implementar función de validación de datos",
+        "Desarrollar triggers para auditoría",
+        "Sistema de logs automático con procedimientos",
+        "Migración de datos con stored procedures"
       ]
     }
   ],
+  "projects": [
+    {
+      "title": "Proyecto 1: Sistema de Gestión de Biblioteca",
+      "description": "Base de datos completa para gestión de biblioteca con libros, usuarios y préstamos.",
+      "requirements": [
+        "Diseño de esquema relacional normalizado",
+        "Tablas: libros, autores, usuarios, préstamos, categorías",
+        "Implementación de claves primarias y foráneas",
+        "Consultas para gestión de préstamos",
+        "Reportes de libros más prestados",
+        "Sistema de multas por retraso",
+        "Vistas para consultas frecuentes",
+        "Procedimientos para operaciones comunes"
+      ],
+      "duration": "1-2 semanas",
+      "skills": ["Database design", "DDL", "DML", "Relationships", "Views", "Basic procedures"]
+    },
+    {
+      "title": "Proyecto 2: Sistema de Ventas y Inventario",
+      "description": "Base de datos para gestión completa de ventas, inventario y clientes.",
+      "requirements": [
+        "Esquema para productos, clientes, vendedores, pedidos",
+        "Gestión de inventario con stock",
+        "Sistema de precios y descuentos",
+        "Análisis de ventas por período",
+        "Reportes de rendimiento de vendedores",
+        "Dashboard con métricas clave",
+        "Procedimientos para procesamiento de pedidos",
+        "Triggers para actualización automática de stock",
+        "Optimización con índices apropiados"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["Complex queries", "JOINs", "Aggregations", "Stored procedures", "Triggers", "Performance"]
+    },
+    {
+      "title": "Proyecto 3: Sistema de Recursos Humanos",
+      "description": "Base de datos para gestión de empleados, departamentos y nómina.",
+      "requirements": [
+        "Estructura jerárquica de empleados y departamentos",
+        "Gestión de roles y permisos",
+        "Cálculo de nómina y bonificaciones",
+        "Histórico de cambios salariales",
+        "Reportes de asistencia y performance",
+        "Análisis demográfico de empleados",
+        "CTEs para consultas jerárquicas",
+        "Window functions para rankings",
+        "Vistas materializadas para reportes"
+      ],
+      "duration": "2-3 semanas",
+      "skills": ["Hierarchical data", "CTEs", "Window functions", "Complex reporting", "Data analysis"]
+    },
+    {
+      "title": "Proyecto 4: Data Warehouse y Business Intelligence",
+      "description": "Implementación de un data warehouse básico con cubos OLAP.",
+      "requirements": [
+        "Diseño de esquema estrella o copo de nieve",
+        "Tablas de dimensiones y hechos",
+        "Procesos ETL básicos con SQL",
+        "Consultas analíticas complejas",
+        "Reportes ejecutivos con métricas KPI",
+        "Análisis temporal y de tendencias",
+        "Optimización para consultas analíticas",
+        "Procedimientos para actualización de datos",
+        "Dashboard con indicadores clave"
+      ],
+      "duration": "3-4 semanas",
+      "skills": ["Data warehousing", "OLAP", "ETL", "Advanced analytics", "Performance optimization"]
+    }
+  ],
   "exam": {
+    "title": "Examen Integral de SQL",
+    "description": "Evaluación completa desde fundamentos hasta consultas avanzadas",
+    "duration": "90 minutos",
+    "totalQuestions": 25,
+    "passingScore": "75%",
     "questions": [
       {
-        "question": "¿Qué comando se usa para seleccionar datos?",
+        "id": 1,
+        "question": "¿Qué comando se usa para seleccionar datos de una tabla?",
+        "type": "multiple-choice",
         "options": [
           "SELECT",
           "INSERT",
-          "UPDATE"
+          "UPDATE",
+          "DELETE"
         ],
-        "answer": "SELECT"
+        "answer": "SELECT",
+        "explanation": "SELECT es el comando fundamental para consultar y recuperar datos de tablas en SQL."
       },
       {
-        "question": "¿Para qué sirve WHERE?",
+        "id": 2,
+        "question": "¿Para qué sirve la cláusula WHERE?",
+        "type": "multiple-choice",
         "options": [
-          "Para filtrar resultados",
+          "Para filtrar resultados según condiciones",
           "Para insertar datos",
-          "Para eliminar tablas"
+          "Para eliminar tablas",
+          "Para crear índices"
         ],
-        "answer": "Para filtrar resultados"
+        "answer": "Para filtrar resultados según condiciones",
+        "explanation": "WHERE permite especificar condiciones para filtrar los registros que cumplen ciertos criterios."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es la diferencia entre INNER JOIN y LEFT JOIN?",
+        "type": "multiple-choice",
+        "options": [
+          "INNER JOIN solo devuelve coincidencias, LEFT JOIN incluye todos los registros de la tabla izquierda",
+          "No hay diferencia",
+          "LEFT JOIN es más rápido",
+          "INNER JOIN incluye más registros"
+        ],
+        "answer": "INNER JOIN solo devuelve coincidencias, LEFT JOIN incluye todos los registros de la tabla izquierda",
+        "explanation": "INNER JOIN solo muestra registros que tienen coincidencias en ambas tablas, mientras LEFT JOIN incluye todos los registros de la tabla izquierda."
+      },
+      {
+        "id": 4,
+        "question": "¿Qué hace la función COUNT()?",
+        "type": "multiple-choice",
+        "options": [
+          "Cuenta el número de registros",
+          "Suma valores numéricos",
+          "Encuentra el valor máximo",
+          "Calcula el promedio"
+        ],
+        "answer": "Cuenta el número de registros",
+        "explanation": "COUNT() es una función de agregación que cuenta el número de filas que cumplen cierta condición."
+      },
+      {
+        "id": 5,
+        "question": "¿Cuándo se usa GROUP BY?",
+        "type": "multiple-choice",
+        "options": [
+          "Para agrupar registros y usar funciones de agregación",
+          "Para ordenar resultados",
+          "Para unir tablas",
+          "Para insertar datos"
+        ],
+        "answer": "Para agrupar registros y usar funciones de agregación",
+        "explanation": "GROUP BY agrupa registros que tienen valores similares en columnas específicas, permitiendo usar funciones como COUNT, SUM, AVG."
+      },
+      {
+        "id": 6,
+        "question": "¿Qué tipo de clave garantiza la unicidad en una tabla?",
+        "type": "multiple-choice",
+        "options": [
+          "PRIMARY KEY",
+          "FOREIGN KEY",
+          "INDEX",
+          "UNIQUE"
+        ],
+        "answer": "PRIMARY KEY",
+        "explanation": "PRIMARY KEY identifica de forma única cada registro en una tabla y no permite valores duplicados o nulos."
+      },
+      {
+        "id": 7,
+        "question": "¿Para qué se usa la cláusula HAVING?",
+        "type": "multiple-choice",
+        "options": [
+          "Para filtrar grupos después de GROUP BY",
+          "Para filtrar registros individuales",
+          "Para ordenar resultados",
+          "Para crear tablas"
+        ],
+        "answer": "Para filtrar grupos después de GROUP BY",
+        "explanation": "HAVING filtra grupos creados por GROUP BY, mientras que WHERE filtra registros individuales antes del agrupamiento."
+      },
+      {
+        "id": 8,
+        "question": "¿Qué hace ORDER BY DESC?",
+        "type": "multiple-choice",
+        "options": [
+          "Ordena en orden descendente",
+          "Ordena en orden ascendente",
+          "Elimina duplicados",
+          "Agrupa registros"
+        ],
+        "answer": "Ordena en orden descendente",
+        "explanation": "ORDER BY DESC ordena los resultados de mayor a menor (descendente), mientras que ASC ordena de menor a mayor."
+      },
+      {
+        "id": 9,
+        "question": "¿Cuál es la sintaxis correcta para crear una tabla?",
+        "type": "multiple-choice",
+        "options": [
+          "CREATE TABLE nombre (columna1 tipo, columna2 tipo)",
+          "MAKE TABLE nombre (columna1 tipo, columna2 tipo)",
+          "NEW TABLE nombre (columna1 tipo, columna2 tipo)",
+          "BUILD TABLE nombre (columna1 tipo, columna2 tipo)"
+        ],
+        "answer": "CREATE TABLE nombre (columna1 tipo, columna2 tipo)",
+        "explanation": "CREATE TABLE es el comando estándar SQL para crear nuevas tablas con sus respectivas columnas y tipos de datos."
+      },
+      {
+        "id": 10,
+        "question": "¿Qué operador se usa para buscar patrones en texto?",
+        "type": "multiple-choice",
+        "options": [
+          "LIKE",
+          "EQUAL",
+          "MATCH",
+          "FIND"
+        ],
+        "answer": "LIKE",
+        "explanation": "LIKE se usa con wildcards (% y _) para buscar patrones específicos en campos de texto."
       }
     ]
+  },
+  "practicalAssessment": {
+    "title": "Evaluación Práctica Final de SQL",
+    "description": "Desarrollar una base de datos completa que demuestre dominio de SQL",
+    "requirements": [
+      "Diseño de base de datos normalizada (3NF mínimo)",
+      "Implementación de al menos 5 tablas relacionadas",
+      "Uso de claves primarias y foráneas apropiadas",
+      "Consultas complejas con JOINs múltiples",
+      "Implementación de vistas para reportes",
+      "Procedimientos almacenados para operaciones críticas",
+      "Índices para optimización de performance",
+      "Triggers para mantener integridad de datos",
+      "Análisis de datos con funciones de agregación",
+      "Documentación completa del esquema"
+    ],
+    "timeLimit": "4 horas",
+    "evaluationCriteria": {
+      "databaseDesign": "30%",
+      "queryComplexity": "25%",
+      "optimization": "20%",
+      "storedProcedures": "15%",
+      "documentation": "10%"
+    }
+  },
+  "additionalResources": {
+    "documentation": [
+      "SQL Standard ISO/IEC 9075",
+      "MySQL Documentation",
+      "PostgreSQL Documentation",
+      "SQLite Documentation",
+      "Microsoft SQL Server Documentation"
+    ],
+    "tools": [
+      "MySQL Workbench",
+      "phpMyAdmin",
+      "pgAdmin (PostgreSQL)",
+      "DBeaver (Universal)",
+      "SQL Server Management Studio",
+      "DataGrip",
+      "SQLiteStudio",
+      "Adminer"
+    ],
+    "practiceWebsites": [
+      "SQLBolt",
+      "W3Schools SQL Tutorial",
+      "SQLZoo",
+      "HackerRank SQL Domain",
+      "LeetCode Database Problems",
+      "SQLiteOnline",
+      "DB Fiddle",
+      "SQL Murder Mystery"
+    ],
+    "extensions": [
+      "NoSQL databases (MongoDB, Cassandra)",
+      "Graph databases (Neo4j)",
+      "Time series databases (InfluxDB)",
+      "Data warehousing (Snowflake, BigQuery)",
+      "ETL tools (Talend, SSIS)",
+      "Business Intelligence (Tableau, Power BI)"
+    ]
+  },
+  "assessmentCriteria": {
+    "participation": "10%",
+    "exercises": "30%",
+    "projects": "45%",
+    "finalExam": "15%"
+  },
+  "roadmap": {
+    "week1-2": "Fundamentos: bases de datos, tablas, consultas básicas",
+    "week3-4": "Manipulación de datos: INSERT, UPDATE, DELETE, funciones",
+    "week5-6": "Consultas avanzadas: JOINs, subconsultas, agregaciones",
+    "week7-8": "Optimización: índices, vistas, procedimientos almacenados",
+    "week9-10": "Proyectos finales y evaluación práctica"
+  },
+  "careerPaths": {
+    "dataAnalyst": {
+      "nextSteps": ["Advanced SQL", "Python/R", "Tableau/Power BI", "Statistics"],
+      "timeline": "3-6 meses adicionales"
+    },
+    "databaseAdministrator": {
+      "nextSteps": ["Database Administration", "Backup/Recovery", "Performance Tuning", "Security"],
+      "timeline": "6-12 meses adicionales"
+    },
+    "dataEngineer": {
+      "nextSteps": ["ETL/ELT", "Big Data tools", "Cloud platforms", "Data pipelines"],
+      "timeline": "4-8 meses adicionales"
+    },
+    "businessIntelligence": {
+      "nextSteps": ["OLAP", "Data warehousing", "BI tools", "Data modeling"],
+      "timeline": "4-6 meses adicionales"
+    }
+  },
+  "certificationPath": {
+    "basicLevel": "SQL Fundamentals Certificate",
+    "intermediateLevel": "SQL Developer Certificate",
+    "advancedLevel": "SQL Expert Certificate",
+    "requirements": {
+      "basicLevel": "Completar primeros 5 capítulos + proyecto 1 + examen >70%",
+      "intermediateLevel": "Completar hasta capítulo 8 + proyectos 1-2 + examen >75%",
+      "advancedLevel": "Completar curso completo + todos los proyectos + examen >85%"
+    }
   }
 }

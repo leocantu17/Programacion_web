@@ -10,7 +10,7 @@
     {
       "title": "Introducción a CSS",
       "description": "Sintaxis básica, selectores y formas de aplicar estilos a HTML.",
-      "video": "https://www.youtube.com/embed/1Rs2ND1ryYc",
+      "video": "https://www.youtube.com/embed/_9ZjZdJMHPU",
       "duration": "45 minutos",
       "topics": [
         "¿Qué es CSS y para qué sirve?",
@@ -39,7 +39,7 @@
     {
       "title": "Selectores Avanzados y Pseudo-clases",
       "description": "Selectores complejos, pseudo-clases y pseudo-elementos para un control preciso.",
-      "video": "https://www.youtube.com/embed/Bcr70LIJcOk",
+      "video": "https://www.youtube.com/embed/rRYfCHMLkaI",
       "duration": "50 minutos",
       "topics": [
         "Selectores descendientes y combinadores",
@@ -63,7 +63,7 @@
     {
       "title": "Modelo de Caja y Posicionamiento",
       "description": "Comprende el box model, márgenes, padding y diferentes tipos de posicionamiento.",
-      "video": "https://www.youtube.com/embed/rIO5326FgPE",
+      "video": "https://www.youtube.com/embed/UW6bTQm2bwg",
       "duration": "55 minutos",
       "topics": [
         "Box model: content, padding, border, margin",
@@ -87,7 +87,7 @@
     {
       "title": "Flexbox - Layout Flexible",
       "description": "Domina Flexbox para crear layouts flexibles y responsivos de una dimensión.",
-      "video": "https://www.youtube.com/embed/JJSoEo8JSnc",
+      "video": "https://www.youtube.com/embed/QcYz949d8rM",
       "duration": "60 minutos",
       "topics": [
         "Conceptos básicos: flex container y flex items",
@@ -112,7 +112,7 @@
     {
       "title": "CSS Grid - Layout Bidimensional",
       "description": "Aprende CSS Grid para crear layouts complejos de dos dimensiones.",
-      "video": "https://www.youtube.com/embed/jV8B24rSN5o",
+      "video": "https://www.youtube.com/embed/edEG0CoM5gw",
       "duration": "65 minutos",
       "topics": [
         "Grid container y grid items",
@@ -138,7 +138,7 @@
     {
       "title": "Diseño Responsivo y Media Queries",
       "description": "Técnicas para crear sitios web que se adapten a diferentes dispositivos.",
-      "video": "https://www.youtube.com/embed/2KL-z9A56SQ",
+      "video": "https://www.youtube.com/embed/rmS1Poz0NQc",
       "duration": "50 minutos",
       "topics": [
         "Conceptos de diseño responsivo",
@@ -163,7 +163,7 @@
     {
       "title": "Animaciones y Transiciones",
       "description": "Añade vida a tus diseños con transiciones suaves y animaciones CSS.",
-      "video": "https://www.youtube.com/embed/zHUpx90NerM",
+      "video": "https://www.youtube.com/embed/8Jh2K3tq5n0",
       "duration": "45 minutos",
       "topics": [
         "CSS Transitions: propiedades y timing functions",
@@ -189,7 +189,7 @@
     {
       "title": "CSS Moderno y Metodologías",
       "description": "Variables CSS, metodologías como BEM y técnicas avanzadas.",
-      "video": "https://www.youtube.com/embed/Nt0NViCfwNs",
+      "video": "https://www.youtube.com/embed/6LUz0MnNCiA",
       "duration": "55 minutos",
       "topics": [
         "Custom Properties (Variables CSS)",

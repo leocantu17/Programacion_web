@@ -1,546 +1,561 @@
 {
   "courseInfo": {
-    "title": "Curso Completo de HTML",
-    "description": "Aprende HTML desde cero hasta técnicas avanzadas para crear páginas web estructuradas y semánticamente correctas",
-    "duration": "6-8 semanas",
+    "title": "Curso Completo de Java",
+    "description": "Aprende Java desde los fundamentos hasta programación orientada a objetos y desarrollo de aplicaciones robustas",
+    "duration": "12-14 semanas",
     "level": "Principiante a Intermedio",
-    "prerequisites": ["Conocimientos básicos de computación", "Editor de texto o código", "Navegador web"],
-    "objectives": [
-      "Comprender la estructura y sintaxis de HTML",
-      "Crear páginas web semánticamente correctas",
-      "Implementar formularios interactivos y accesibles",
-      "Integrar multimedia y contenido dinámico",
-      "Aplicar mejores prácticas de SEO y accesibilidad"
-    ]
+    "prerequisites": ["Lógica de programación básica", "Manejo básico de computadora", "IDE (IntelliJ IDEA o Eclipse)", "JDK 17 o superior instalado"]
   },
   "chapters": [
     {
-      "title": "Introducción a HTML y Estructura Básica",
-      "description": "Fundamentos de HTML, elementos, etiquetas y estructura general de una página web.",
-      "video": "https://www.youtube.com/embed/pQN-pnXPaVg",
-      "duration": "45 minutos",
-      "topics": [
-        "¿Qué es HTML y cómo funciona la web?",
-        "Estructura básica: DOCTYPE, html, head, body",
-        "Etiquetas y elementos: sintaxis y atributos",
-        "Comentarios en HTML",
-        "Configuración del entorno de desarrollo",
-        "Validación de HTML"
-      ],
-      "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML",
-        "https://www.w3schools.com/html/html_intro.asp",
-        "https://validator.w3.org/",
-        "https://html.spec.whatwg.org/"
-      ],
-      "exercises": [
-        "Crear tu primera página HTML con estructura básica",
-        "Agregar metadatos en el head (title, charset, viewport)",
-        "Crear una página con título, párrafos y enlaces",
-        "Experimentar con diferentes tipos de comentarios",
-        "Validar tu código HTML usando el validador W3C"
-      ],
-      "keyPoints": [
-        "HTML significa HyperText Markup Language",
-        "Todo documento HTML debe tener DOCTYPE, html, head y body",
-        "Las etiquetas se abren y cierran (la mayoría)",
-        "Los atributos proporcionan información adicional a los elementos"
-      ]
-    },
-    {
-      "title": "Texto y Formateo Semántico",
-      "description": "Elementos de texto, encabezados, párrafos y formateo semántico del contenido.",
-      "video": "https://www.youtube.com/embed/qz0aGYrrlhU",
-      "duration": "40 minutos",
-      "topics": [
-        "Jerarquía de encabezados (h1-h6)",
-        "Párrafos y saltos de línea",
-        "Formateo de texto: strong, em, mark, small",
-        "Citas y referencias: blockquote, cite, q",
-        "Listas ordenadas y no ordenadas",
-        "Listas de definición"
-      ],
-      "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element#Contenido_de_texto",
-        "https://www.w3schools.com/html/html_formatting.asp",
-        "https://html5doctor.com/element-index/"
-      ],
-      "exercises": [
-        "Crear un artículo con jerarquía de encabezados",
-        "Formatear texto usando elementos semánticos",
-        "Crear diferentes tipos de listas",
-        "Agregar citas y referencias a un texto",
-        "Estructurar un documento académico completo"
-      ]
-    },
-    {
-      "title": "Enlaces e Imágenes",
-      "description": "Navegación web con enlaces y incorporación de imágenes y multimedia básica.",
-      "video": "https://www.youtube.com/embed/TSdTKhPWFBY",
-      "duration": "50 minutos",
-      "topics": [
-        "Enlaces: absolutos, relativos e internos",
-        "Atributos de enlaces: target, title, download",
-        "Elemento img: src, alt, width, height",
-        "Imágenes responsivas: srcset y sizes",
-        "Figure y figcaption para imágenes con descripción",
-        "Mapas de imagen (image maps)"
-      ],
-      "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/a",
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/img",
-        "https://web.dev/responsive-images/",
-        "https://picsum.photos/ (imágenes de prueba)"
-      ],
-      "exercises": [
-        "Crear un menú de navegación con enlaces",
-        "Agregar imágenes con textos alternativos apropiados",
-        "Implementar una galería de imágenes básica",
-        "Crear enlaces a diferentes secciones de la página",
-        "Experimentar con imágenes responsivas"
-      ]
-    },
-    {
-      "title": "Tablas y Datos Tabulares",
-      "description": "Creación de tablas para presentar datos de forma estructurada y accesible.",
-      "video": "https://www.youtube.com/embed/dK8WkJWqcr4",
-      "duration": "40 minutos",
-      "topics": [
-        "Estructura básica: table, tr, td, th",
-        "Agrupación: thead, tbody, tfoot",
-        "Combinación de celdas: colspan, rowspan",
-        "Accesibilidad en tablas: scope, headers",
-        "Estilizado básico de tablas",
-        "Cuándo usar tablas vs otros elementos"
-      ],
-      "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/table",
-        "https://www.w3schools.com/html/html_tables.asp",
-        "https://webaim.org/techniques/tables/"
-      ],
-      "exercises": [
-        "Crear una tabla simple con información de productos",
-        "Diseñar una tabla de horarios con encabezados",
-        "Implementar una tabla con celdas combinadas",
-        "Crear una tabla financiera con agrupaciones",
-        "Hacer una tabla accesible con atributos apropiados"
-      ]
-    },
-    {
-      "title": "Formularios Completos",
-      "description": "Formularios interactivos para entrada de datos, validación y envío.",
-      "video": "https://www.youtube.com/embed/fNCqyGwyYmI",
+      "title": "Introducción a Java y Configuración del Entorno",
+      "description": "Historia de Java, características del lenguaje y configuración del entorno de desarrollo.",
+      "video": "https://www.youtube.com/embed/U709ktN2N7c",
       "duration": "60 minutos",
       "topics": [
-        "Elemento form y atributos (action, method)",
-        "Tipos de input: text, email, password, number, date",
-        "Elementos de selección: select, radio, checkbox",
-        "Áreas de texto y elementos avanzados",
-        "Labels y accesibilidad en formularios",
-        "Validación HTML5 nativa",
-        "Fieldset y legend para agrupación"
+        "Historia y características de Java",
+        "JVM, JRE y JDK: diferencias y componentes",
+        "Instalación de JDK y configuración de variables de entorno",
+        "IDEs populares: IntelliJ IDEA, Eclipse, NetBeans",
+        "Primer programa: 'Hola Mundo'",
+        "Compilación y ejecución de programas Java",
+        "Estructura básica de un programa Java"
       ],
       "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/form",
-        "https://web.dev/learn/forms/",
-        "https://www.w3schools.com/html/html_forms.asp",
-        "https://webaim.org/techniques/forms/"
+        "https://docs.oracle.com/en/java/",
+        "https://www.oracle.com/java/technologies/downloads/",
+        "https://www.jetbrains.com/idea/",
+        "https://www.eclipse.org/downloads/"
       ],
       "exercises": [
-        "Diseñar un formulario simple de contacto",
-        "Crear un formulario de registro completo",
-        "Implementar un formulario de encuesta con diferentes tipos de input",
-        "Agregar validación HTML5 a formularios",
-        "Crear un formulario de pedido e-commerce"
+        "Instalar JDK y configurar variables de entorno",
+        "Crear y ejecutar tu primer programa 'Hola Mundo'",
+        "Experimentar con diferentes IDEs",
+        "Crear un programa que imprima información personal"
+      ],
+      "keyPoints": [
+        "Java es multiplataforma gracias a la JVM",
+        "Write Once, Run Anywhere (WORA)",
+        "Java es fuertemente tipado y orientado a objetos"
       ]
     },
     {
-      "title": "HTML Semántico y Estructura",
-      "description": "Elementos semánticos de HTML5 para crear páginas bien estructuradas.",
-      "video": "https://www.youtube.com/embed/kGW8Al_cga4",
-      "duration": "50 minutos",
+      "title": "Sintaxis Básica y Tipos de Datos",
+      "description": "Variables, tipos de datos primitivos, operadores y entrada/salida básica.",
+      "video": "https://www.youtube.com/embed/eIrMbAQSU34",
+      "duration": "75 minutos",
       "topics": [
-        "Elementos semánticos: header, nav, main, section, article",
-        "Aside, footer y su uso apropiado",
-        "Diferencia entre div y elementos semánticos",
-        "Estructura de página típica",
-        "Microdata y datos estructurados básicos",
-        "Importancia para SEO y accesibilidad"
+        "Variables y constantes",
+        "Tipos de datos primitivos: int, double, boolean, char",
+        "Tipos de datos de referencia: String",
+        "Operadores aritméticos, relacionales y lógicos",
+        "Conversión de tipos (casting)",
+        "Entrada de datos con Scanner",
+        "Formateo de salida con System.out",
+        "Convenciones de nomenclatura en Java"
       ],
       "resources": [
-        "https://developer.mozilla.org/es/docs/Glossary/Semantics",
-        "https://html5doctor.com/",
-        "https://schema.org/",
-        "https://web.dev/semantic-html/"
+        "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/",
+        "https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html",
+        "https://www.w3schools.com/java/java_data_types.asp"
       ],
       "exercises": [
-        "Reestructurar una página usando elementos semánticos",
-        "Crear un blog con artículos semánticamente correctos",
-        "Diseñar la estructura de un sitio web corporativo",
-        "Implementar breadcrumbs semánticos",
-        "Crear una página de noticias con estructura apropiada"
+        "Crear una calculadora básica con operaciones aritméticas",
+        "Programa que convierta temperaturas (Celsius a Fahrenheit)",
+        "Calculadora de IMC con entrada del usuario",
+        "Programa que determine si un número es par o impar"
       ]
     },
     {
-      "title": "Multimedia y Contenido Embebido",
-      "description": "Integración de audio, video y contenido externo en páginas web.",
-      "video": "https://www.youtube.com/embed/ZjBLbXUuyWs",
-      "duration": "45 minutos",
+      "title": "Estructuras de Control",
+      "description": "Condicionales, bucles y control de flujo del programa.",
+      "video": "https://www.youtube.com/embed/ldYLYRNaucM",
+      "duration": "80 minutos",
       "topics": [
-        "Elemento video: controles, autoplay, poster",
-        "Elemento audio y formatos compatibles",
-        "Iframe para contenido externo",
-        "Embed y object (elementos legacy)",
-        "Canvas básico para gráficos",
-        "SVG inline vs external",
-        "Consideraciones de performance y accesibilidad"
+        "Estructura condicional if-else",
+        "Operador ternario",
+        "Estructura switch-case",
+        "Bucles: for, while, do-while",
+        "Enhanced for loop (for-each)",
+        "Sentencias break y continue",
+        "Estructuras de control anidadas",
+        "Buenas prácticas en control de flujo"
       ],
       "resources": [
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/video",
-        "https://developer.mozilla.org/es/docs/Web/HTML/Element/audio",
-        "https://web.dev/media-accessibility/",
-        "https://caniuse.com/ (compatibilidad de formatos)"
+        "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html",
+        "https://www.programiz.com/java-programming/if-else-statement",
+        "https://www.geeksforgeeks.org/loops-in-java/"
       ],
       "exercises": [
-        "Crear un reproductor de video personalizado",
-        "Implementar una galería con audio",
-        "Embeber mapas y contenido de redes sociales",
-        "Crear gráficos básicos con canvas",
-        "Agregar subtítulos a videos"
+        "Crear un menú interactivo con switch-case",
+        "Programa que encuentre números primos en un rango",
+        "Juego de adivinar número con validación de entrada",
+        "Calculadora de factorial usando bucles",
+        "Tabla de multiplicar con bucles anidados"
       ]
     },
     {
-      "title": "Optimización, SEO y Mejores Prácticas",
-      "description": "Técnicas avanzadas para optimizar HTML para rendimiento, SEO y accesibilidad.",
-      "video": "https://www.youtube.com/embed/RFTXcjLXWYc",
-      "duration": "55 minutos",
+      "title": "Arrays y Colecciones Básicas",
+      "description": "Manejo de arrays unidimensionales y multidimensionales.",
+      "video": "https://www.youtube.com/embed/Mfacb9T4biQ",
+      "duration": "70 minutos",
       "topics": [
-        "Meta tags para SEO: description, keywords, robots",
-        "Open Graph y Twitter Cards",
-        "Structured data y JSON-LD",
-        "Accesibilidad: ARIA roles y propiedades",
-        "Performance: lazy loading, preload, prefetch",
-        "HTML para PWAs: manifest, service workers",
-        "Validación y testing automatizado"
+        "Declaración e inicialización de arrays",
+        "Acceso y modificación de elementos",
+        "Propiedades de arrays: length",
+        "Arrays multidimensionales",
+        "Recorrido de arrays con bucles",
+        "Búsqueda y ordenamiento básico",
+        "Arrays como parámetros de métodos",
+        "Clase Arrays y métodos útiles"
       ],
       "resources": [
-        "https://developers.google.com/search/docs/beginner/seo-starter-guide",
-        "https://web.dev/accessible/",
-        "https://ogp.me/",
-        "https://lighthouse-dot-webdotdevsite.appspot.com/"
+        "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html",
+        "https://www.programiz.com/java-programming/arrays"
       ],
       "exercises": [
-        "Optimizar una página para motores de búsqueda",
-        "Implementar structured data en un sitio de recetas",
-        "Crear meta tags para redes sociales",
-        "Auditar accesibilidad con herramientas automáticas",
-        "Optimizar performance de carga de páginas"
+        "Programa que calcule el promedio de calificaciones",
+        "Buscar el número mayor y menor en un array",
+        "Crear y llenar una matriz 3x3",
+        "Programa que invierta los elementos de un array",
+        "Sistema simple de inventario usando arrays"
+      ]
+    },
+    {
+      "title": "Métodos y Funciones",
+      "description": "Creación de métodos, parámetros, valores de retorno y sobrecarga.",
+      "video": "https://www.youtube.com/embed/cCgOESMQe44",
+      "duration": "85 minutos",
+      "topics": [
+        "Definición y llamada de métodos",
+        "Métodos con y sin parámetros",
+        "Métodos con y sin valor de retorno",
+        "Modificadores de acceso: public, private, protected",
+        "Métodos estáticos vs métodos de instancia",
+        "Sobrecarga de métodos (overloading)",
+        "Recursividad",
+        "Paso por valor vs paso por referencia",
+        "Buenas prácticas en diseño de métodos"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html",
+        "https://www.programiz.com/java-programming/methods",
+        "https://www.geeksforgeeks.org/methods-in-java/"
+      ],
+      "exercises": [
+        "Crear métodos para operaciones matemáticas básicas",
+        "Método recursivo para calcular Fibonacci",
+        "Sistema de validación con múltiples métodos",
+        "Calculadora modular usando métodos sobrecargados",
+        "Métodos para manipular arrays (buscar, ordenar, filtrar)"
+      ]
+    },
+    {
+      "title": "Programación Orientada a Objetos - Fundamentos",
+      "description": "Clases, objetos, constructores y encapsulación.",
+      "video": "https://www.youtube.com/embed/pTB0EiLXX2w",
+      "duration": "90 minutos",
+      "topics": [
+        "Conceptos de POO: clases y objetos",
+        "Atributos y métodos de clase",
+        "Constructores: default y parametrizados",
+        "Encapsulación: getters y setters",
+        "Modificadores de acceso",
+        "Palabra clave 'this'",
+        "Métodos toString() y equals()",
+        "Buenas prácticas en diseño de clases"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/java/concepts/",
+        "https://docs.oracle.com/javase/tutorial/java/javaOO/",
+        "https://www.programiz.com/java-programming/class-objects"
+      ],
+      "exercises": [
+        "Crear clase Persona con atributos y métodos",
+        "Sistema de gestión de estudiantes con POO",
+        "Clase Cuenta bancaria con encapsulación",
+        "Modelar un sistema de biblioteca con clases",
+        "Crear clase Producto para un sistema de ventas"
+      ]
+    },
+    {
+      "title": "Herencia y Polimorfismo",
+      "description": "Herencia, sobrescritura de métodos, polimorfismo y clases abstractas.",
+      "video": "https://www.youtube.com/embed/9JOeqT4nOS4",
+      "duration": "95 minutos",
+      "topics": [
+        "Concepto de herencia: extends",
+        "Clase padre (superclass) y clase hija (subclass)",
+        "Sobrescritura de métodos (overriding)",
+        "Palabra clave 'super'",
+        "Polimorfismo y binding dinámico",
+        "Clases abstractas y métodos abstractos",
+        "Interfaces: definición e implementación",
+        "Diferencias entre herencia e interfaces"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/java/IandI/",
+        "https://www.programiz.com/java-programming/inheritance",
+        "https://www.geeksforgeeks.org/inheritance-in-java/"
+      ],
+      "exercises": [
+        "Sistema de jerarquía Animal con herencia",
+        "Polimorfismo con figuras geométricas",
+        "Interface para operaciones CRUD",
+        "Sistema de empleados con diferentes tipos",
+        "Implementar patrón Template Method"
+      ]
+    },
+    {
+      "title": "Manejo de Excepciones",
+      "description": "Try-catch, tipos de excepciones y manejo robusto de errores.",
+      "video": "https://www.youtube.com/embed/1XAfapkBQjk",
+      "duration": "75 minutos",
+      "topics": [
+        "¿Qué son las excepciones?",
+        "Tipos de excepciones: checked vs unchecked",
+        "Bloques try-catch-finally",
+        "Múltiples bloques catch",
+        "Lanzamiento de excepciones: throw y throws",
+        "Crear excepciones personalizadas",
+        "Best practices en manejo de excepciones",
+        "Try-with-resources"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/essential/exceptions/",
+        "https://www.programiz.com/java-programming/exception-handling",
+        "https://www.baeldung.com/java-exceptions"
+      ],
+      "exercises": [
+        "Validación robusta de entrada de usuario",
+        "Sistema de división con manejo de excepciones",
+        "Lectura de archivos con manejo de errores",
+        "Crear excepciones personalizadas para un sistema",
+        "Calculadora con manejo completo de excepciones"
+      ]
+    },
+    {
+      "title": "Colecciones y Estructuras de Datos",
+      "description": "ArrayList, HashMap, Set y otras colecciones del framework Collections.",
+      "video": "https://www.youtube.com/embed/rxbYvBq3CkA",
+      "duration": "85 minutos",
+      "topics": [
+        "Framework Collections de Java",
+        "List: ArrayList, LinkedList",
+        "Set: HashSet, TreeSet",
+        "Map: HashMap, TreeMap",
+        "Iteradores y enhanced for loop",
+        "Comparadores: Comparable y Comparator",
+        "Operaciones comunes en colecciones",
+        "Generics básicos en colecciones",
+        "Cuándo usar cada tipo de colección"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/collections/",
+        "https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html",
+        "https://www.programiz.com/java-programming/collections"
+      ],
+      "exercises": [
+        "Sistema de gestión de contactos con ArrayList",
+        "Eliminar duplicados usando Set",
+        "Diccionario de palabras con HashMap",
+        "Sistema de calificaciones con TreeMap",
+        "Ordenar lista de objetos personalizados"
+      ]
+    },
+    {
+      "title": "Entrada/Salida de Archivos",
+      "description": "Lectura y escritura de archivos, streams y serialización básica.",
+      "video": "https://www.youtube.com/embed/ScUJx4aWRi0",
+      "duration": "80 minutos",
+      "topics": [
+        "Clases File y Path",
+        "FileReader y FileWriter",
+        "BufferedReader y BufferedWriter",
+        "Scanner para lectura de archivos",
+        "PrintWriter para escritura",
+        "Manejo de rutas relativas y absolutas",
+        "Serialización básica de objetos",
+        "Try-with-resources para archivos"
+      ],
+      "resources": [
+        "https://docs.oracle.com/javase/tutorial/essential/io/",
+        "https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html",
+        "https://www.programiz.com/java-programming/file"
+      ],
+      "exercises": [
+        "Leer y procesar archivo de texto línea por línea",
+        "Sistema de log que escriba a archivo",
+        "Procesador de CSV con Java",
+        "Sistema de persistencia básico para objetos",
+        "Copia de archivos con verificación de errores"
       ]
     }
   ],
   "projects": [
     {
-      "title": "Proyecto 1: Sitio Web Personal",
-      "description": "Crear un sitio web personal completo usando solo HTML semántico.",
+      "title": "Proyecto 1: Sistema de Gestión de Biblioteca",
+      "description": "Aplicación completa para gestionar libros, usuarios y préstamos usando POO.",
       "requirements": [
-        "Página de inicio con información personal",
-        "Página de portfolio con proyectos",
-        "Página de contacto con formulario funcional",
-        "Blog con al menos 3 artículos",
-        "Navegación consistente entre páginas",
-        "Uso correcto de elementos semánticos",
-        "Optimización básica para SEO"
+        "Clases: Libro, Usuario, Prestamo, Biblioteca",
+        "Funcionalidades CRUD para cada entidad",
+        "Sistema de búsqueda por diferentes criterios",
+        "Manejo de excepciones personalizado",
+        "Persistencia en archivos",
+        "Interfaz de consola amigable",
+        "Validación robusta de datos"
       ],
-      "duration": "2-3 semanas",
-      "skills": ["HTML semántico", "Formularios", "Estructura de sitio", "SEO básico"]
+      "duration": "2-3 semanas"
     },
     {
-      "title": "Proyecto 2: Plataforma de Recetas",
-      "description": "Desarrollar una plataforma de recetas con contenido estructurado y multimedia.",
+      "title": "Proyecto 2: Sistema de Gestión de Inventario",
+      "description": "Aplicación para manejar productos, categorías, proveedores y ventas.",
       "requirements": [
-        "Página principal con lista de recetas",
-        "Páginas individuales para cada receta",
-        "Formulario para agregar nuevas recetas",
-        "Galería de imágenes para cada receta",
-        "Videos instructivos embebidos",
-        "Datos estructurados para SEO",
-        "Sistema de categorías y tags",
-        "Tabla nutricional"
+        "Jerarquía de clases con herencia",
+        "Uso de interfaces para operaciones comunes",
+        "Colecciones para almacenar datos",
+        "Sistema de reportes básicos",
+        "Manejo de fechas y cálculos",
+        "Menú interactivo completo",
+        "Documentación JavaDoc"
       ],
-      "duration": "3-4 semanas",
-      "skills": ["Multimedia", "Datos estructurados", "Formularios avanzados", "Tablas"]
+      "duration": "3-4 semanas"
     },
     {
-      "title": "Proyecto 3: Portal de Noticias",
-      "description": "Crear un portal de noticias completo con múltiples secciones y contenido multimedia.",
+      "title": "Proyecto 3: Juego de Trivia",
+      "description": "Juego interactivo con preguntas, puntuación y múltiples niveles.",
       "requirements": [
-        "Estructura de portal con múltiples secciones",
-        "Sistema de artículos con metadatos",
-        "Galería multimedia por artículo",
-        "Formulario de suscripción a newsletter",
-        "Página de archivo con filtros",
-        "Comentarios y formularios de interacción",
-        "Optimización completa para SEO",
-        "Accesibilidad avanzada"
+        "Sistema de preguntas con diferentes categorías",
+        "Puntuación y ranking de jugadores",
+        "Niveles de dificultad",
+        "Persistencia de scores en archivos",
+        "Timer para respuestas",
+        "Interfaz colorida en consola",
+        "Sistema de logros/badges"
       ],
-      "duration": "4-5 semanas",
-      "skills": ["HTML avanzado", "SEO completo", "Accesibilidad", "Estructura compleja"]
+      "duration": "2-3 semanas"
     }
   ],
   "exam": {
-    "title": "Examen Integral de HTML",
-    "description": "Evaluación completa de conocimientos de HTML desde básico hasta avanzado",
-    "duration": "75 minutos",
-    "totalQuestions": 20,
+    "title": "Examen Final de Java",
+    "description": "Evaluación completa de conocimientos de Java desde básico hasta intermedio",
+    "duration": "120 minutos",
+    "totalQuestions": 30,
     "passingScore": "75%",
     "questions": [
       {
         "id": 1,
-        "question": "¿Cuál es la etiqueta principal que contiene todo el contenido visible de HTML?",
+        "question": "¿Cuál es la diferencia principal entre JDK, JRE y JVM?",
         "type": "multiple-choice",
         "options": [
-          "<html>",
-          "<body>",
-          "<head>",
-          "<main>"
+          "JDK incluye herramientas de desarrollo, JRE es el entorno de ejecución, JVM ejecuta bytecode",
+          "Son lo mismo, solo nombres diferentes",
+          "JVM incluye a JRE y JDK",
+          "JRE es para desarrollo, JDK para ejecución"
         ],
-        "answer": "<body>",
-        "explanation": "La etiqueta <body> contiene todo el contenido visible, mientras que <html> es el contenedor raíz."
+        "answer": "JDK incluye herramientas de desarrollo, JRE es el entorno de ejecución, JVM ejecuta bytecode",
+        "explanation": "JDK (Development Kit) incluye compilador y herramientas, JRE (Runtime Environment) permite ejecutar aplicaciones, JVM (Virtual Machine) ejecuta el bytecode."
       },
       {
         "id": 2,
-        "question": "¿Para qué sirve la etiqueta <form>?",
+        "question": "¿Cuál es el tipo de dato primitivo para números decimales de mayor precisión?",
         "type": "multiple-choice",
         "options": [
-          "Crear formularios para entrada de datos",
-          "Insertar imágenes",
-          "Definir tablas",
-          "Crear enlaces"
+          "float",
+          "double",
+          "decimal",
+          "real"
         ],
-        "answer": "Crear formularios para entrada de datos",
-        "explanation": "La etiqueta <form> se usa para crear formularios que permiten a los usuarios enviar datos."
+        "answer": "double",
+        "explanation": "double es el tipo primitivo de punto flotante de doble precisión en Java."
       },
       {
         "id": 3,
-        "question": "¿Cuál es la diferencia entre <strong> y <b>?",
+        "question": "¿Qué palabra clave se usa para la herencia en Java?",
         "type": "multiple-choice",
         "options": [
-          "No hay diferencia, son idénticos",
-          "<strong> es semántico (importancia), <b> es solo visual",
-          "<b> es semántico, <strong> es visual",
-          "Solo se diferencian en el navegador usado"
+          "inherits",
+          "extends",
+          "implements",
+          "derives"
         ],
-        "answer": "<strong> es semántico (importancia), <b> es solo visual",
-        "explanation": "<strong> indica importancia semántica, mientras que <b> solo aplica formato visual."
+        "answer": "extends",
+        "explanation": "La palabra clave 'extends' se usa para crear herencia entre clases en Java."
       },
       {
         "id": 4,
-        "question": "¿Qué atributo es obligatorio en la etiqueta <img>?",
+        "question": "¿Cuál es la salida de: System.out.println(5 / 2);?",
         "type": "multiple-choice",
         "options": [
-          "src",
-          "alt",
-          "width",
-          "title"
+          "2.5",
+          "2",
+          "2.0",
+          "Error de compilación"
         ],
-        "answer": "src",
-        "explanation": "El atributo src es obligatorio para especificar la fuente de la imagen, aunque alt es altamente recomendado para accesibilidad."
+        "answer": "2",
+        "explanation": "La división entre enteros en Java resulta en un entero, descartando la parte decimal."
       },
       {
         "id": 5,
-        "question": "¿Cuál es la estructura correcta de una tabla HTML básica?",
+        "question": "¿Qué modificador de acceso permite acceso solo dentro de la misma clase?",
         "type": "multiple-choice",
         "options": [
-          "<table><tr><td>Contenido</td></tr></table>",
-          "<table><row><cell>Contenido</cell></row></table>",
-          "<grid><tr><td>Contenido</td></tr></grid>",
-          "<table><tbody><td>Contenido</td></tbody></table>"
+          "public",
+          "protected",
+          "private",
+          "default"
         ],
-        "answer": "<table><tr><td>Contenido</td></tr></table>",
-        "explanation": "Una tabla básica necesita <table>, <tr> para filas y <td> para celdas."
+        "answer": "private",
+        "explanation": "El modificador 'private' restringe el acceso solo a la misma clase."
       },
       {
         "id": 6,
-        "question": "¿Qué elemento HTML5 se usa para el contenido principal de una página?",
+        "question": "¿Cuál es la diferencia entre == y .equals() para Strings?",
         "type": "multiple-choice",
         "options": [
-          "<main>",
-          "<content>",
-          "<primary>",
-          "<center>"
+          "== compara contenido, .equals() compara referencias",
+          "== compara referencias, .equals() compara contenido",
+          "No hay diferencia",
+          "== es más rápido siempre"
         ],
-        "answer": "<main>",
-        "explanation": "El elemento <main> identifica el contenido principal de una página web."
+        "answer": "== compara referencias, .equals() compara contenido",
+        "explanation": "== compara si dos referencias apuntan al mismo objeto, .equals() compara el contenido de los strings."
       },
       {
         "id": 7,
-        "question": "¿Cuál es la forma correcta de crear un enlace que abra en nueva ventana?",
+        "question": "¿Qué colección permite elementos duplicados y mantiene orden de inserción?",
         "type": "multiple-choice",
         "options": [
-          "<a href='url' target='_blank'>Enlace</a>",
-          "<a href='url' new-window='true'>Enlace</a>",
-          "<a href='url' open='new'>Enlace</a>",
-          "<a href='url' window='new'>Enlace</a>"
+          "HashSet",
+          "TreeSet",
+          "ArrayList",
+          "HashMap"
         ],
-        "answer": "<a href='url' target='_blank'>Enlace</a>",
-        "explanation": "El atributo target='_blank' hace que el enlace se abra en una nueva ventana o pestaña."
+        "answer": "ArrayList",
+        "explanation": "ArrayList permite duplicados y mantiene el orden de inserción."
       },
       {
         "id": 8,
-        "question": "¿Qué tipo de input HTML5 valida automáticamente direcciones de email?",
+        "question": "¿Cuál es la sintaxis correcta para manejar excepciones?",
         "type": "multiple-choice",
         "options": [
-          "type='email'",
-          "type='mail'",
-          "type='e-mail'",
-          "type='address'"
+          "try { } catch(Exception e) { }",
+          "handle { } error(Exception e) { }",
+          "attempt { } fail(Exception e) { }",
+          "begin { } rescue(Exception e) { }"
         ],
-        "answer": "type='email'",
-        "explanation": "El input type='email' proporciona validación automática de formato de email."
+        "answer": "try { } catch(Exception e) { }",
+        "explanation": "La sintaxis correcta es try-catch para manejar excepciones en Java."
       },
       {
         "id": 9,
-        "question": "¿Cuál es el propósito del atributo 'alt' en imágenes?",
+        "question": "¿Qué significa que una clase sea 'abstract'?",
         "type": "multiple-choice",
         "options": [
-          "Proporcionar texto alternativo para accesibilidad",
-          "Cambiar el tamaño de la imagen",
-          "Agregar un borde a la imagen",
-          "Especificar el formato de la imagen"
+          "No puede tener métodos",
+          "No puede ser instanciada directamente",
+          "Solo puede tener métodos estáticos",
+          "No puede tener constructores"
         ],
-        "answer": "Proporcionar texto alternativo para accesibilidad",
-        "explanation": "El atributo alt proporciona descripción textual para lectores de pantalla y cuando la imagen no carga."
+        "answer": "No puede ser instanciada directamente",
+        "explanation": "Una clase abstracta no puede ser instanciada con 'new', solo puede ser heredada."
       },
       {
         "id": 10,
-        "question": "¿Qué etiqueta se usa para agrupar opciones relacionadas en un formulario?",
+        "question": "¿Cuál es la diferencia entre sobrecarga y sobrescritura de métodos?",
         "type": "multiple-choice",
         "options": [
-          "<fieldset>",
-          "<group>",
-          "<form-group>",
-          "<section>"
+          "Sobrecarga cambia implementación, sobrescritura cambia parámetros",
+          "Sobrecarga cambia parámetros en misma clase, sobrescritura cambia implementación en subclase",
+          "No hay diferencia",
+          "Sobrecarga solo funciona con constructores"
         ],
-        "answer": "<fieldset>",
-        "explanation": "<fieldset> agrupa controles de formulario relacionados, generalmente con una <legend>."
-      },
-      {
-        "id": 11,
-        "question": "¿Cuál es la diferencia entre <article> y <section>?",
-        "type": "multiple-choice",
-        "options": [
-          "<article> es contenido independiente, <section> agrupa contenido relacionado",
-          "Son exactamente lo mismo",
-          "<section> es contenido independiente, <article> agrupa contenido",
-          "Solo difieren en el estilo CSS aplicado"
-        ],
-        "answer": "<article> es contenido independiente, <section> agrupa contenido relacionado",
-        "explanation": "<article> representa contenido independiente y reutilizable, <section> agrupa contenido temáticamente relacionado."
-      },
-      {
-        "id": 12,
-        "question": "¿Qué etiqueta HTML se usa para mostrar código de programación?",
-        "type": "multiple-choice",
-        "options": [
-          "<code>",
-          "<program>",
-          "<script>",
-          "<coding>"
-        ],
-        "answer": "<code>",
-        "explanation": "La etiqueta <code> se usa para mostrar fragmentos de código en línea."
+        "answer": "Sobrecarga cambia parámetros en misma clase, sobrescritura cambia implementación en subclase",
+        "explanation": "Overloading permite múltiples métodos con mismo nombre pero diferentes parámetros. Overriding permite a subclases cambiar la implementación de métodos heredados."
       }
     ]
   },
-  "practicalAssessment": {
-    "title": "Evaluación Práctica Final",
-    "description": "Crear una página web completa que demuestre dominio de todos los conceptos",
-    "requirements": [
-      "Estructura HTML5 semánticamente correcta",
-      "Al menos 3 páginas interconectadas",
-      "Formulario funcional con validación",
-      "Tabla de datos estructurada",
-      "Contenido multimedia (imágenes, video/audio)",
-      "Navegación accesible",
-      "Meta tags para SEO",
-      "Código válido según W3C"
-    ],
-    "timeLimit": "4 horas",
-    "evaluationCriteria": {
-      "semanticStructure": "25%",
-      "functionality": "25%",
-      "accessibility": "20%",
-      "codeQuality": "15%",
-      "creativity": "15%"
-    }
-  },
   "additionalResources": {
-    "documentation": [
-      "MDN Web Docs - HTML",
-      "W3Schools HTML Tutorial",
-      "HTML Living Standard (WHATWG)",
-      "W3C HTML Validator"
+    "books": [
+      "Effective Java by Joshua Bloch",
+      "Java: The Complete Reference by Herbert Schildt",
+      "Head First Java by Kathy Sierra",
+      "Clean Code by Robert Martin",
+      "Java Concurrency in Practice by Brian Goetz"
     ],
     "tools": [
-      "Visual Studio Code con extensiones HTML",
-      "Chrome DevTools",
-      "HTML5 Boilerplate",
-      "Emmet para escritura rápida de HTML"
+      "IntelliJ IDEA Community Edition",
+      "Eclipse IDE for Java Developers",
+      "Visual Studio Code con Extension Pack for Java",
+      "Maven para gestión de dependencias",
+      "Git para control de versiones",
+      "JUnit para testing"
     ],
     "practiceWebsites": [
-      "freeCodeCamp HTML sections",
-      "Codecademy HTML course",
-      "HTML Dog tutorials",
-      "W3Schools Try It Editor"
+      "LeetCode - Problemas de algoritmos",
+      "HackerRank - Java challenges",
+      "Codewars - Kata de programación",
+      "Project Euler - Problemas matemáticos",
+      "CodingBat - Ejercicios de Java"
     ],
-    "accessibility": [
-      "WebAIM guidelines",
-      "WAVE Web Accessibility Evaluator",
-      "axe DevTools",
-      "Lighthouse accessibility audit"
+    "communities": [
+      "Stack Overflow",
+      "Reddit r/learnjava",
+      "Oracle Java Community",
+      "JavaRanch Forums",
+      "Discord Java Community"
     ],
-    "seoTools": [
-      "Google Search Console",
-      "Structured Data Testing Tool",
-      "Open Graph Debugger",
-      "Screaming Frog SEO Spider"
+    "onlineDocumentation": [
+      "Oracle Java Documentation",
+      "Java Tutorials by Oracle",
+      "Baeldung Java Tutorials",
+      "GeeksforGeeks Java",
+      "Java Code Geeks"
     ]
   },
   "assessmentCriteria": {
-    "participation": "15%",
+    "participation": "10%",
     "exercises": "35%",
-    "projects": "35%",
+    "projects": "40%",
     "finalExam": "15%"
-  },
-  "roadmap": {
-    "week1": "Introducción y estructura básica",
-    "week2": "Texto, enlaces e imágenes",
-    "week3": "Tablas y formularios básicos",
-    "week4": "HTML semántico y multimedia",
-    "week5": "Formularios avanzados y optimización",
-    "week6": "Proyecto final y mejores prácticas",
-    "week7-8": "Proyectos adicionales y evaluación"
   },
   "nextSteps": {
     "title": "Después de completar este curso",
     "suggestions": [
-      "Aprender CSS para dar estilo a tus páginas HTML",
-      "Estudiar JavaScript para agregar interactividad",
-      "Explorar frameworks como Bootstrap o Tailwind CSS",
-      "Profundizar en accesibilidad web (WCAG)",
-      "Aprender sobre Progressive Web Apps (PWAs)",
-      "Estudiar SEO técnico avanzado",
-      "Practicar con proyectos reales y complejos"
+      "Aprender frameworks como Spring Boot para desarrollo web",
+      "Estudiar bases de datos y JDBC para persistencia",
+      "Explorar desarrollo de aplicaciones móviles con Android",
+      "Profundizar en patrones de diseño",
+      "Aprender testing con JUnit y Mockito",
+      "Estudiar concurrencia y multithreading",
+      "Explorar microservicios y arquitecturas distribuidas",
+      "Certificarse con Oracle Java SE Programmer"
     ]
   },
-  "certificationPath": {
-    "basicLevel": "HTML Fundamentals Certificate",
-    "intermediateLevel": "Semantic HTML & Accessibility Certificate",
-    "advancedLevel": "HTML5 Expert Certificate",
-    "requirements": {
-      "basicLevel": "Completar primeros 4 capítulos + proyecto 1",
-      "intermediateLevel": "Completar todos los capítulos + 2 proyectos",
-      "advancedLevel": "Completar curso completo + todos los proyectos + examen final >85%"
-    }
+  "developmentEnvironment": {
+    "requirements": [
+      "JDK 17 o superior (LTS recomendado)",
+      "IDE: IntelliJ IDEA Community o Eclipse",
+      "Git para control de versiones",
+      "Sistema operativo: Windows, macOS o Linux"
+    ],
+    "optionalTools": [
+      "Maven o Gradle para gestión de proyectos",
+      "JUnit para testing unitario",
+      "Postman para APIs (proyectos avanzados)",
+      "Docker (para proyectos finales)"
+    ]
+  },
+  "careerPaths": {
+    "title": "Oportunidades profesionales con Java",
+    "paths": [
+      "Desarrollador Backend Java",
+      "Desarrollador Full Stack",
+      "Desarrollador de aplicaciones móviles Android",
+      "Arquitecto de software",
+      "Desarrollador de sistemas empresariales",
+      "Consultor técnico Java"
+    ]
   }
 }

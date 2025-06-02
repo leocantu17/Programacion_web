@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import "../styles/login.css"
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,7 +22,7 @@ function Login() {
 
     if (response.ok) {
       localStorage.setItem('token', data.token);
-      alert('¡Login exitoso!');
+      navigate("/")
     } else {
       setError(data.message || 'Error al iniciar sesión');
     }

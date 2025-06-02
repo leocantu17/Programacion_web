@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../styles/Register.css"
 import { useNavigate } from "react-router-dom";
+
 
 const Register = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -23,6 +25,7 @@ const Register = () => {
   };
 
   return (
+  <div className="page-container">
     <div className="form-container">
       <h2>Registro</h2>
       {error && <p className="error">{error}</p>}
@@ -33,7 +36,9 @@ const Register = () => {
         <button type="submit">Registrarse</button>
       </form>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default Register;

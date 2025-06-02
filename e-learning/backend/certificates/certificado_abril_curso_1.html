@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de Finalización</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .certificate {
+            background: white;
+            width: 800px;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 8px solid #f8f9fa;
+            position: relative;
+        }
+        
+        .certificate::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid #667eea;
+            border-radius: 15px;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        .title {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+        
+        .recipient {
+            font-size: 32px;
+            color: #667eea;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+        
+        .course-name {
+            font-size: 28px;
+            color: #2c3e50;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        .completion-text {
+            font-size: 20px;
+            color: #34495e;
+            line-height: 1.6;
+            margin: 30px 0;
+        }
+        
+        .date {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+        
+        .signature-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+        
+        .signature {
+            text-align: center;
+        }
+        
+        .signature-line {
+            width: 200px;
+            height: 2px;
+            background: #bdc3c7;
+            margin: 20px auto 10px;
+        }
+        
+        .signature-title {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .decoration {
+            font-size: 60px;
+            color: #f39c12;
+            margin: 20px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .certificate {
+                box-shadow: none;
+                border: 2px solid #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="header">
+            <div class="decoration">🏆</div>
+            <h1 class="title">CERTIFICADO</h1>
+            <p class="subtitle">de Finalización</p>
+        </div>
+        
+        <div class="content">
+            <p class="completion-text">Por la presente se certifica que</p>
+            
+            <h2 class="recipient">Abril</h2>
+            
+            <p class="completion-text">ha completado satisfactoriamente el curso</p>
+            
+            <h3 class="course-name">"Curso de Java"</h3>
+            
+            <p class="completion-text">
+                demostrando dedicación, esfuerzo y conocimiento en la materia estudiada.
+                Este certificado reconoce el logro académico y el compromiso con el aprendizaje continuo.
+            </p>
+            
+            <p class="date">Expedido el 01 de June de 2025</p>
+        </div>
+        
+        <div class="signature-section">
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p class="signature-title">Director Académico</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p class="signature-title">Plataforma E-learning</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
