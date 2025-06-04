@@ -1,28 +1,36 @@
+/* Barra de navegación con diseño horizontal y separación */
 .navbar {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: blue;
+  display: flex; /* Usamos flexbox para que los elementos estén en fila */
+  gap: 1rem; /* Espacio entre cada enlace */
+  padding: 1rem; /* Espacio interno alrededor de la barra */
+  background-color: blue; /* Fondo azul para la navbar */
 }
 
+/* Estilo para los enlaces dentro de la navbar */
 .navbar a {
-  color: white;
-  text-decoration: none;
+  color: white; /* Texto blanco para contraste */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
 }
+
+/* Contenedor principal de la página de inicio */
 .home-container {
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem; /* Espacio interno amplio */
+  text-align: center; /* Centra el texto dentro del contenedor */
 }
 
+/* Grid para mostrar los cursos en tarjetas responsivas */
 .course-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  display: grid; /* Usamos grid layout para organizar las tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+  /* Crea columnas que se ajustan automáticamente,
+     con mínimo 240px y máximo 1fr (una fracción del espacio) */
+  gap: 1rem; /* Espacio entre tarjetas */
 }
 
+/* Tarjeta individual para cada curso */
 .card {
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem; /* Espacio interno dentro de la tarjeta */
+  border-radius: 12px; /* Bordes redondeados para estilo moderno */
+  background-color: #f0f0f0; /* Fondo gris claro */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
 }

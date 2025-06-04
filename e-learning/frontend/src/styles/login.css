@@ -1,65 +1,67 @@
-/* Centrado y fondo */
+/* Contenedor principal que centra el contenido vertical y horizontalmente */
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura igual a toda la ventana */
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
 }
 
-/* Formulario */
+/* Estilo del formulario */
 .login-form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
+  background-color: white; /* Fondo blanco para el formulario */
+  padding: 2rem; /* Espacio interno amplio */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  width: 100%; /* Ocupa todo el ancho posible */
+  max-width: 400px; /* Máximo ancho fijo para no estirarse demasiado */
+  display: flex; /* Flexbox para organizar hijos */
+  flex-direction: column; /* Colocar elementos en columna */
 }
 
-/* Título */
+/* Estilo para el título del formulario */
 .login-title {
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #333;
+  margin-bottom: 1rem; /* Espacio debajo del título */
+  text-align: center; /* Centrar texto */
+  color: #333; /* Texto gris oscuro */
 }
 
-/* Campos */
+/* Estilo para los campos input */
 .login-form input {
-  padding: 10px;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.3s ease;
+  padding: 10px; /* Espacio interior cómodo */
+  margin-bottom: 1rem; /* Separación entre inputs */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  outline: none; /* Quita el contorno por defecto */
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
 }
 
+/* Estilo para input cuando está enfocado */
 .login-form input:focus {
-  border-color: #2575fc;
+  border-color: #2575fc; /* Borde azul vivo al enfocar */
 }
 
-/* Botón */
+/* Estilo para el botón de login */
 .login-button {
-  background-color: #2575fc;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #2575fc; /* Fondo azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 12px; /* Espacio interno amplio */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de texto legible */
+  cursor: pointer; /* Cursor mano para indicar clickeable */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar color */
 }
 
+/* Efecto hover para el botón */
 .login-button:hover {
-  background-color: #1a5fd2;
+  background-color: #1a5fd2; /* Azul más oscuro al pasar el cursor */
 }
 
-/* Error */
+/* Estilo para mostrar mensajes de error */
 .login-error {
-  color: red;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  text-align: center;
+  color: red; /* Texto rojo para destacar error */
+  margin-bottom: 1rem; /* Espacio debajo del mensaje */
+  font-size: 0.9rem; /* Texto un poco más pequeño */
+  text-align: center; /* Centrar el texto */
 }

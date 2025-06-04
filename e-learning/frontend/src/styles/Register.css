@@ -1,60 +1,69 @@
+/* Contenedor principal que ocupa toda la ventana y centra su contenido */
 .page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  background-color: #f0f2f5;
+  display: flex; /* Usa Flexbox para centrar */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura igual a la ventana completa */
+  background-color: #f0f2f5; /* Fondo gris claro */
 }
 
+/* Contenedor del formulario */
 .form-container {
-  width: 100%;
-  max-width: 400px;
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 400px; /* Máximo ancho fijo para mantener forma */
+  padding: 30px; /* Espacio interno alrededor del contenido */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+  font-family: Arial, sans-serif; /* Tipografía legible */
 }
 
+/* Estilo del título h2 dentro del formulario */
 .form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color:black;
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: black; /* Color negro para el texto */
 }
 
+/* Formulario usa flexbox en columna */
 .form-container form {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Usa Flexbox */
+  flex-direction: column; /* Organiza los hijos en columna */
 }
 
+/* Estilos comunes para inputs y botón */
 .form-container input,
 .form-container button {
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+  padding: 12px; /* Espacio interno para comodidad */
+  margin-bottom: 15px; /* Separación entre elementos */
+  border-radius: 6px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 16px; /* Tamaño de fuente legible */
 }
 
+/* Estilo para input cuando está enfocado */
 .form-container input:focus {
-  border-color: #007bff;
-  outline: none;
+  border-color: #007bff; /* Borde azul cuando está activo */
+  outline: none; /* Quita el outline por defecto */
 }
 
+/* Estilo específico para el botón */
 .form-container button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background-color: #007bff; /* Fondo azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor tipo mano */
+  transition: background-color 0.3s; /* Transición suave al cambiar color */
 }
 
+/* Efecto hover para el botón */
 .form-container button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
 }
 
+/* Estilo para mostrar mensajes de error */
 .error {
-  color: #d9534f;
-  text-align: center;
-  margin-bottom: 10px;
+  color: #d9534f; /* Rojo intenso para destacar el error */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 10px; /* Espacio debajo del mensaje */
 }

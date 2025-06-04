@@ -1,386 +1,456 @@
+/* ===== ESTILOS GENERALES ===== */
+
+/* Configuración básica del body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  margin: 0;
-  color: #333;
+  font-family: Arial, sans-serif;        /* Fuente principal del sitio */
+  background-color: #f5f7fa;             /* Color de fondo gris claro */
+  margin: 0;                             /* Eliminar márgenes por defecto */
+  color: #333;                           /* Color de texto principal */
 }
 
+/* Contenedor principal con layout flex */
 .course-container {
-  display: flex;
-  min-height: 100vh;
+  display: flex;                         /* Layout flexbox horizontal */
+  min-height: 100vh;                     /* Altura mínima de toda la pantalla */
 }
 
-/* Sidebar */
+/* ===== SIDEBAR (BARRA LATERAL) ===== */
+
+/* Configuración principal del sidebar */
 .sidebar {
-  width: 250px;
-  background-color: #007acc;
-  color: white;
-  padding: 1rem;
-  box-sizing: border-box;
+  width: 250px;                          /* Ancho fijo de la barra lateral */
+  background-color: #007acc;             /* Color de fondo azul */
+  color: white;                          /* Texto en blanco */
+  padding: 1rem;                         /* Espaciado interno */
+  box-sizing: border-box;                /* Incluir padding en el cálculo del ancho */
 }
 
+/* Título principal del sidebar */
 .sidebar h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  font-size: 1.4rem;
+  margin-top: 0;                         /* Sin margen superior */
+  margin-bottom: 1rem;                   /* Margen inferior */
+  font-weight: bold;                     /* Texto en negrita */
+  font-size: 1.4rem;                     /* Tamaño de fuente más grande */
 }
 
+/* Lista de navegación en el sidebar */
 .sidebar-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;                      /* Sin viñetas */
+  padding: 0;                            /* Sin padding */
+  margin: 0;                             /* Sin margen */
 }
 
+/* Elementos individuales de la lista */
 .sidebar-list li {
-  padding: 0.6rem 0.75rem;
-  cursor: pointer;
-  border-radius: 4px;
-  user-select: none;
-  transition: background-color 0.3s ease;
+  padding: 0.6rem 0.75rem;               /* Espaciado interno vertical y horizontal */
+  cursor: pointer;                       /* Cursor de mano al pasar por encima */
+  border-radius: 4px;                    /* Bordes redondeados */
+  user-select: none;                     /* Evitar selección de texto */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
+/* Efecto hover en elementos de la lista */
 .sidebar-list li:hover {
-  background-color: #005fa3;
+  background-color: #005fa3;             /* Color más oscuro al pasar el mouse */
 }
 
+/* Elemento activo de la lista */
 .sidebar-list li.active {
-  background-color: #004d82;
-  font-weight: bold;
+  background-color: #004d82;             /* Color aún más oscuro para el elemento activo */
+  font-weight: bold;                     /* Texto en negrita */
 }
 
-/* Content */
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+/* Área de contenido principal */
 .content {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: white;
-  box-sizing: border-box;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  flex-grow: 1;                          /* Ocupa todo el espacio restante */
+  padding: 2rem;                         /* Espaciado interno */
+  background-color: white;               /* Fondo blanco */
+  box-sizing: border-box;                /* Incluir padding en el cálculo del ancho */
+  max-width: 900px;                      /* Ancho máximo del contenido */
+  margin: 0 auto;                        /* Centrar horizontalmente */
+  border-radius: 6px;                    /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1); /* Sombra sutil */
 }
 
+/* Títulos del contenido con color azul */
 h2, h3, h4 {
-  margin-top: 0;
-  color: #007acc;
+  margin-top: 0;                         /* Sin margen superior */
+  color: #007acc;                        /* Color azul para títulos */
 }
 
+/* Wrapper para videos embebidos */
 .video-wrapper iframe {
-  border-radius: 6px;
-  border: none;
+  border-radius: 6px;                    /* Bordes redondeados para videos */
+  border: none;                          /* Sin borde */
 }
 
+/* Lista de recursos */
 .resources-list {
-  margin-left: 1.5rem;
+  margin-left: 1.5rem;                   /* Margen izquierdo para sangría */
 }
 
+/* Enlaces en la lista de recursos */
 .resources-list li a {
-  color: #007acc;
-  text-decoration: none;
+  color: #007acc;                        /* Color azul para enlaces */
+  text-decoration: none;                 /* Sin subrayado por defecto */
 }
 
+/* Efecto hover en enlaces de recursos */
 .resources-list li a:hover {
-  text-decoration: underline;
+  text-decoration: underline;            /* Subrayado al pasar el mouse */
 }
 
-/* Exam */
+/* ===== SECCIÓN DE EXAMEN ===== */
+
+/* Lista de opciones del examen */
 .options-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
+  list-style: none;                      /* Sin viñetas */
+  padding: 0;                            /* Sin padding */
+  margin-top: 1rem;                      /* Margen superior */
 }
 
+/* Elementos individuales de opciones */
 .options-list li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;                 /* Espacio entre opciones */
 }
 
+/* Botones de opciones del examen */
 .option-button {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border: 2px solid #007acc;
-  background-color: white;
-  color: #007acc;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
+  width: 100%;                           /* Ancho completo */
+  padding: 0.5rem 1rem;                  /* Espaciado interno */
+  border: 2px solid #007acc;             /* Borde azul */
+  background-color: white;               /* Fondo blanco */
+  color: #007acc;                        /* Texto azul */
+  font-size: 1rem;                       /* Tamaño de fuente */
+  border-radius: 5px;                    /* Bordes redondeados */
+  cursor: pointer;                       /* Cursor de mano */
+  transition: background-color 0.25s ease; /* Transición suave */
 }
 
+/* Efecto hover en botones de opciones */
 .option-button:hover {
-  background-color: #007acc;
-  color: white;
+  background-color: #007acc;             /* Fondo azul al pasar el mouse */
+  color: white;                          /* Texto blanco */
 }
 
+/* Retroalimentación del examen */
 .feedback {
-  margin-top: 1rem;
-  font-weight: bold;
+  margin-top: 1rem;                      /* Margen superior */
+  font-weight: bold;                     /* Texto en negrita */
 }
 
+/* Retroalimentación para respuesta correcta */
 .feedback.correct {
-  color: green;
+  color: green;                          /* Color verde */
 }
 
+/* Retroalimentación para respuesta incorrecta */
 .feedback.incorrect {
-  color: #d9534f;
+  color: #d9534f;                        /* Color rojo */
 }
 
-/* Loading/Error */
+/* ===== ESTADOS DE CARGA Y ERROR ===== */
+
+/* Estilos para estado de carga y error */
 .loading, .error {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666;
+  padding: 2rem;                         /* Espaciado interno */
+  text-align: center;                    /* Texto centrado */
+  font-size: 1.2rem;                     /* Tamaño de fuente más grande */
+  color: #666;                           /* Color gris */
 }
 
+/* Color específico para errores */
 .error {
-  color: #d9534f;
+  color: #d9534f;                        /* Color rojo para errores */
 }
 
+/* Mensaje de examen completado */
 .exam-completed {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #28a745;
-  text-align: center;
-  padding: 2rem 0;
+  font-weight: bold;                     /* Texto en negrita */
+  font-size: 1.2rem;                     /* Tamaño de fuente más grande */
+  color: #28a745;                        /* Color verde */
+  text-align: center;                    /* Texto centrado */
+  padding: 2rem 0;                       /* Espaciado vertical */
 }
 
-/* Responsive */
+/* ===== DISEÑO RESPONSIVO ===== */
+
+/* Adaptación para pantallas pequeñas (tablets y móviles) */
 @media (max-width: 768px) {
   .course-container {
-    flex-direction: column;
+    flex-direction: column;              /* Layout vertical en pantallas pequeñas */
   }
   .sidebar {
-    width: 100%;
-    padding: 1rem 0.5rem;
+    width: 100%;                         /* Ancho completo en móviles */
+    padding: 1rem 0.5rem;               /* Menos padding horizontal */
   }
   .content {
-    max-width: 100%;
-    padding: 1rem;
-    border-radius: 0;
-    box-shadow: none;
+    max-width: 100%;                     /* Ancho completo */
+    padding: 1rem;                       /* Menos padding */
+    border-radius: 0;                    /* Sin bordes redondeados */
+    box-shadow: none;                    /* Sin sombra */
   }
 }
 
-/* === NUEVOS ESTILOS PARA EL PROGRESO VISUAL === */
+/* ===== NUEVOS ESTILOS PARA EL PROGRESO VISUAL ===== */
 
-/* Progress indicator */
+/* Indicador de progreso principal */
 .progress-indicator {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);  /* Fondo semi-transparente */
+  border-radius: 8px;                     /* Bordes redondeados */
+  padding: 15px;                          /* Espaciado interno */
+  margin-bottom: 20px;                    /* Margen inferior */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
 }
 
+/* Cabecera del indicador de progreso */
 .progress-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  display: flex;                          /* Layout flexbox */
+  justify-content: space-between;         /* Espaciado entre elementos */
+  align-items: center;                    /* Alineación vertical centrada */
+  margin-bottom: 10px;                    /* Margen inferior */
 }
 
+/* Título en la cabecera del progreso */
 .progress-header h4 {
-  margin: 0;
-  color: white;
-  font-size: 14px;
+  margin: 0;                              /* Sin márgenes */
+  color: white;                           /* Texto blanco */
+  font-size: 14px;                        /* Tamaño de fuente pequeño */
 }
 
+/* Porcentaje de progreso */
 .progress-percentage {
-  font-size: 18px;
-  font-weight: bold;
-  color: #007acc;
-  background: white;
-  padding: 4px 12px;
-  border-radius: 15px;
+  font-size: 18px;                        /* Tamaño de fuente más grande */
+  font-weight: bold;                      /* Texto en negrita */
+  color: #007acc;                         /* Color azul */
+  background: white;                      /* Fondo blanco */
+  padding: 4px 12px;                      /* Espaciado interno */
+  border-radius: 15px;                    /* Bordes muy redondeados */
 }
 
+/* Barra de progreso contenedora */
 .progress-bar {
-  width: 100%;
-  height: 8px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 10px;
+  width: 100%;                            /* Ancho completo */
+  height: 8px;                            /* Altura de la barra */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente */
+  border-radius: 4px;                     /* Bordes redondeados */
+  overflow: hidden;                       /* Ocultar contenido que se desborde */
+  margin-bottom: 10px;                    /* Margen inferior */
 }
 
+/* Relleno de la barra de progreso */
 .progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #28a745, #20c997);
-  border-radius: 4px;
-  transition: width 0.5s ease;
+  height: 100%;                           /* Altura completa de la barra */
+  background: linear-gradient(90deg, #28a745, #20c997); /* Gradiente verde */
+  border-radius: 4px;                     /* Bordes redondeados */
+  transition: width 0.5s ease;            /* Transición suave del ancho */
 }
 
+/* Estadísticas del progreso */
 .progress-stats p {
-  margin: 5px 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 12px;
+  margin: 5px 0;                          /* Margen vertical pequeño */
+  color: rgba(255, 255, 255, 0.9);       /* Color blanco semi-transparente */
+  font-size: 12px;                        /* Tamaño de fuente pequeño */
 }
 
+/* Indicador de curso completado */
 .course-completed {
-  color: #90EE90 !important;
-  font-weight: bold;
+  color: #90EE90 !important;              /* Color verde claro con alta prioridad */
+  font-weight: bold;                      /* Texto en negrita */
 }
 
-/* Sidebar navigation mejorado */
+/* ===== NAVEGACIÓN MEJORADA DEL SIDEBAR ===== */
+
+/* Títulos de sección en el sidebar */
 .sidebar-nav h4 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 10px 0;
-  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);       /* Color blanco semi-transparente */
+  margin: 0 0 10px 0;                     /* Solo margen inferior */
+  font-size: 14px;                        /* Tamaño de fuente pequeño */
 }
 
+/* Elementos individuales del sidebar */
 .sidebar-item {
-  margin-bottom: 5px;
-  border-radius: 4px;
+  margin-bottom: 5px;                     /* Espacio entre elementos */
+  border-radius: 4px;                     /* Bordes redondeados */
 }
 
+/* Elemento completado */
 .sidebar-item.completed {
-  background-color: rgba(40, 167, 69, 0.2);
-  border-left: 3px solid #28a745;
+  background-color: rgba(40, 167, 69, 0.2); /* Fondo verde semi-transparente */
+  border-left: 3px solid #28a745;           /* Borde izquierdo verde */
 }
 
+/* Elemento pendiente */
 .sidebar-item.pending {
-  background-color: rgba(255, 193, 7, 0.2);
-  border-left: 3px solid #ffc107;
+  background-color: rgba(255, 193, 7, 0.2); /* Fondo amarillo semi-transparente */
+  border-left: 3px solid #ffc107;           /* Borde izquierdo amarillo */
 }
 
+/* Elemento bloqueado */
 .sidebar-item.locked {
-  background-color: rgba(220, 53, 69, 0.2);
-  border-left: 3px solid #dc3545;
-  cursor: not-allowed;
-  opacity: 0.7;
+  background-color: rgba(220, 53, 69, 0.2); /* Fondo rojo semi-transparente */
+  border-left: 3px solid #dc3545;           /* Borde izquierdo rojo */
+  cursor: not-allowed;                      /* Cursor de prohibido */
+  opacity: 0.7;                             /* Reducir opacidad */
 }
 
+/* Información del capítulo */
 .chapter-info {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: flex;                            /* Layout flexbox */
+  align-items: center;                      /* Alineación vertical centrada */
+  gap: 8px;                                 /* Espacio entre elementos */
 }
 
+/* Estado del capítulo (icono) */
 .chapter-status {
-  font-size: 16px;
-  min-width: 20px;
+  font-size: 16px;                          /* Tamaño del icono */
+  min-width: 20px;                          /* Ancho mínimo */
 }
 
+/* Título del capítulo */
 .chapter-title {
-  font-weight: 500;
-  flex-grow: 1;
+  font-weight: 500;                         /* Peso de fuente medio */
+  flex-grow: 1;                             /* Ocupa el espacio restante */
 }
 
+/* Metadatos del capítulo */
 .chapter-meta {
-  margin-top: 3px;
+  margin-top: 3px;                          /* Margen superior pequeño */
 }
 
+/* Texto del estado */
 .status-text {
-  font-size: 10px;
-  font-weight: 500;
-  padding: 1px 6px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  font-size: 10px;                          /* Tamaño de fuente muy pequeño */
+  font-weight: 500;                         /* Peso de fuente medio */
+  padding: 1px 6px;                         /* Espaciado interno pequeño */
+  border-radius: 8px;                       /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+  color: white;                             /* Texto blanco */
 }
 
-/* Exam divider */
+/* ===== DIVISOR DEL EXAMEN ===== */
+
+/* Contenedor del divisor */
 .exam-divider {
-  margin: 15px 0;
-  text-align: center;
-  position: relative;
+  margin: 15px 0;                           /* Margen vertical */
+  text-align: center;                       /* Texto centrado */
+  position: relative;                       /* Posicionamiento relativo */
 }
 
+/* Línea horizontal del divisor */
 .exam-divider hr {
-  border: none;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin: 8px 0;
+  border: none;                             /* Sin borde por defecto */
+  height: 1px;                              /* Altura de la línea */
+  background-color: rgba(255, 255, 255, 0.3); /* Color semi-transparente */
+  margin: 8px 0;                            /* Margen vertical */
 }
 
+/* Texto del divisor */
 .divider-text {
-  background-color: #007acc;
-  padding: 0 10px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: #007acc;                /* Fondo azul */
+  padding: 0 10px;                          /* Espaciado horizontal */
+  color: rgba(255, 255, 255, 0.8);         /* Color blanco semi-transparente */
+  font-size: 10px;                          /* Tamaño de fuente pequeño */
+  font-weight: 500;                         /* Peso de fuente medio */
+  text-transform: uppercase;                /* Texto en mayúsculas */
+  position: absolute;                       /* Posicionamiento absoluto */
+  top: -6px;                                /* Posición superior */
+  left: 50%;                                /* Centrado horizontal */
+  transform: translateX(-50%);              /* Ajuste de centrado */
 }
 
-/* Content header */
+/* ===== CABECERA DEL CONTENIDO ===== */
+
+/* Cabecera principal del contenido */
 .content-header {
-  background: linear-gradient(135deg, #007acc 0%, #005fa3 100%);
-  color: white;
-  padding: 25px;
-  border-radius: 8px;
-  margin-bottom: 25px;
+  background: linear-gradient(135deg, #007acc 0%, #005fa3 100%); /* Gradiente azul */
+  color: white;                             /* Texto blanco */
+  padding: 25px;                            /* Espaciado interno */
+  border-radius: 8px;                       /* Bordes redondeados */
+  margin-bottom: 25px;                      /* Margen inferior */
 }
 
+/* Título principal en la cabecera */
 .content-header h1 {
-  margin: 0 0 15px 0;
-  font-size: 24px;
-  color: white;
+  margin: 0 0 15px 0;                       /* Solo margen inferior */
+  font-size: 24px;                          /* Tamaño de fuente grande */
+  color: white;                             /* Color blanco */
 }
 
+/* Resumen del progreso */
 .progress-summary {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: flex;                            /* Layout flexbox */
+  align-items: center;                      /* Alineación vertical centrada */
+  gap: 15px;                                /* Espacio entre elementos */
 }
 
+/* Círculo de progreso */
 .progress-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;                              /* Ancho del círculo */
+  height: 60px;                             /* Alto del círculo */
+  border-radius: 50%;                       /* Forma circular */
+  background: rgba(255, 255, 255, 0.2);    /* Fondo semi-transparente */
+  display: flex;                            /* Layout flexbox */
+  align-items: center;                      /* Centrado vertical */
+  justify-content: center;                  /* Centrado horizontal */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
 }
 
+/* Texto dentro del círculo de progreso */
 .progress-text {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 16px;                          /* Tamaño de fuente */
+  font-weight: bold;                        /* Texto en negrita */
 }
 
+/* Detalles del progreso */
 .progress-details p {
-  margin: 3px 0;
-  opacity: 0.9;
-  font-size: 14px;
+  margin: 3px 0;                            /* Margen vertical pequeño */
+  opacity: 0.9;                             /* Ligeramente transparente */
+  font-size: 14px;                          /* Tamaño de fuente */
 }
 
+/* Mensaje de curso completado */
 .completion-message {
-  color: #90EE90 !important;
-  font-weight: bold;
+  color: #90EE90 !important;                /* Color verde claro con alta prioridad */
+  font-weight: bold;                        /* Texto en negrita */
 }
 
+/* Mensaje de elementos restantes */
 .remaining-message {
-  color: #FFE4B5 !important;
+  color: #FFE4B5 !important;                /* Color beige con alta prioridad */
 }
 
-/* Responsive adjustments */
+/* ===== AJUSTES RESPONSIVOS ADICIONALES ===== */
+
+/* Adaptaciones para pantallas pequeñas */
 @media (max-width: 768px) {
+  /* Resumen de progreso en columna */
   .progress-summary {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: column;                 /* Layout vertical */
+    align-items: flex-start;                /* Alineación a la izquierda */
+    gap: 10px;                              /* Espacio reducido */
   }
   
+  /* Círculo de progreso más pequeño */
   .progress-circle {
-    width: 50px;
-    height: 50px;
+    width: 50px;                            /* Ancho reducido */
+    height: 50px;                           /* Alto reducido */
   }
   
+  /* Texto de progreso más pequeño */
   .progress-text {
-    font-size: 14px;
+    font-size: 14px;                        /* Tamaño de fuente reducido */
   }
   
+  /* Cabecera de contenido más compacta */
   .content-header {
-    padding: 15px;
+    padding: 15px;                          /* Padding reducido */
   }
   
+  /* Título más pequeño */
   .content-header h1 {
-    font-size: 20px;
+    font-size: 20px;                        /* Tamaño de fuente reducido */
   }
 }

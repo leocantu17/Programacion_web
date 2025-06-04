@@ -1,35 +1,48 @@
+/* Contenedor principal centrado vertical y horizontal */
 .form-container {
-  max-width: 400px;
-  margin: auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: auto; /* Margen automático para centrar horizontalmente (sin position fixed) */
+  padding: 2rem; /* Espacio interior alrededor del contenido */
+  background: #fff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+
+  /* Posicionamiento fijo para centrar el formulario en la pantalla */
+  position: fixed; /* El contenedor se fija en la ventana del navegador */
+  top: 50%; /* Posición vertical al 50% de la pantalla */
+  left: 50%; /* Posición horizontal al 50% de la pantalla */
+  transform: translate(-50%, -50%); /* Desplaza el contenedor hacia arriba y a la izquierda la mitad de su tamaño para centrarlo perfectamente */
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho y alto total */
 }
 
+/* Estilos para el campo de texto (input) */
 input {
-  width: 100%;
-  padding: 0.8rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  width: 100%; /* El input ocupa todo el ancho del contenedor */
+  padding: 0.8rem; /* Espacio interior para hacer el input más grande y cómodo */
+  margin: 0.5rem 0; /* Margen vertical para separar de otros elementos */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  box-sizing: border-box; /* Padding y borde dentro del ancho total */
 }
 
+/* Estilos para el botón */
 button {
-  width: 100%;
-  padding: 0.8rem;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  width: 100%; /* El botón ocupa todo el ancho del contenedor */
+  padding: 0.8rem; /* Espacio interior para hacerlo más grande */
+  background: #4CAF50; /* Color verde */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
 }
 
+/* Efecto hover para el botón (al pasar el cursor) */
 button:hover {
-  background: #45a049;
+  background: #45a049; /* Verde un poco más oscuro para feedback visual */
 }
 
+/* Estilo para mostrar mensajes de error */
 .error {
-  color: red;
-  margin-bottom: 1rem;
+  color: red; /* Texto en rojo para destacar el error */
+  margin-bottom: 1rem; /* Espacio debajo para separar del siguiente contenido */
 }

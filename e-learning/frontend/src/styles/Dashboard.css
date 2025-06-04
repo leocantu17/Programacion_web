@@ -1,186 +1,212 @@
-/* Dashboard.css */
+/* Contenedor principal del dashboard que ocupa toda la altura visible */
 .dashboard-container {
-  min-height: 100vh;
-  padding: 2rem;
+  min-height: 100vh; /* Altura mínima: 100% del viewport */
+  padding: 2rem; /* Espacio interno alrededor */
 }
 
+/* Contenedor principal para centrar y limitar el ancho del contenido */
 .dashboard-main {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
+/* Encabezado del dashboard */
 .dashboard-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  color: white;
+  text-align: center; /* Centrar texto */
+  margin-bottom: 3rem; /* Margen inferior grande */
+  color: white; /* Texto blanco (pero el h1 lo sobrescribe) */
 }
 
+/* Título principal dentro del encabezado */
 .dashboard-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  color:black
+  font-size: 2.5rem; /* Tamaño grande */
+  margin-bottom: 0.5rem; /* Margen inferior pequeño */
+  font-weight: 700; /* Negrita */
+  color: black; /* Sobrescribe el blanco para texto negro */
 }
 
+/* Subtítulo del dashboard */
 .dashboard-subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  font-weight: 300;
-  color: black;
+  font-size: 1.2rem; /* Tamaño mediano */
+  opacity: 0.9; /* Ligera transparencia */
+  font-weight: 300; /* Texto delgado */
+  color: black; /* Color negro */
 }
 
+/* Sección de estadísticas con grid responsivo */
 .dashboard-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* Columnas adaptativas con mínimo 200px */
+  gap: 1.5rem; /* Separación entre tarjetas */
+  margin-bottom: 3rem; /* Margen inferior */
 }
 
+/* Tarjetas individuales de estadísticas */
 .stat-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+  backdrop-filter: blur(10px); /* Desenfoque de fondo */
+  border-radius: 16px; /* Bordes redondeados */
+  padding: 2rem; /* Espacio interno */
+  text-align: center; /* Texto centrado */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco translúcido */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
 
+/* Efecto hover para tarjetas de estadísticas */
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Levanta la tarjeta */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
 }
 
+/* Título dentro de las tarjetas de estadísticas */
 .stat-card h3 {
-  color: #4a5568;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
+  color: #4a5568; /* Gris oscuro */
+  font-size: 0.9rem; /* Tamaño pequeño */
+  margin-bottom: 1rem; /* Espacio debajo */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 1px; /* Espacio entre letras */
+  font-weight: 600; /* Semi-negrita */
 }
 
+/* Número principal dentro de la estadística */
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin: 0;
+  font-size: 2.5rem; /* Tamaño grande */
+  font-weight: 700; /* Negrita */
+  color: #2d3748; /* Gris oscuro */
+  margin: 0; /* Sin margen */
 }
 
+/* Sección que muestra los cursos */
 .dashboard-courses {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95); /* Fondo blanco translúcido */
+  backdrop-filter: blur(10px); /* Desenfoque fondo */
+  border-radius: 20px; /* Bordes redondeados más grandes */
+  padding: 2.5rem; /* Espacio interno */
+  margin-bottom: 2rem; /* Margen inferior */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
+/* Título de la sección cursos */
 .dashboard-courses h2 {
-  color: #2d3748;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  font-weight: 600;
+  color: #2d3748; /* Gris oscuro */
+  margin-bottom: 2rem; /* Margen inferior grande */
+  font-size: 1.8rem; /* Tamaño mediano */
+  font-weight: 600; /* Semi-negrita */
 }
 
+/* Grid para las tarjetas de cursos */
 .dashboard-courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+  /* Columnas adaptables mínimo 350px */
+  gap: 2rem; /* Espacio entre tarjetas */
 }
 
+/* Tarjeta individual de curso */
 .dashboard-course-card {
-  background: white;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  background: white; /* Fondo blanco */
+  border-radius: 16px; /* Bordes redondeados */
+  padding: 1.5rem; /* Espacio interno */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  border: 1px solid #e2e8f0; /* Borde gris claro */
+  transition: all 0.3s ease; /* Transiciones suaves */
+  cursor: pointer; /* Cursor mano */
+  position: relative; /* Para posicionar pseudo-elementos */
+  overflow: hidden; /* Oculta lo que sobresale */
 }
 
+/* Línea decorativa arriba de la tarjeta de curso (pseudo-elemento) */
 .dashboard-course-card::before {
-  content: '';
-  position: absolute;
+  content: ''; /* Elemento vacío */
+  position: absolute; /* Posición absoluta relativa al padre */
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #4299e1, #3182ce);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+  height: 4px; /* Altura de la línea */
+  background: linear-gradient(90deg, #4299e1, #3182ce); /* Degradado azul */
+  transform: scaleX(0); /* Oculto inicialmente (escala horizontal 0) */
+  transition: transform 0.3s ease; /* Transición suave */
 }
 
+/* Al pasar el cursor la línea se muestra */
 .dashboard-course-card:hover::before {
-  transform: scaleX(1);
+  transform: scaleX(1); /* Escala horizontal completa */
 }
 
+/* Efecto hover general para la tarjeta */
 .dashboard-course-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px); /* Levanta la tarjeta */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
 }
 
+/* Header de la tarjeta de curso (título + badge) */
 .course-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Separar elementos */
+  align-items: flex-start; /* Alinear arriba */
+  margin-bottom: 1rem; /* Margen inferior */
 }
 
+/* Título del curso */
 .course-card-header h3 {
-  color: #2d3748;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: 0;
-  flex: 1;
+  color: #2d3748; /* Gris oscuro */
+  font-size: 1.3rem; /* Tamaño mediano */
+  font-weight: 600; /* Semi-negrita */
+  margin: 0; /* Sin margen */
+  flex: 1; /* Ocupa todo el espacio posible */
 }
 
+/* Insignia de progreso */
 .progress-badge {
-  background: linear-gradient(135deg, #4299e1, #3182ce);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-left: 1rem;
+  background: linear-gradient(135deg, #4299e1, #3182ce); /* Degradado azul */
+  color: white; /* Texto blanco */
+  padding: 0.25rem 0.75rem; /* Espaciado vertical y horizontal */
+  border-radius: 20px; /* Bordes redondeados */
+  font-size: 0.8rem; /* Texto pequeño */
+  font-weight: 600; /* Semi-negrita */
+  margin-left: 1rem; /* Margen izquierdo */
 }
 
+/* Descripción del curso */
 .course-description {
-  color: #718096;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  color: #718096; /* Gris medio */
+  margin-bottom: 1.5rem; /* Margen inferior */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
 
+/* Sección que contiene la barra de progreso */
 .progress-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Margen inferior */
 }
 
+/* Información de progreso: texto y detalles */
 .progress-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Separar extremos */
+  align-items: center; /* Centrar vertical */
+  margin-bottom: 0.5rem; /* Margen inferior */
 }
 
+/* Texto descriptivo del progreso */
 .progress-text {
-  color: #4a5568;
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: #4a5568; /* Gris oscuro */
+  font-weight: 600; /* Semi-negrita */
+  font-size: 0.9rem; /* Tamaño pequeño */
 }
 
+/* Texto que indica capítulos completados */
 .chapters-completed {
-  color: #718096;
-  font-size: 0.8rem;
+  color: #718096; /* Gris medio */
+  font-size: 0.8rem; /* Texto pequeño */
 }
 
+/* Barra de progreso base */
 .progress-bar {
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
+  height: 8px; /* Altura fija */
+  background: #e2e8f0; /* Fondo gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que sobresale */
+  position: relative; /* Para elementos hijos posicionados */
 }
-
