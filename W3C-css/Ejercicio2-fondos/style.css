@@ -1,0 +1,12 @@
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+p {
+  color: hsl(120, 100%, 25%);
+  background-size: cover;
+}

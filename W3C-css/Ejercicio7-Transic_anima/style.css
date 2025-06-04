@@ -1,0 +1,22 @@
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+@keyframes slide {
+  from {margin-left: 0;}
+  to {margin-left: 100px;}
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  animation: slide 2s infinite alternate;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}

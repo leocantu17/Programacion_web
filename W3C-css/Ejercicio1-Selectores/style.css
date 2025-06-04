@@ -1,0 +1,14 @@
+/* Selector de etiqueta */
+p {
+  color: blue;
+}
+
+/* Selector de clase */
+.highlight {
+  background-color: yellow;
+}
+
+/* Selector de ID */
+#main-title {
+  font-size: 24px;
+}

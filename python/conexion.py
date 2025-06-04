@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configuración de la conexión a la base de datos MySQL
 db_config = {
-    'host': '172.16.186.174',        # Dirección IP del servidor MySQL
+    'host': '192.168.43.132',        # Dirección IP del servidor MySQL
     'port': 3306,                    # Puerto de conexión
     'user': 'LEO',                   # Usuario de la base de datos
     'password': 'Leonardo123*',      # Contraseña del usuario

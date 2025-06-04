@@ -1,0 +1,10 @@
+:root {
+  --main-color: #3498db;
+  --padding: 10px;
+}
+
+.box {
+  background-color: var(--main-color);
+  padding: var(--padding);
+  color: white;
+}
