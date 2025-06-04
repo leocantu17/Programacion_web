@@ -1,22 +1,22 @@
 .button {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  transition: background-color 0.5s ease;
+  background-color: blue;           /* Fondo azul para el botón */
+  color: white;                     /* Texto blanco */
+  padding: 10px;                    /* Espaciado interno de 10px */
+  transition: background-color 0.5s ease; /* Transición suave de 0.5 segundos en el cambio del color de fondo */
 }
 
 .button:hover {
-  background-color: red;
+  background-color: red;            /* Cambia el fondo a rojo cuando el cursor está sobre el botón */
 }
 
 @keyframes slide {
-  from {margin-left: 0;}
-  to {margin-left: 100px;}
+  from { margin-left: 0; }          /* Animación inicia con margen izquierdo 0 */
+  to { margin-left: 100px; }        /* Termina con margen izquierdo 100px */
 }
 
 .animated-box {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  animation: slide 2s infinite alternate;
+  width: 100px;                    /* Ancho fijo de 100px */
+  height: 100px;                   /* Alto fijo de 100px */
+  background-color: orange;        /* Fondo naranja */
+  animation: slide 2s infinite alternate; /* Aplica la animación "slide" que dura 2 segundos, se repite infinitamente y alterna dirección */
 }

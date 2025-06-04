@@ -1,6 +1,6 @@
 .box {
-  width: 200px;
-  padding: 20px;
-  border: 5px solid black;
-  margin: 10px;
+  width: 200px;              /* Ancho fijo de la caja de 200 píxeles */
+  padding: 20px;             /* Espacio interior entre el borde y el contenido */
+  border: 5px solid black;   /* Borde negro sólido de 5 píxeles de grosor */
+  margin: 10px;              /* Espacio exterior que separa la caja de otros elementos */
 }

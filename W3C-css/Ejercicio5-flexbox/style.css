@@ -1,12 +1,12 @@
 .container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 200px;
+  display: flex;               /* Activa Flexbox en el contenedor */
+  justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+  align-items: center;         /* Centra los elementos verticalmente dentro del contenedor */
+  height: 200px;               /* Altura fija de 200 píxeles para el contenedor */
 }
 
 .item {
-  background-color: lightblue;
-  padding: 20px;
-  margin: 10px;
+  background-color: lightblue; /* Fondo azul claro para cada elemento */
+  padding: 20px;               /* Espacio interno de 20 píxeles alrededor del contenido */
+  margin: 10px;                /* Espacio externo de 10 píxeles entre elementos */
 }

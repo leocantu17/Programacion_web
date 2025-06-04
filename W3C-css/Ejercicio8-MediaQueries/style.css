@@ -1,9 +1,9 @@
 body {
-  background-color: white;
+  background-color: white; /* Fondo blanco por defecto para el body */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* Media query: aplica estilos cuando el ancho de la ventana es 600px o menos */
   body {
-    background-color: lightgray;
+    background-color: lightgray; /* Cambia el fondo a gris claro en pantallas pequeñas */
   }
 }

@@ -1,11 +1,14 @@
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
+  display: grid;              /* Activa el layout de CSS Grid en el contenedor */
+  grid-template-columns: repeat(3, 1fr); /* Define 3 columnas iguales */
+  gap: 10px;                  /* Espacio de 10px entre filas y columnas */
+  padding: 10px;              /* Espacio interno alrededor del grid */
 }
 
 .grid-item {
-  background-color: lightgreen;
-  padding: 20px;
-  text-align: center;
+  background-color: lightcoral; /* Color de fondo para los ítems */
+  padding: 20px;               /* Espacio interno dentro de cada ítem */
+  text-align: center;          /* Centra el texto dentro del ítem */
+  font-size: 1.5rem;           /* Tamaño de fuente grande para visibilidad */
+  color: white;                /* Color de texto blanco */
 }

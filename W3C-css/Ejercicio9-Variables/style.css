@@ -1,10 +1,10 @@
 :root {
-  --main-color: #3498db;
-  --padding: 10px;
+  --main-color: #3498db; /* Definición de la variable CSS --main-color con un azul */
+  --padding: 10px;       /* Definición de la variable CSS --padding con 10 píxeles */
 }
 
 .box {
-  background-color: var(--main-color);
-  padding: var(--padding);
-  color: white;
+  background-color: var(--main-color); /* Aplica el color definido en --main-color como fondo */
+  padding: var(--padding);              /* Aplica el valor de --padding como espacio interno */
+  color: white;                        /* Texto en color blanco */
 }

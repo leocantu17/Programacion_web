@@ -1,12 +1,12 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Color de fondo gris claro para toda la página */
 }
 
 h1 {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0); /* Color rojo brillante para los encabezados h1 */
 }
 
 p {
-  color: hsl(120, 100%, 25%);
-  background-size: cover;
+  color: hsl(120, 100%, 25%); /* Color verde oscuro para todos los párrafos */
+  background-size: cover; /* Escala el fondo para cubrir completamente el área del párrafo */
 }

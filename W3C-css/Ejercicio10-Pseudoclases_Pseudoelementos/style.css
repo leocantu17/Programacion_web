@@ -1,8 +1,8 @@
 a:hover {
-  color: red;
+  color: red; /* Cambia el color del texto del enlace a rojo cuando el cursor está sobre él */
 }
 
 p::first-letter {
-  font-size: 2em;
-  color: green;
+  font-size: 2em; /* Aumenta el tamaño de la primera letra del párrafo al doble del tamaño base */
+  color: green;  /* Cambia el color de la primera letra del párrafo a verde */
 }

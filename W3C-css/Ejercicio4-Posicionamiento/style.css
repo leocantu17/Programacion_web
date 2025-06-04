@@ -1,17 +1,17 @@
 .relative-box {
-  position: relative;
-  left: 30px;
-  top: 20px;
+  position: relative; /* Posiciona el elemento relativo a su posición normal */
+  left: 30px;        /* Desplaza el elemento 30 píxeles a la derecha desde su posición original */
+  top: 20px;         /* Desplaza el elemento 20 píxeles hacia abajo desde su posición original */
 }
 
 .absolute-box {
-  position: absolute;
-  top: 50px;
-  left: 100px;
+  position: absolute; /* Posiciona el elemento absolutamente respecto al primer ancestro posicionado */
+  top: 50px;          /* Desplaza el elemento 50 píxeles desde la parte superior del contenedor posicionado */
+  left: 100px;        /* Desplaza el elemento 100 píxeles desde la izquierda del contenedor posicionado */
 }
 
 .fixed-box {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+  position: fixed;   /* Posiciona el elemento fijo en la ventana del navegador, permanece visible al hacer scroll */
+  bottom: 10px;      /* Lo posiciona a 10 píxeles desde la parte inferior de la ventana */
+  right: 10px;       /* Lo posiciona a 10 píxeles desde la derecha de la ventana */
 }
