@@ -1,0 +1,151 @@
+<!-- Declaración del tipo de documento. HTML5 en este caso. -->
+<!DOCTYPE html>
+
+<!-- Etiqueta raíz del documento. El atributo lang="es" indica que el idioma del contenido es español. -->
+<html lang="es">
+
+<head>
+    <!-- Establece la codificación de caracteres como UTF-8, permitiendo caracteres como tildes, ñ, etc. -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea responsiva en dispositivos móviles. 
+         width=device-width: el ancho se ajusta al dispositivo.
+         initial-scale=1.0: establece el nivel de zoom inicial. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página que aparece en la pestaña del navegador. -->
+    <title>Café Aromático - Tu Rincón Favorito</title>
+</head>
+
+<!-- Cuerpo del documento. Todo lo visible por el usuario va dentro de esta etiqueta. -->
+<body>
+
+    <!-- h1: Encabezado principal del sitio. 
+         style: se aplica estilo directamente al elemento. -->
+    <h1 style="color: #6F4E37; text-align: center;">
+        <!-- 
+            CSS:
+            - color: #6F4E37 → Define el color del texto (marrón tipo café).
+            - text-align: center → Centra el texto horizontalmente.
+        -->
+        Café Aromático
+    </h1>
+
+    <!-- h2: Subtítulo, ligeramente menos importante que h1. -->
+    <h2 style="color: #8B4513; text-align: center;">
+        <!-- 
+            CSS:
+            - color: #8B4513 → Color Marrón intermedio.
+            - text-align: center → Centra el texto.
+        -->
+        Tu Rincón Favorito para Desconectar
+    </h2>
+
+    <!-- hr: línea horizontal usada como separación visual de secciones. -->
+    <hr>
+
+    <!-- p: párrafo con texto. El estilo mejora la legibilidad del texto. -->
+    <p style="font-size: 1.1em; line-height: 1.6; text-align: justify;">
+        <!-- 
+            CSS:
+            font-size: 1.1em → Aumenta el tamaño del texto en un 10%.
+            line-height: 1.6 → Incrementa el interlineado (espaciado entre líneas).
+            text-align: justify → Justifica el texto en ambos márgenes.
+        -->
+
+        <!-- strong: da énfasis al texto (negrita semántica). -->
+        ¡Bienvenido a <strong>Café Aromático</strong>! 
+
+        <!-- mark: resalta el texto como si estuviera subrayado con marcador. -->
+        Sumérgete en un mundo de sabores y aromas inigualables.
+        Nuestro objetivo es ofrecerte un <mark>ambiente acogedor</mark> y la mejor calidad en cada taza.
+
+        <!-- ins: indica texto insertado o añadido, puede mostrarse subrayado. -->
+        Te invitamos a <ins>relajarte</ins> y disfrutar de una experiencia única.
+    </p>
+
+    <!-- h3: subtítulo de tercer nivel. -->
+    <h3 style="color: #A0522D;">
+        <!-- 
+            CSS:
+            color: #A0522D → Marrón claro, coherente con la estética de café.
+        -->
+        Nuestros Productos
+    </h3>
+
+    <!-- p: nuevo párrafo descriptivo. -->
+    <p>
+        Descubre nuestra 
+        <!-- span: etiqueta genérica para aplicar estilos a una parte del texto. -->
+        <span style="font-weight: bold;">
+            <!-- 
+                CSS:
+                font-weight: bold → Aplica negrita al texto.
+            -->
+            selección artesanal
+        </span>:
+    </p>
+
+    <p><strong>Cafés:</strong></p>
+    <!--ul: lista no ordenada de productos (cafés). -->
+    <ul>
+        <!-- li: elemento de lista. Cada uno representa un ítem. -->
+        <li>Espresso Clásico</li>
+        <li>
+            Latte Cremoso 
+            <!-- em: enfatiza el texto (se muestra en cursiva). -->
+            (con opciones de leche <em>vegetal</em>)
+        </li>
+        <li>Cappuccino Tradicional</li>
+        <li>Mocaccino Dulce</li>
+    </ul>
+
+    <p><strong>Postres Caseros:</strong></p>
+    <!-- Lista ordenada de postres. ol: lista numerada. -->
+    <ol>
+        <li>
+            Tarta de Chocolate 
+            <span style="color: #8B4513;">
+                <!-- 
+                    CSS:
+                    color: #8B4513 →  Aplica un tono marrón a este texto adicional para destacarlo.
+                -->
+                (¡nuestra especialidad!)
+            </span>
+        </li>
+        <li>Cheesecake de Frutos Rojos</li>
+        <li>Galletas de Avena con Pasas</li>
+    </ol>
+
+    <!-- Nueva sección de contenido -->
+    <h3 style="color: #A0522D;">
+        <!-- 
+            CSS:
+            color: #A0522D → Mismo color para mantener la identidad visual.
+        -->
+        Nuestra Filosofía
+    </h3>
+
+    <p>
+        En Café Aromático, creemos que cada momento merece una taza de café perfecta.
+        Nos esforzamos por seleccionar los granos de la más 
+
+        <!-- del: indica texto eliminado, aparece tachado. -->
+        <del>baja</del> 
+
+        <!-- ins: texto añadido. Puede representarse subrayado. -->
+        <ins>alta</ins> calidad, provenientes de cultivos sostenibles.
+
+        <!-- sup: texto en superíndice (útil para notas, fórmulas, etc.). -->
+        Nuestra pasión es servir <sup>felicidad</sup> en cada sorbo.
+    </p>
+
+    <!-- small: texto más pequeño, generalmente usado para notas. -->
+    <p>
+        <small>
+            Nota: La cafeína puede variar por bebida. Consulta a nuestro personal para más detalles.
+        </small>
+    </p>
+
+</body>
+</html>

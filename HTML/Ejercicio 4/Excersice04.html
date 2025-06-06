@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de México - Recetas Auténticas</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #c0392b; /* Rojo tradicional */
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #e67e22; /* Naranja cálido */
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #c0392b;
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+            display: inline-block; /* Para que el borde se ajuste al texto */
+            text-align: center;
+            width: 100%; /* Ocupa todo el ancho disponible */
+        }
+
+        h4 {
+            color: #2c3e50; /* Gris oscuro */
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed #ccc;
+            margin: 30px 0;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px; /* Limita el ancho del párrafo para legibilidad */
+            margin: 0 auto 20px auto; /* Centra el párrafo */
+        }
+
+        .recipe-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra las tarjetas en el contenedor */
+            gap: 25px; /* Espacio entre las tarjetas */
+            margin-top: 20px;
+        }
+
+        .recipe-card {
+            width: 320px; /* Ancho fijo para cada tarjeta */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+            box-sizing: border-box; /* Incluye padding y borde en el width */
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: left; /* Títulos de tarjeta alineados a la izquierda */
+            color: #c0392b;
+        }
+
+        .recipe-card p {
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            text-align: left; /* Párrafos de tarjeta alineados a la izquierda */
+        }
+
+        .recipe-card h5 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        .recipe-card ul {
+            list-style-type: disc; /* Vuelven los bullets estándar */
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .recipe-card ul li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .recipe-card a {
+            display: block; /* El enlace ocupa toda la línea */
+            text-align: right;
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .recipe-card a:hover {
+            color: #c0392b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85em;
+            color: #7f8c8d;
+        }
+
+        footer a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+<body>
+
+    <h1>Sabores de México</h1>
+    <h2>Recetas Auténticas para Disfrutar</h2>
+
+    <nav>
+        <a href="#sopas">Sopas</a>
+        <a href="#platos-principales">Platos Principales</a>
+        <a href="#postres">Postres</a>
+    </nav>
+
+    <hr>
+
+    <p>
+        ¡Bienvenido a un festín de sabores! Aquí encontrarás recetas tradicionales de la cocina mexicana,
+        desde sopas reconfortantes hasta postres deliciosos. ¡Prepárate para cocinar y disfrutar!
+    </p>
+
+    <hr>
+
+    <h3 id="sopas">Sopas</h3>
+
+    <div class="recipe-section">
+
+        <div class="recipe-card">
+            <img src="./assets/sopa-tortilla.jpeg" alt="Sopa de Tortilla">
+            <h4>Sopa de Tortilla</h4>
+            <p>Un clásico reconfortante con tortilla frita, aguacate y queso.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Tortillas</li>
+                <li>Tomate</li>
+                <li>Cebolla</li>
+                <li>Ajo</li>
+                <li>Caldo de pollo</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+        <div class="recipe-card">
+            <img src="./assets/Pozole.webp" alt="Pozole">
+            <h4>Pozole</h4>
+            <p>Un caldo rico con maíz cacahuazintle y carne, tradicional para celebraciones.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Maíz cacahuazintle</li>
+                <li>Carne de cerdo o pollo</li>
+                <li>Chile ancho</li>
+                <li>Orégano</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3 id="platos-principales">Platos Principales</h3>
+
+    <div class="recipe-section">
+
+        <div class="recipe-card">
+            <img src="./assets//pastor.jpeg" alt="Tacos al Pastor">
+            <h4>Tacos al Pastor</h4>
+            <p>Carne de cerdo marinada y cocinada en un trompo vertical.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Carne de cerdo</li>
+                <li>Piña</li>
+                <li>Chile guajillo</li>
+                <li>Cebolla</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://peopleenespanol.com/thmb/jZqckY5Qzfmc1ibnxnr6pZpxCSY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/enchiladas-verdes-con-pollo-2000-cf4dccfe73014347be4826ffc9e3fdaa.jpg" alt="Enchiladas Verdes">
+            <h4>Enchiladas Verdes</h4>
+            <p>Tortillas de maíz rellenas y bañadas en salsa verde.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Tortillas de maíz</li>
+                <li>Pollo</li>
+                <li>Salsa verde</li>
+                <li>Queso</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3 id="postres">Postres</h3>
+
+    <div class="recipe-section">
+
+        <div class="recipe-card">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RZMDKNR2D5H4LH2KHQHFELJCYA.jpeg" alt="Churros">
+            <h4>Churros</h4>
+            <p>Deliciosos palitos de masa frita, espolvoreados con azúcar y canela.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Harina</li>
+                <li>Agua</li>
+                <li>Azúcar</li>
+                <li>Canela</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/54c6cbcbc6d611e056122d64560cd9c1.jpg" alt="Flan">
+            <h4>Flan</h4>
+            <p>Un postre cremoso a base de huevo, leche y caramelo.</p>
+            <h5>Ingredientes:</h5>
+            <ul>
+                <li>Huevo</li>
+                <li>Leche</li>
+                <li>Azúcar</li>
+                <li>Vainilla</li>
+            </ul>
+            <a href="#">Ver receta completa</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Sabores de México. ¡Buen provecho!</p>
+        <p>Contacto: <a href="mailto:info@saboresdemexico.com">info@saboresdemexico.com</a></p>
+    </footer>
+
+</body>
+</html>

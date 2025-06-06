@@ -1,0 +1,501 @@
+<!-- Declaración del tipo de documento. HTML5 en este caso. -->
+<!DOCTYPE html>
+
+<!-- Etiqueta raíz del documento. El atributo lang="es" indica que el idioma del contenido es español. -->
+<html lang="es">
+
+<head>
+    <!-- Establece la codificación de caracteres como UTF-8, permitiendo caracteres como tildes, ñ, etc. -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página sea responsiva en dispositivos móviles. 
+         width=device-width: el ancho se ajusta al dispositivo.
+         initial-scale=1.0: establece el nivel de zoom inicial. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página que aparece en la pestaña del navegador. -->
+    <title>Contacto - Viajes del Puerto (Tampico)</title>
+</head>
+
+<!-- Cuerpo del documento. Todo lo visible por el usuario va dentro de esta etiqueta. -->
+<body>
+
+    <!-- h1: Encabezado principal del sitio. -->
+    <h1 style="color: #0056b3; text-align: center;">
+        <!-- 
+            CSS:
+            color: #0056b3 → Define el color del texto (azul corporativo oscuro).
+            text-align: center → Centra el texto horizontalmente.
+        -->
+        Viajes del Puerto
+    </h1>
+
+    <!-- h2: Subtítulo, ligeramente menos importante que h1. -->
+    <h2 style="color: #007bff; text-align: center;">
+        <!-- 
+            CSS:
+            color: #007bff → Color azul más claro, coherente con la identidad corporativa.
+            text-align: center → Centra el texto.
+        -->
+        ¡Tu Próxima Aventura Comienza Aquí!
+    </h2>
+
+    <!-- hr: línea horizontal usada como separación visual de secciones. -->
+    <hr style="border-top: 1px solid #ddd;">
+        <!-- 
+            CSS:
+            border-top: 1px solid #ddd → Crea una línea superior de 1px sólida en color gris claro.
+        -->
+
+    <!-- h3: Subtítulo de tercer nivel. -->
+    <h3 style="color: #343a40; text-align: center; margin-bottom: 20px;">
+        <!-- 
+            CSS:
+            color: #343a40 → Color gris oscuro para contraste visual.
+            text-align: center → Centra el texto.
+            margin-bottom: 20px → Agrega espacio de 20px debajo del elemento.
+        -->
+        Envíanos tu Consulta
+    </h3>
+
+    <!-- form: formulario principal para recopilar información del usuario. -->
+    <form action="/enviar-formulario" method="POST" style="width: 80%; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;">
+        <!-- 
+            Atributos:
+            action="/enviar-formulario" → URL donde se enviarán los datos del formulario.
+            method="POST" → Método HTTP para enviar datos de forma segura.
+            
+            CSS:
+            width: 80% → El formulario ocupa el 80% del ancho disponible.
+            margin: 0 auto → Centra el formulario horizontalmente.
+            padding: 20px → Espaciado interno de 20px en todos los lados.
+            border: 1px solid #ccc → Borde sólido de 1px en color gris claro.
+            border-radius: 8px → Esquinas redondeadas de 8px.
+            background-color: #f9f9f9 → Fondo gris muy claro.
+        -->
+
+        <!-- fieldset: agrupa elementos relacionados del formulario. -->
+        <fieldset style="border: 1px solid #bbb; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+            <!-- 
+                CSS:
+                border: 1px solid #bbb → Borde sólido de 1px en gris medio.
+                padding: 15px → Espaciado interno de 15px.
+                margin-bottom: 20px → Espacio de 20px debajo del fieldset.
+                border-radius: 5px → Esquinas redondeadas de 5px.
+            -->
+
+            <!-- legend: título descriptivo del fieldset. -->
+            <legend style="font-weight: bold; color: #007bff;">
+                <!-- 
+                    CSS:
+                    font-weight: bold → Aplica negrita al texto.
+                    color: #007bff → Color azul corporativo.
+                -->
+                Datos Personales
+            </legend>
+
+            <!-- label: etiqueta descriptiva para el campo de entrada. -->
+            <label for="nombre" style="display: block; margin-bottom: 5px;">
+                <!-- 
+                    Atributo:
+                    for="nombre" → Asocia la etiqueta con el input que tiene id="nombre".
+                    
+                    CSS:
+                    display: block → Hace que la etiqueta ocupe toda la línea.
+                    margin-bottom: 5px → Espacio de 5px debajo de la etiqueta.
+                -->
+                Nombre Completo:
+            </label>
+
+            <!-- input: campo de entrada de texto. -->
+            <input type="text" id="nombre" name="nombre_completo" required placeholder="Ej. Juan Pérez" style="width: calc(100% - 12px); padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <!-- 
+                    Atributos:
+                    type="text" → Define el tipo de entrada como texto.
+                    id="nombre" → Identificador único del elemento.
+                    name="nombre_completo" → Nombre del campo al enviar el formulario.
+                    required → Campo obligatorio.
+                    placeholder="Ej. Juan Pérez" → Texto de ejemplo dentro del campo.
+                    
+                    CSS:
+                    width: calc(100% - 12px) → Ancho del 100% menos 12px para compensar el padding.
+                    padding: 8px → Espaciado interno de 8px.
+                    margin-bottom: 15px → Espacio de 15px debajo del input.
+                    border: 1px solid #ccc → Borde sólido gris claro.
+                    border-radius: 4px → Esquinas redondeadas de 4px.
+                -->
+
+            <label for="email" style="display: block; margin-bottom: 5px;">
+                <!-- 
+                    CSS:
+                    display: block → Hace que la etiqueta ocupe toda la línea.
+                    margin-bottom: 5px → Espacio de 5px debajo de la etiqueta.
+                -->
+                Correo Electrónico:
+            </label>
+
+            <!-- input: campo de entrada de email con validación automática. -->
+            <input type="email" id="email" name="correo_electronico" required placeholder="ejemplo@dominio.com" style="width: calc(100% - 12px); padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <!-- 
+                    Atributos:
+                    type="email" → Valida automáticamente el formato de email.
+                    id="email" → Identificador único del elemento.
+                    name="correo_electronico" → Nombre del campo al enviar el formulario.
+                    required → Campo obligatorio.
+                    placeholder="ejemplo@dominio.com" → Texto de ejemplo dentro del campo.
+                    
+                    CSS:
+                    width: calc(100% - 12px) → Ancho del 100% menos 12px para compensar el padding.
+                    padding: 8px → Espaciado interno de 8px.
+                    margin-bottom: 15px → Espacio de 15px debajo del input.
+                    border: 1px solid #ccc → Borde sólido gris claro.
+                    border-radius: 4px → Esquinas redondeadas de 4px.
+                -->
+
+            <label for="telefono" style="display: block; margin-bottom: 5px;">
+                <!-- 
+                    CSS:
+                    display: block → Hace que la etiqueta ocupe toda la línea.
+                    margin-bottom: 5px → Espacio de 5px debajo de la etiqueta.
+                -->
+                Número de Teléfono (opcional):
+            </label>
+
+            <!-- input: campo de entrada de teléfono con patrón de validación. -->
+            <input type="tel" id="telefono" name="numero_telefono" placeholder="Ej. 833-123-4567" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" style="width: calc(100% - 12px); padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <!-- 
+                    Atributos:
+                    type="tel" → Define el tipo de entrada como teléfono.
+                    id="telefono" → Identificador único del elemento.
+                    name="numero_telefono" → Nombre del campo al enviar el formulario.
+                    placeholder="Ej. 833-123-4567" → Texto de ejemplo dentro del campo.
+                    pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" → Patrón de validación para formato de teléfono.
+                    
+                    CSS:
+                    width: calc(100% - 12px) → Ancho del 100% menos 12px para compensar el padding.
+                    padding: 8px → Espaciado interno de 8px.
+                    margin-bottom: 15px → Espacio de 15px debajo del input.
+                    border: 1px solid #ccc → Borde sólido gris claro.
+                    border-radius: 4px → Esquinas redondeadas de 4px.
+                -->
+
+            <!-- small: texto informativo en tamaño pequeño. -->
+            <small style="color: #666; font-size: 0.85em;">
+                <!-- 
+                    CSS:
+                    color: #666 → Color gris medio para texto secundario.
+                    font-size: 0.85em → Tamaño de fuente reducido al 85%.
+                -->
+                Formato: 123-456-7890 o 1234567890
+            </small>
+        </fieldset>
+
+        <!-- fieldset: segundo grupo de campos relacionados. -->
+        <fieldset style="border: 1px solid #bbb; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+            <!-- 
+                CSS:
+                border: 1px solid #bbb → Borde sólido de 1px en gris medio.
+                padding: 15px → Espaciado interno de 15px.
+                margin-bottom: 20px → Espacio de 20px debajo del fieldset.
+                border-radius: 5px → Esquinas redondeadas de 5px.
+            -->
+
+            <legend style="font-weight: bold; color: #007bff;">
+                <!-- 
+                    CSS:
+                    font-weight: bold → Aplica negrita al texto.
+                    color: #007bff → Color azul corporativo.
+                -->
+                Preferencia de Viaje
+            </legend>
+
+            <!-- p: párrafo introductorio para las opciones de radio. -->
+            <p style="margin-bottom: 10px;">
+                <!-- 
+                    CSS:
+                    margin-bottom: 10px → Espacio de 10px debajo del párrafo.
+                -->
+                ¿Qué tipo de viaje te interesa?
+            </p>
+
+            <!-- input: botón de radio para selección única. -->
+            <input type="radio" id="vacaciones" name="tipo_viaje" value="vacaciones">
+                <!-- 
+                    Atributos:
+                    type="radio" → Botón de radio para selección única.
+                    id="vacaciones" → Identificador único del elemento.
+                    name="tipo_viaje" → Nombre del grupo de opciones.
+                    value="vacaciones" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="vacaciones" style="margin-right: 20px;">
+                <!-- 
+                    CSS:
+                    margin-right: 20px → Espacio de 20px a la derecha de la etiqueta.
+                -->
+                Vacaciones
+            </label><br>
+
+            <input type="radio" id="negocios" name="tipo_viaje" value="negocios">
+                <!-- 
+                    Atributos:
+                    type="radio" → Botón de radio para selección única.
+                    id="negocios" → Identificador único del elemento.
+                    name="tipo_viaje" → Nombre del grupo de opciones.
+                    value="negocios" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="negocios" style="margin-right: 20px;">
+                <!-- 
+                    CSS:
+                    margin-right: 20px → Espacio de 20px a la derecha de la etiqueta.
+                -->
+                Negocios
+            </label><br>
+
+            <input type="radio" id="aventura" name="tipo_viaje" value="aventura">
+                <!-- 
+                    Atributos:
+                    type="radio" → Botón de radio para selección única.
+                    id="aventura" → Identificador único del elemento.
+                    name="tipo_viaje" → Nombre del grupo de opciones.
+                    value="aventura" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="aventura">Aventura</label>
+        </fieldset>
+
+        <!-- fieldset: tercer grupo de campos relacionados. -->
+        <fieldset style="border: 1px solid #bbb; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+            <!-- 
+                CSS:
+                border: 1px solid #bbb → Borde sólido de 1px en gris medio.
+                padding: 15px → Espaciado interno de 15px.
+                margin-bottom: 20px → Espacio de 20px debajo del fieldset.
+                border-radius: 5px → Esquinas redondeadas de 5px.
+            -->
+
+            <legend style="font-weight: bold; color: #007bff;">
+                <!-- 
+                    CSS:
+                    font-weight: bold → Aplica negrita al texto.
+                    color: #007bff → Color azul corporativo.
+                -->
+                Intereses Específicos
+            </legend>
+
+            <p style="margin-bottom: 10px;">
+                <!-- 
+                    CSS:
+                    margin-bottom: 10px → Espacio de 10px debajo del párrafo.
+                -->
+                ¿Qué te gustaría incluir en tu viaje?
+            </p>
+
+            <!-- input: checkbox para selección múltiple. -->
+            <input type="checkbox" id="vuelos" name="intereses" value="vuelos">
+                <!-- 
+                    Atributos:
+                    type="checkbox" → Casilla de verificación para selección múltiple.
+                    id="vuelos" → Identificador único del elemento.
+                    name="intereses" → Nombre del grupo de opciones.
+                    value="vuelos" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="vuelos" style="margin-right: 15px;">
+                <!-- 
+                    CSS:
+                    margin-right: 15px → Espacio de 15px a la derecha de la etiqueta.
+                -->
+                Vuelos
+            </label>
+
+            <input type="checkbox" id="hoteles" name="intereses" value="hoteles">
+                <!-- 
+                    Atributos:
+                    type="checkbox" → Casilla de verificación para selección múltiple.
+                    id="hoteles" → Identificador único del elemento.
+                    name="intereses" → Nombre del grupo de opciones.
+                    value="hoteles" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="hoteles" style="margin-right: 15px;">
+                <!-- 
+                    CSS:
+                    margin-right: 15px → Espacio de 15px a la derecha de la etiqueta.
+                -->
+                Hoteles
+            </label>
+
+            <input type="checkbox" id="tours" name="intereses" value="tours">
+                <!-- 
+                    Atributos:
+                    type="checkbox" → Casilla de verificación para selección múltiple.
+                    id="tours" → Identificador único del elemento.
+                    name="intereses" → Nombre del grupo de opciones.
+                    value="tours" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="tours" style="margin-right: 15px;">
+                <!-- 
+                    CSS:
+                    margin-right: 15px → Espacio de 15px a la derecha de la etiqueta.
+                -->
+                Tours Guiados
+            </label>
+
+            <input type="checkbox" id="cruceros" name="intereses" value="cruceros">
+                <!-- 
+                    Atributos:
+                    type="checkbox" → Casilla de verificación para selección múltiple.
+                    id="cruceros" → Identificador único del elemento.
+                    name="intereses" → Nombre del grupo de opciones.
+                    value="cruceros" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <label for="cruceros">Cruceros</label>
+        </fieldset>
+
+        <label for="destino" style="display: block; margin-bottom: 5px;">
+            <!-- 
+                CSS:
+                display: block → Hace que la etiqueta ocupe toda la línea.
+                margin-bottom: 5px → Espacio de 5px debajo de la etiqueta.
+            -->
+            Destino de Interés:
+        </label>
+
+        <!-- select: menú desplegable de opciones. -->
+        <select id="destino" name="destino_interes" style="width: calc(100% - 12px); padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            <!-- 
+                Atributos:
+                id="destino" → Identificador único del elemento.
+                name="destino_interes" → Nombre del campo al enviar el formulario.
+                
+                CSS:
+                width: calc(100% - 12px) → Ancho del 100% menos 12px para compensar el padding.
+                padding: 8px → Espaciado interno de 8px.
+                margin-bottom: 15px → Espacio de 15px debajo del select.
+                border: 1px solid #ccc → Borde sólido gris claro.
+                border-radius: 4px → Esquinas redondeadas de 4px.
+            -->
+
+            <!-- option: opciones individuales del menú desplegable. -->
+            <option value="">Selecciona un destino</option>
+                <!-- 
+                    Atributo:
+                    value="" → Valor vacío para opción por defecto.
+                -->
+
+            <option value="cancun">Cancún</option>
+                <!-- 
+                    Atributo:
+                    value="cancun" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <option value="riviera_maya">Riviera Maya</option>
+                <!-- 
+                    Atributo:
+                    value="riviera_maya" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <option value="cdmx">Ciudad de México</option>
+                <!-- 
+                    Atributo:
+                    value="cdmx" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <option value="puerto_vallarta">Puerto Vallarta</option>
+                <!-- 
+                    Atributo:
+                    value="puerto_vallarta" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <option value="tampico">Tampico y alrededores</option>
+                <!-- 
+                    Atributo:
+                    value="tampico" → Valor enviado al seleccionar esta opción.
+                -->
+
+            <option value="otro">Otro (especificar en mensaje)</option>
+                <!-- 
+                    Atributo:
+                    value="otro" → Valor enviado al seleccionar esta opción.
+                -->
+        </select>
+
+        <label for="mensaje" style="display: block; margin-bottom: 5px;">
+            <!-- 
+                CSS:
+                display: block → Hace que la etiqueta ocupe toda la línea.
+                margin-bottom: 5px → Espacio de 5px debajo de la etiqueta.
+            -->
+            Tu Mensaje o Requisitos:
+        </label>
+
+        <!-- textarea: área de texto multilínea. -->
+        <textarea id="mensaje" name="mensaje_usuario" rows="5" placeholder="Escribe aquí tu consulta o lo que necesitas..." style="width: calc(100% - 12px); padding: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+            <!-- 
+                Atributos:
+                id="mensaje" → Identificador único del elemento.
+                name="mensaje_usuario" → Nombre del campo al enviar el formulario.
+                rows="5" → Número de líneas visibles del textarea.
+                placeholder="Escribe aquí tu consulta..." → Texto de ejemplo dentro del campo.
+                
+                CSS:
+                width: calc(100% - 12px) → Ancho del 100% menos 12px para compensar el padding.
+                padding: 8px → Espaciado interno de 8px.
+                margin-bottom: 20px → Espacio de 20px debajo del textarea.
+                border: 1px solid #ccc → Borde sólido gris claro.
+                border-radius: 4px → Esquinas redondeadas de 4px.
+                resize: vertical → Permite redimensionar solo verticalmente.
+            -->
+
+        <!-- button: botón de envío del formulario. -->
+        <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; display: block; margin: 0 auto;">
+            <!-- 
+                Atributo:
+                type="submit" → Define el botón como de envío del formulario.
+                
+                CSS:
+                background-color: #28a745 → Color de fondo verde.
+                color: white → Color del texto blanco.
+                padding: 10px 20px → Espaciado interno de 10px arriba/abajo, 20px izquierda/derecha.
+                border: none → Sin borde.
+                border-radius: 5px → Esquinas redondeadas de 5px.
+                cursor: pointer → Cambia el cursor a puntero al pasar el mouse.
+                font-size: 1em → Tamaño de fuente normal.
+                display: block → Hace que el botón sea un elemento de bloque.
+                margin: 0 auto → Centra el botón horizontalmente.
+            -->
+            Enviar Consulta
+        </button>
+
+    </form>
+
+    <!-- hr: línea horizontal de separación. -->
+    <hr style="border-top: 1px solid #ddd; margin-top: 40px;">
+        <!-- 
+            CSS:
+            border-top: 1px solid #ddd → Crea una línea superior de 1px sólida en color gris claro.
+            margin-top: 40px → Espacio de 40px arriba del elemento.
+        -->
+
+    <!-- footer: pie de página con información adicional. -->
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.85em; color: #6c757d;">
+        <!-- 
+            CSS:
+            text-align: center → Centra el contenido del footer.
+            margin-top: 20px → Espacio de 20px arriba del footer.
+            font-size: 0.85em → Tamaño de fuente reducido al 85%.
+            color: #6c757d → Color gris medio para texto secundario.
+        -->
+
+        <!-- p: párrafos con información del pie de página. -->
+        <p>&copy; 2025 Viajes del Puerto. Con sede en Tampico, Tamaulipas.</p>
+
+        <p>Aviso: Este formulario es un ejemplo. Los datos no se enviarán a un servidor real.</p>
+    </footer>
+
+</body>
+</html>
