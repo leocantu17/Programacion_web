@@ -7,104 +7,323 @@
     </head>
 <body>
 
-    <h1 style="color: #2F4F4F; text-align: center;">Explorando la Naturaleza de Tamaulipas</h1>
-    <h2 style="color: #556B2F; text-align: center;">Biodiversidad y Paisajes Asombrosos</h2>
+    <!-- h1: título principal centrado con color oscuro. Transmite seriedad y enfoque natural. -->
+    <h1 style="color: #2F4F4F; text-align: center;">
+        <!-- 
+            CSS:
+            color: #2F4F4F → Color gris oscuro (Dark Slate Gray), da un tono sobrio y natural.
+            text-align: center → Centra el texto horizontalmente en la página.
+        -->
+        Explorando la Naturaleza de Tamaulipas
+    </h1>
 
+    <!-- h2: subtítulo centrado con color verde oliva oscuro. Refuerza la temática natural. -->
+    <h2 style="color: #556B2F; text-align: center;">
+        <!-- 
+            CSS:
+            color: #556B2F → Color verde oliva oscuro, asociado con vegetación.
+            text-align: center → Centra el subtítulo bajo el título principal.
+        -->
+        Biodiversidad y Paisajes Asombrosos
+    </h2>
+
+    <!-- p: párrafo con enlaces de navegación, centrado. Mejora la accesibilidad interna y externa del sitio. -->
     <p style="text-align: center;">
+        <!-- 
+            CSS:
+            text-align: center → Centra los enlaces horizontalmente.
+        -->
+        <!-- a: enlace interno con estilo destacado. Facilita navegación y coherencia visual. -->
         <a href="#flora-fauna" style="margin: 0 15px; color: #006400; text-decoration: none; font-weight: bold;">
+            <!-- 
+                CSS:
+                margin: 0 15px → Espacio horizontal entre enlaces.
+                color: #006400 → Verde oscuro que armoniza con la temática.
+                text-decoration: none → Elimina el subrayado predeterminado.
+                font-weight: bold → Resalta el texto del enlace.
+            -->
             Flora y Fauna
         </a>
+        <!-- a: enlace interno. Igual formato visual que el anterior. -->
         <a href="#datos-interesantes" style="margin: 0 15px; color: #006400; text-decoration: none; font-weight: bold;">
             Datos Interesantes
         </a>
+        <!-- a: enlace externo. Conserva el mismo estilo visual y abre en nueva pestaña. -->
         <a href="https://www.tamaulipas.gob.mx/seduma/" target="_blank" style="margin: 0 15px; color: #006400; text-decoration: none; font-weight: bold;">
             Sitio Oficial Tamaulipas Ambiente
         </a>
     </p>
 
+    <!-- hr: línea divisoria con estilo de línea discontinua gris oscuro. Segmenta visualmente el contenido. -->
     <hr style="border-top: 1px dashed #A9A9A9;">
+    <!-- 
+        CSS:
+        border-top: 1px dashed #A9A9A9 → Línea superior discontinua de 1px en gris claro.
+    -->
 
-    <h3 style="color: #4682B4;">¡Bienvenido a nuestro viaje natural!</h3>
+    <!-- h3: encabezado de sección con color azul moderado. Invita al lector. -->
+    <h3 style="color: #4682B4;">
+        <!-- 
+            CSS:
+            color: #4682B4 → Azul acero claro que resalta sin ser estridente.
+        -->
+        ¡Bienvenido a nuestro viaje natural!
+    </h3>
+
+    <!-- p: texto introductorio. Sin estilos adicionales. Mejora la comprensión del contenido. -->
     <p>
-        Tamaulipas, un estado en el noreste de México, es hogar de una **diversidad impresionante de ecosistemas**.
-        Desde sus extensas costas hasta sus sierras boscosas, ofrece paisajes que te dejarán sin aliento.
-        Aquí exploraremos algunos de los tesoros naturales que hacen de este estado un lugar único.
+        Tamaulipas, un estado en el noreste de México, es hogar de una **diversidad impresionante de ecosistemas**...
     </p>
 
+    <!-- hr: línea divisoria entre secciones. Repetición del estilo anterior. -->
     <hr style="border-top: 1px dashed #A9A9A9;">
 
-    <h3 id="flora-fauna" style="color: #4682B4;">Flora y Fauna Destacada</h3>
+    <!-- h3: subtítulo con color azul para la sección "Flora y Fauna". -->
+    <h3 id="flora-fauna" style="color: #4682B4;">
+        <!-- 
+            CSS:
+            color: #4682B4 → Mismo tono azul para mantener la consistencia visual.
+        -->
+        Flora y Fauna Destacada
+    </h3>
 
+    <!-- p: descripción introductoria de la sección. Sin estilos especiales. -->
     <p>
-        La riqueza biológica de Tamaulipas se manifiesta en sus variadas especies. Aquí te mostramos algunos ejemplos:
+        La riqueza biológica de Tamaulipas se manifiesta...
     </p>
 
+    <!-- h4: subtítulo de subsección "Árboles Emblemáticos". -->
     <h4>Árboles Emblemáticos:</h4>
+
+    <!-- img: imagen con borde verde, tamaño fijo y alineación vertical con lista. -->
     <img src="./assets/arbol1.jpeg" alt="Árbol nativo de Tamaulipas" style="width: 300px; height: 200px; border: 2px solid #556B2F; margin-right: 15px; vertical-align: middle;">
+    <!-- 
+        CSS:
+        width: 300px → Ancho fijo para la imagen.
+        height: 200px → Altura fija proporcional.
+        border: 2px solid #556B2F → Borde verde oscuro que enmarca la imagen.
+        margin-right: 15px → Separación con el contenido a la derecha.
+        vertical-align: middle → Alinea verticalmente con el contenido contiguo.
+    -->
+
+    <!-- ul: lista de árboles, alineada a la derecha de la imagen. -->
     <ul style="display: inline-block; vertical-align: middle;">
-        <li><strong>Ébano</strong> (<i>Pithecellobium ebano</i>): Madera dura y resistente.</li>
-        <li><strong>Anacahuita</strong> (<i>Cordia boissieri</i>): Floración hermosa y abundante.</li>
-        <li><strong>Sabino</strong>( <i>Taxodium mucronatum</i>): Árboles longevos asociados a ríos.</li>
+        <!-- 
+            CSS:
+            display: inline-block → Permite alinear junto con la imagen.
+            vertical-align: middle → Alineación vertical coherente con la imagen.
+        -->
+        <!-- li: especie de árbol nativo con nombre común destacado, nombre científico en cursiva y descripción funcional. -->
+        <li>
+            <strong>Ébano</strong> (<i>Pithecellobium ebano</i>): Madera dura y resistente.
+            <!-- 
+                HTML:
+                <strong>Ébano</strong> → Resalta el nombre común del árbol para destacar su importancia.
+                <i>Pithecellobium ebano</i> → Presenta el nombre científico en cursiva, según convención taxonómica.
+            -->
+        </li>
+
+        <!-- li: árbol regional con floración decorativa. Se mantiene el mismo formato de presentación. -->
+        <li>
+            <strong>Anacahuita</strong> (<i>Cordia boissieri</i>): Floración hermosa y abundante.
+            <!-- 
+                HTML:
+                <strong>Anacahuita</strong> → Destaca visualmente el nombre común de la especie.
+                <i>Cordia boissieri</i> → Nombre científico en estilo itálico por normas biológicas.
+            -->
+        </li>
+
+        <!-- li: árbol asociado a entornos ribereños. Su longevidad lo hace relevante ecológicamente. -->
+        <li>
+            <strong>Sabino</strong> (<i>Taxodium mucronatum</i>): Árboles longevos asociados a ríos.
+            <!-- 
+                HTML:
+                <strong>Sabino</strong> → Realce del nombre común para facilitar identificación.
+                <i>Taxodium mucronatum</i> → Nombre científico en cursiva, siguiendo estándares científicos.
+            -->
+        </li>
+
     </ul>
 
+    <!-- h4: subtítulo de subsección "Fauna Representativa". -->
     <h4>Fauna Representativa:</h4>
+
+    <!-- img: imagen de animal con borde, alineada a la derecha. -->
     <img src="./assets/animal1.jpeg" alt="Animal local de Tamaulipas" style="width: 300px; height: 200px; border: 2px solid #556B2F; margin-left: 15px; float: right;">
+    <!-- 
+        CSS:
+        width: 300px → Ancho fijo para mantener proporción visual.
+        height: 200px → Altura fija para coherencia.
+        border: 2px solid #556B2F → Borde verde oscuro que enmarca la imagen.
+        margin-left: 15px → Espacio entre la imagen y el texto.
+        float: right → La imagen se alinea a la derecha del texto.
+    -->
+
+    <!-- ol: lista ordenada con fauna destacada. -->
     <ol>
-        <li>&#8810;<strong>Jaguar</strong> (<i>Panthera onca</i> )&#8811;: El felino más grande de América.</li>
-        <li>&#8810;<strong>Ocelote</strong> (<i>Leopardus pardalis</i> )&#8811;: El felino más grande de América.</li>
-        <li>&#8810;<strong>Mariposa Monarca</strong> (<i>Danaus plexippus</i> )&#8811;: El felino más grande de América.</li>
-        <li>&#8810;<strong>Guacamaya Verde</strong> (<i>Ara militaris</i> )&#8811;: El felino más grande de América.</li>
-        
+        <li>&#8810;<strong>Jaguar</strong> (<i>Panthera onca</i>)&#8811;: El felino más grande de América.</li>
+        <li>&#8810;<strong>Ocelote</strong> (<i>Leopardus pardalis</i>)&#8811;: Felino mediano de hábitos nocturnos.</li>
+        <li>&#8810;<strong>Mariposa Monarca</strong> (<i>Danaus plexippus</i>)&#8811;: Migratoria, símbolo de conservación.</li>
+        <li>&#8810;<strong>Guacamaya Verde</strong> (<i>Ara militaris</i>)&#8811;: Ave colorida en peligro de extinción.</li>
     </ol>
-    <div style="clear: both;"></div> <p>
-        Para más información sobre las especies endémicas, visita: <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Fauna_de_Tamaulipas" target="_blank">Fauna de Tamaulipas en Wikipedia</a>.
+
+    <!-- div: limpia el flujo flotante generado por la imagen. -->
+    <div style="clear: both;"></div>
+    <!-- 
+        CSS:
+        clear: both → Evita que el siguiente contenido se posicione junto a elementos flotantes.
+    -->
+
+    <!-- p: párrafo con enlace a información externa sobre fauna. -->
+    <p>
+        Para más información sobre las especies endémicas, visita: 
+        <a href="https://es.wikipedia.org/wiki/Categor%C3%ADa:Fauna_de_Tamaulipas" target="_blank">
+            Fauna de Tamaulipas en Wikipedia
+        </a>.
     </p>
 
+    <!-- hr: división entre secciones. Estilo coherente. -->
     <hr style="border-top: 1px dashed #A9A9A9;">
 
-    <h3 id="datos-interesantes" style="color: #4682B4;">Datos Interesantes sobre Ecosistemas</h3>
+    <!-- h3: sección de datos interesantes, con título azul. -->
+    <h3 id="datos-interesantes" style="color: #4682B4;">
+        Datos Interesantes sobre Ecosistemas
+    </h3>
 
+    <!-- p: descripción breve introductoria. -->
     <p>Conoce la distribución de algunos ecosistemas clave en Tamaulipas:</p>
 
+    <!-- table: tabla informativa centrada, con fondo y bordes personalizados. -->
     <table border="1" style="width: 80%; border-collapse: collapse; margin: 20px auto; background-color: #F8F8FF;">
-        <caption style="font-weight: bold; margin-bottom: 10px;">Ecosistemas Principales en Tamaulipas</caption>
+        <!-- 
+            CSS:
+            width: 80% → Ancho proporcional al contenedor.
+            border-collapse: collapse → Elimina espacio entre bordes de celdas.
+            margin: 20px auto → Centra la tabla con márgenes verticales.
+            background-color: #F8F8FF → Fondo ligeramente grisáceo.
+        -->
+        <!-- caption: título de la tabla con estilo fuerte. -->
+        <caption style="font-weight: bold; margin-bottom: 10px;">
+            <!-- 
+                CSS:
+                font-weight: bold → Resalta el texto del título.
+                margin-bottom: 10px → Espacio inferior del título respecto a la tabla.
+            -->
+            Ecosistemas Principales en Tamaulipas
+        </caption>
+        <!-- thead: sección del encabezado de la tabla, contiene los títulos de columnas. -->
         <thead>
+            <!-- tr: fila de encabezado, distingue las columnas con un fondo gris claro. -->
             <tr style="background-color: #D3D3D3;">
-                <th style="padding: 8px; text-align: left;">Ecosistema</th>
-                <th style="padding: 8px; text-align: left;">Características</th>
-                <th style="padding: 8px; text-align: left;">Regiones Clave</th>
+                <!-- 
+                    CSS:
+                    background-color: #D3D3D3 → Encabezado con fondo gris claro para resaltar los títulos de las columnas.
+                -->
+                
+                <!-- th: encabezado de columna para el tipo de ecosistema. -->
+                <th style="padding: 8px; text-align: left;">
+                    <!-- 
+                        CSS:
+                        padding: 8px → Añade espacio interno para mejorar la legibilidad.
+                        text-align: left → Alinea el texto del encabezado a la izquierda.
+                    -->
+                    Ecosistema
+                </th>
+
+                <!-- th: encabezado de columna para describir características de cada ecosistema. -->
+                <th style="padding: 8px; text-align: left;">
+                    <!-- 
+                        CSS:
+                        padding: 8px → Espaciado interno uniforme.
+                        text-align: left → Alineación izquierda del texto.
+                    -->
+                    Características
+                </th>
+
+                <!-- th: encabezado de columna para indicar las regiones donde se encuentran los ecosistemas. -->
+                <th style="padding: 8px; text-align: left;">
+                    <!-- 
+                        CSS:
+                        padding: 8px → Mejora el espaciado interior.
+                        text-align: left → Mantiene alineación izquierda del texto.
+                    -->
+                    Regiones Clave
+                </th>
             </tr>
         </thead>
+
+        <!-- tbody: cuerpo principal de la tabla, contiene los datos. -->
         <tbody>
+            <!-- tr: fila con datos del ecosistema "Bosque de Encino y Pino". -->
             <tr>
-                <td style="padding: 8px;">Bosque de Encino y Pino</td>
-                <td style="padding: 8px;">Áreas montañosas, clima templado.</td>
-                <td style="padding: 8px;">Sierra Madre Oriental</td>
+                <!-- td: celda con el nombre del ecosistema. -->
+                <td style="padding: 8px;">
+                    <!-- 
+                        CSS:
+                        padding: 8px → Espaciado interno que mejora la legibilidad.
+                    -->
+                    Bosque de Encino y Pino
+                </td>
+                <!-- td: celda con las características del ecosistema. -->
+                <td style="padding: 8px;">
+                    Áreas montañosas, clima templado.
+                </td>
+                <!-- td: celda con las regiones donde se encuentra este ecosistema. -->
+                <td style="padding: 8px;">
+                    Sierra Madre Oriental
+                </td>
             </tr>
+
+            <!-- tr: fila con datos del ecosistema "Matorral Xerófilo". -->
             <tr>
                 <td style="padding: 8px;">Matorral Xerófilo</td>
                 <td style="padding: 8px;">Zonas semiáridas, vegetación adaptada a sequía.</td>
                 <td style="padding: 8px;">Centro y Norte del Estado</td>
             </tr>
+
+            <!-- tr: fila con datos del ecosistema "Selva Baja Caducifolia". -->
             <tr>
                 <td style="padding: 8px;">Selva Baja Caducifolia</td>
                 <td style="padding: 8px;">Vegetación que pierde hojas en secas, clima cálido.</td>
                 <td style="padding: 8px;">Sur y Sureste del Estado</td>
             </tr>
+
+            <!-- tr: fila con datos del ecosistema "Manglares". -->
             <tr>
                 <td style="padding: 8px;">Manglares</td>
                 <td style="padding: 8px;">Ecosistemas costeros, protección y refugio.</td>
                 <td style="padding: 8px;">Lagunas costeras (Ej. Laguna Madre)</td>
             </tr>
         </tbody>
+
     </table>
 
+    <!-- hr: línea final antes del pie de página. -->
     <hr style="border-top: 1px dashed #A9A9A9;">
 
+    <!-- footer: pie de página centrado con estilo discreto. -->
     <footer style="text-align: center; margin-top: 30px; font-size: 0.9em; color: #696969;">
+        <!-- 
+            CSS:
+            text-align: center → Centra el texto del pie.
+            margin-top: 30px → Espacio superior respecto al contenido anterior.
+            font-size: 0.9em → Tamaño levemente menor al del texto normal.
+            color: #696969 → Gris medio para baja prominencia.
+        -->
         <p>&copy; 2025 Explorando la Naturaleza de Tamaulipas. Todos los derechos reservados.</p>
-        <p>Recursos adicionales: <a href="https://www.biodiversidad.gob.mx/region/mexico/estados/tamaulipas" target="_blank" style="color: #006400; text-decoration: none;">CONABIO Tamaulipas</a></p>
+        <p>
+            Recursos adicionales:
+            <a href="https://www.biodiversidad.gob.mx/region/mexico/estados/tamaulipas" target="_blank" style="color: #006400; text-decoration: none;">
+                <!-- 
+                    CSS:
+                    color: #006400 → Verde oscuro, mismo tono del resto de los enlaces.
+                    text-decoration: none → Quita el subrayado.
+                -->
+                CONABIO Tamaulipas
+            </a>
+        </p>
     </footer>
+
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Citas Célebres</title>
+  <!-- style: Permite crear css de forma centralizada y aplicable a este documento -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,39 +25,29 @@
       padding: 15px;
     }
 
-    .science {
-      background-color: #e0f7fa;
-    }
+    .science { background-color: #e0f7fa; }
+    .art { background-color: rgb(255, 240, 245); }
+    .philosophy { background-color: hsl(34, 100%, 91%); }
+    .tech { background-color: #f0f0f0; }
+    .literature { background-color: #fef6e4; }
+    .politics { background-color: #f3e5f5; }
 
-    .art {
-      background-color: rgb(255, 240, 245);
-    }
-
-    .philosophy {
-      background-color: hsl(34, 100%, 91%);
-    }
-
-    .tech {
-      background-color: #f0f0f0;
-    }
-
-    .literature {
-      background-color: #fef6e4;
-    }
-
-    .politics {
-      background-color: #f3e5f5;
-    }
-
-    .quote {
-      margin: 10px 0;
-      padding-left: 10px;
+    blockquote {
+      margin: 1em 0;
+      padding-left: 1em;
       border-left: 5px solid rgb(0, 102, 204);
     }
 
-    .author {
+    cite {
+      font-style: normal;
       font-weight: bold;
       color: #555;
+    }
+
+    address {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #666;
     }
 
     mark {
@@ -65,119 +56,137 @@
   </style>
 </head>
 <body>
+
+  <!-- h1: título principal de la página -->
   <h1>Citas Célebres de Personas Célebres</h1>
 
-  <!-- Ciencia -->
+  <!-- 
+    Sección Ciencia
+    div con clase 'category science': bloque temático con fondo azul claro 
+  -->
   <div class="category science">
     <h2>Ciencia</h2>
 
-    <div class="quote">
-      <p><strong>"La imaginación es más importante que el conocimiento."</strong><br>
-      <span class="author">— Albert Einstein</span></p>
-      <p><small><i>Físico teórico alemán</i></small></p>
-    </div>
+    <!-- 
+      blockquote: cita larga con fuente y contexto 
+    -->
+    <blockquote>
+      <!-- p: cita textual -->
+      <p>"La imaginación es más importante que el conocimiento."</p>
+      <!-- cite: autor de la cita -->
+      <cite>Albert Einstein</cite><br>
+      <!-- address: contexto o profesión del autor -->
+      <address>Físico teórico alemán</address>
+    </blockquote>
 
-    <div class="quote">
-      <p><em>"Nada en la vida debe ser temido, solo comprendido."</em><br>
-      <span class="author">— Marie Curie</span></p>
-    </div>
+    <blockquote>
+      <p>
+        <!-- q: cita corta integrada en el párrafo -->
+        <q>Nada en la vida debe ser temido, solo comprendido.</q>
+      </p>
+      <cite>Marie Curie</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p><strong>"La ciencia no conoce país, porque el conocimiento pertenece a la humanidad."</strong><br>
-      <span class="author">— Louis Pasteur</span></p>
-    </div>
+    <blockquote>
+      <p><q>La ciencia no conoce país, porque el conocimiento pertenece a la humanidad.</q></p>
+      <cite>Louis Pasteur</cite>
+    </blockquote>
   </div>
 
   <!-- Arte -->
   <div class="category art">
     <h2>Arte</h2>
 
-    <div class="quote">
-      <p><i>"Todo niño es un artista. El problema es cómo seguir siéndolo al crecer."</i><br>
-      <span class="author">— Pablo Picasso</span></p>
-    </div>
+    <blockquote>
+      <p><q>Todo niño es un artista. El problema es cómo seguir siéndolo al crecer.</q></p>
+      <cite>Pablo Picasso</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p><strong>"El arte limpia del alma el polvo de la vida cotidiana."</strong><br>
-      <span class="author">— Salvador Dalí</span></p>
-    </div>
+    <blockquote>
+      <p><q>El arte limpia del alma el polvo de la vida cotidiana.</q></p>
+      <cite>Salvador Dalí</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p>"Donde no puedas amar, <mark>no te demores</mark>."<br>
-      <span class="author">— Frida Kahlo</span></p>
-    </div>
+    <blockquote>
+      <p>Donde no puedas amar, <mark>no te demores</mark>.</p>
+      <cite>Frida Kahlo</cite>
+    </blockquote>
   </div>
 
   <!-- Filosofía -->
   <div class="category philosophy">
     <h2>Filosofía</h2>
 
-    <div class="quote">
-      <p><strong><em>"Solo sé que no sé nada."</em></strong><br>
-      <span class="author">— Sócrates</span></p>
-    </div>
+    <blockquote>
+      <p><q>Solo sé que no sé nada.</q></p>
+      <cite>Sócrates</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p>"El hombre está condenado a ser libre." <br>
-      <span class="author">— Jean-Paul Sartre</span></p>
-    </div>
+    <blockquote>
+      <p><q>El hombre está condenado a ser libre.</q></p>
+      <cite>Jean-Paul Sartre</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p>"El conocimiento verdadero está en saber que no sabes nada."<br>
-      <span class="author">— Confucio</span></p>
-    </div>
+    <blockquote>
+      <p><q>El conocimiento verdadero está en saber que no sabes nada.</q></p>
+      <cite>Confucio</cite>
+    </blockquote>
   </div>
 
   <!-- Tecnología -->
   <div class="category tech">
     <h2>Tecnología</h2>
 
-    <div class="quote">
-      <p><strong>"Stay hungry, stay foolish."</strong><br>
-      <span class="author">— Steve Jobs</span></p>
-      <p><small><del>Apple co-founder</del> <ins>Cofundador de Apple</ins></small></p>
-    </div>
+    <blockquote>
+      <p><q>Stay hungry, stay foolish.</q></p>
+      <cite>Steve Jobs</cite><br>
+      <address><abbr title="Cofundador de Apple">Apple Inc.</abbr></address>
+    </blockquote>
 
-    <div class="quote">
-      <p>"El software es una gran combinación entre arte e ingeniería."<br>
-      <span class="author"><b>— Bill Gates</b></span></p>
-    </div>
+    <blockquote>
+      <p><q>El software es una gran combinación entre arte e ingeniería.</q></p>
+      <cite>Bill Gates</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p>"Cualquier tecnología suficientemente avanzada es indistinguible de la magia."<br>
-      <span class="author">— Arthur C. Clarke</span></p>
-    </div>
+    <blockquote>
+      <p><q>Cualquier tecnología suficientemente avanzada es indistinguible de la magia.</q></p>
+      <cite>Arthur C. Clarke</cite>
+    </blockquote>
   </div>
 
   <!-- Literatura -->
   <div class="category literature">
     <h2>Literatura</h2>
 
-    <div class="quote">
-      <p><i>"No llores porque terminó, sonríe porque sucedió."</i><br>
-      <span class="author">— Dr. Seuss</span></p>
-    </div>
+    <blockquote>
+      <p><q>No llores porque terminó, sonríe porque sucedió.</q></p>
+      <cite>Dr. Seuss</cite>
+    </blockquote>
 
-    <div class="quote">
-      <p>"Ser o no ser, esa es la cuestión."<br>
-      <span class="author"><strong>— William Shakespeare</strong></span><sub>(Hamlet)</sub></p>
-    </div>
+    <blockquote>
+      <p><q>Ser o no ser, esa es la cuestión.</q></p>
+      <cite>William Shakespeare</cite><br>
+      <address><cite>Hamlet</cite></address>
+    </blockquote>
   </div>
 
   <!-- Política -->
   <div class="category politics">
     <h2>Política</h2>
 
-    <div class="quote">
-      <p><em>"La democracia es el peor sistema de gobierno, excepto por todos los demás."</em><br>
-      <span class="author">— Winston Churchill</span></p>
-    </div>
+    <blockquote>
+      <p><q>La democracia es el peor sistema de gobierno, excepto por todos los demás.</q></p>
+      <cite>Winston Churchill</cite>
+    </blockquote>
   </div>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer>
     <hr>
-    <p style="text-align:center; color: hsl(0, 0%, 50%);"><small>Compilado por un estudiante con pocas ideas</small></p>
+    <address style="text-align:center; color: hsl(0, 0%, 50%);">
+      <small>Compilado por un estudiante con pocas ideas</small>
+    </address>
   </footer>
+
 </body>
 </html>

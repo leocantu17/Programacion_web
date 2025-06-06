@@ -1,214 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- meta charset: Define la codificación de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- meta viewport: Configura la ventana gráfica para responsividad -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title: Título de la página que aparece en la pestaña del navegador -->
     <title>Sabores de México - Recetas Auténticas</title>
     
+    <!-- style: Estilos CSS embebidos para la apariencia de la página -->
     <style>
+        /* body: estilos generales para el cuerpo del documento */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Arial, sans-serif; /* Fuente principal */
+            margin: 0; /* Sin margen externo */
+            padding: 20px; /* Espacio interno */
+            background-color: #f4f4f4; /* Fondo gris claro */
+            color: #333; /* Color de texto oscuro */
         }
 
+        /* Encabezados h1 a h4: estilos comunes */
         h1, h2, h3, h4 {
-            font-family: 'Georgia', serif;
-            text-align: center;
-            margin-bottom: 15px;
+            font-family: 'Georgia', serif; /* Fuente serif para títulos */
+            text-align: center; /* Centrado horizontal */
+            margin-bottom: 15px; /* Espacio inferior */
         }
 
+        /* h1: título principal */
         h1 {
             color: #c0392b; /* Rojo tradicional */
-            font-size: 2.5em;
+            font-size: 2.5em; /* Tamaño grande */
         }
 
+        /* h2: subtítulo */
         h2 {
             color: #e67e22; /* Naranja cálido */
-            font-size: 1.8em;
+            font-size: 1.8em; /* Tamaño medio */
         }
 
+        /* h3: títulos secciones con borde inferior */
         h3 {
-            color: #c0392b;
-            font-size: 1.5em;
-            margin-top: 30px;
-            border-bottom: 2px solid #e67e22;
-            padding-bottom: 5px;
-            display: inline-block; /* Para que el borde se ajuste al texto */
-            text-align: center;
-            width: 100%; /* Ocupa todo el ancho disponible */
+            color: #c0392b; /* Rojo tradicional */
+            font-size: 1.5em; /* Tamaño menor */
+            margin-top: 30px; /* Margen superior */
+            border-bottom: 2px solid #e67e22; /* Borde inferior naranja */
+            padding-bottom: 5px; /* Relleno inferior */
+            display: inline-block; /* Borde ajustado al texto */
+            text-align: center; /* Texto centrado */
+            width: 100%; /* Ocupa todo el ancho */
         }
 
+        /* h4: títulos más pequeños */
         h4 {
             color: #2c3e50; /* Gris oscuro */
-            font-size: 1.2em;
-            margin-bottom: 8px;
+            font-size: 1.2em; /* Tamaño pequeño */
+            margin-bottom: 8px; /* Margen inferior */
         }
 
+        /* nav: barra de navegación centrada con fondo y sombra */
         nav {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #f8f8f8;
-            padding: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center; /* Texto centrado */
+            margin-bottom: 20px; /* Margen inferior */
+            background-color: #f8f8f8; /* Fondo claro */
+            padding: 10px 0; /* Espaciado vertical */
+            border-radius: 5px; /* Esquinas redondeadas */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
         }
 
+        /* nav a: enlaces de navegación */
         nav a {
-            margin: 0 15px;
-            color: #2c3e50;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            margin: 0 15px; /* Separación horizontal */
+            color: #2c3e50; /* Color gris oscuro */
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold; /* Negrita */
+            transition: color 0.3s ease; /* Transición suave en color */
         }
 
+        /* nav a:hover: efecto al pasar el mouse */
         nav a:hover {
-            color: #e67e22;
+            color: #e67e22; /* Cambia a naranja cálido */
         }
 
+        /* hr: línea horizontal con estilo punteado */
         hr {
-            border: none;
-            border-top: 1px dashed #ccc;
-            margin: 30px 0;
+            border: none; /* Sin borde estándar */
+            border-top: 1px dashed #ccc; /* Línea punteada gris claro */
+            margin: 30px 0; /* Margen vertical */
         }
 
+        /* p: párrafos centrados con límite de ancho */
         p {
-            text-align: center;
-            font-size: 1.1em;
-            line-height: 1.6;
-            max-width: 800px; /* Limita el ancho del párrafo para legibilidad */
-            margin: 0 auto 20px auto; /* Centra el párrafo */
+            text-align: center; /* Texto centrado */
+            font-size: 1.1em; /* Tamaño de fuente aumentado */
+            line-height: 1.6; /* Interlineado */
+            max-width: 800px; /* Ancho máximo para legibilidad */
+            margin: 0 auto 20px auto; /* Centrado horizontal con margen inferior */
         }
 
+        /* .recipe-section: contenedor flex para tarjetas */
         .recipe-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centra las tarjetas en el contenedor */
-            gap: 25px; /* Espacio entre las tarjetas */
-            margin-top: 20px;
+            display: flex; /* Usar flexbox */
+            flex-wrap: wrap; /* Permite que las tarjetas bajen de línea */
+            justify-content: center; /* Centrar las tarjetas */
+            gap: 25px; /* Espacio entre tarjetas */
+            margin-top: 20px; /* Margen superior */
         }
 
+        /* .recipe-card: tarjeta individual de receta */
         .recipe-card {
-            width: 320px; /* Ancho fijo para cada tarjeta */
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in-out;
-            box-sizing: border-box; /* Incluye padding y borde en el width */
+            width: 320px; /* Ancho fijo */
+            background-color: #fff; /* Fondo blanco */
+            border: 1px solid #ddd; /* Borde gris claro */
+            border-radius: 10px; /* Esquinas redondeadas */
+            padding: 15px; /* Espaciado interno */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+            transition: transform 0.2s ease-in-out; /* Transición para hover */
+            box-sizing: border-box; /* Incluye padding y borde en ancho */
         }
 
+        /* .recipe-card:hover: efecto de elevación al pasar mouse */
         .recipe-card:hover {
-            transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+            transform: translateY(-5px); /* Mueve la tarjeta hacia arriba */
         }
 
+        /* .recipe-card img: imagen dentro de la tarjeta */
         .recipe-card img {
-            width: 100%;
-            height: 200px; /* Altura fija para las imágenes */
-            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-            border-radius: 8px;
-            margin-bottom: 15px;
+            width: 100%; /* Ocupa todo el ancho de la tarjeta */
+            height: 200px; /* Altura fija */
+            object-fit: cover; /* Recorta la imagen para cubrir el espacio */
+            border-radius: 8px; /* Esquinas redondeadas */
+            margin-bottom: 15px; /* Margen inferior */
         }
 
+        /* .recipe-card h4: título dentro de la tarjeta */
         .recipe-card h4 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            text-align: left; /* Títulos de tarjeta alineados a la izquierda */
-            color: #c0392b;
+            margin-top: 0; /* Sin margen superior */
+            margin-bottom: 10px; /* Margen inferior */
+            text-align: left; /* Alineado a la izquierda */
+            color: #c0392b; /* Rojo tradicional */
         }
 
+        /* .recipe-card p: texto descriptivo dentro de la tarjeta */
         .recipe-card p {
-            font-size: 0.95em;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            text-align: left; /* Párrafos de tarjeta alineados a la izquierda */
+            font-size: 0.95em; /* Tamaño ligeramente reducido */
+            line-height: 1.5; /* Interlineado */
+            margin-bottom: 10px; /* Margen inferior */
+            text-align: left; /* Alineado a la izquierda */
         }
 
+        /* .recipe-card h5: subtítulos dentro de la tarjeta */
         .recipe-card h5 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-            text-align: left;
-            font-size: 1em;
+            color: #2c3e50; /* Gris oscuro */
+            margin-bottom: 5px; /* Margen inferior */
+            text-align: left; /* Alineado a la izquierda */
+            font-size: 1em; /* Tamaño estándar */
         }
 
+        /* .recipe-card ul: lista de ingredientes */
         .recipe-card ul {
-            list-style-type: disc; /* Vuelven los bullets estándar */
-            padding-left: 20px;
-            margin-top: 0;
-            margin-bottom: 15px;
-            text-align: left;
+            list-style-type: disc; /* Viñetas estándar */
+            padding-left: 20px; /* Sangría izquierda */
+            margin-top: 0; /* Sin margen superior */
+            margin-bottom: 15px; /* Margen inferior */
+            text-align: left; /* Alineado a la izquierda */
         }
 
+        /* .recipe-card ul li: elementos individuales de la lista */
         .recipe-card ul li {
-            margin-bottom: 5px;
-            font-size: 0.9em;
+            margin-bottom: 5px; /* Margen inferior entre ítems */
+            font-size: 0.9em; /* Tamaño reducido */
         }
 
+        /* .recipe-card a: enlace dentro de la tarjeta */
         .recipe-card a {
-            display: block; /* El enlace ocupa toda la línea */
-            text-align: right;
-            color: #e67e22;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            display: block; /* Ocupa toda la línea */
+            text-align: right; /* Alineado a la derecha */
+            color: #e67e22; /* Naranja cálido */
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold; /* Negrita */
+            transition: color 0.3s ease; /* Transición suave */
         }
 
+        /* .recipe-card a:hover: efecto al pasar mouse */
         .recipe-card a:hover {
-            color: #c0392b;
+            color: #c0392b; /* Cambia a rojo tradicional */
         }
 
+        /* footer: área de pie de página centrada */
         footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.85em;
-            color: #7f8c8d;
+            text-align: center; /* Texto centrado */
+            margin-top: 50px; /* Margen superior */
+            padding-top: 20px; /* Relleno superior */
+            border-top: 1px solid #ddd; /* Línea superior gris claro */
+            font-size: 0.85em; /* Tamaño de fuente pequeño */
+            color: #7f8c8d; /* Gris medio */
         }
 
+        /* footer a: enlaces dentro del footer */
         footer a {
-            color: #2c3e50;
-            text-decoration: none;
-            font-weight: bold;
+            color: #2c3e50; /* Gris oscuro */
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold; /* Negrita */
         }
 
+        /* footer a:hover: efecto al pasar mouse */
         footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Subrayado */
         }
     </style>
-    </head>
+</head>
 <body>
 
+    <!-- h1: título principal de la página -->
     <h1>Sabores de México</h1>
+    <!-- h2: subtítulo descriptivo -->
     <h2>Recetas Auténticas para Disfrutar</h2>
 
+    <!-- nav: menú de navegación con enlaces a secciones -->
     <nav>
         <a href="#sopas">Sopas</a>
         <a href="#platos-principales">Platos Principales</a>
         <a href="#postres">Postres</a>
     </nav>
 
+    <!-- hr: separador visual -->
     <hr>
 
+    <!-- p: párrafo introductorio centrado -->
     <p>
         ¡Bienvenido a un festín de sabores! Aquí encontrarás recetas tradicionales de la cocina mexicana,
         desde sopas reconfortantes hasta postres deliciosos. ¡Prepárate para cocinar y disfrutar!
     </p>
 
+    <!-- hr: separador visual -->
     <hr>
 
+    <!-- h3: sección Sopas -->
     <h3 id="sopas">Sopas</h3>
 
+    <!-- div.recipe-section: contenedor flexible para tarjetas de recetas -->
     <div class="recipe-section">
 
+        <!-- div.recipe-card: tarjeta individual de receta -->
         <div class="recipe-card">
+            <!-- img: imagen representativa de la receta -->
             <img src="./assets/sopa-tortilla.jpeg" alt="Sopa de Tortilla">
+            <!-- 
+                    Atributos:
+                    src="../" → indica la ruta o URL de la imagen.
+                    alt="Sopa de Tortilla" → texto alternativo que describe la imagen para accesibilidad y cuando la imagen no carga.
+                -->
+            <!-- h4: nombre de la receta -->
             <h4>Sopa de Tortilla</h4>
+            <!-- p: descripción breve -->
             <p>Un clásico reconfortante con tortilla frita, aguacate y queso.</p>
+            <!-- h5: subtítulo ingredientes -->
             <h5>Ingredientes:</h5>
+            <!-- ul: lista de ingredientes -->
             <ul>
                 <li>Tortillas</li>
                 <li>Tomate</li>
@@ -216,9 +264,11 @@
                 <li>Ajo</li>
                 <li>Caldo de pollo</li>
             </ul>
+            <!-- a: enlace a la receta completa -->
             <a href="#">Ver receta completa</a>
         </div>
 
+        <!-- div.recipe-card: segunda tarjeta de receta -->
         <div class="recipe-card">
             <img src="./assets/Pozole.webp" alt="Pozole">
             <h4>Pozole</h4>
@@ -235,10 +285,13 @@
 
     </div>
 
+    <!-- hr: separador visual -->
     <hr>
 
+    <!-- h3: sección Platos Principales -->
     <h3 id="platos-principales">Platos Principales</h3>
 
+    <!-- div.recipe-section: contenedor para tarjetas de platos principales -->
     <div class="recipe-section">
 
         <div class="recipe-card">
@@ -271,10 +324,13 @@
 
     </div>
 
+    <!-- hr: separador visual -->
     <hr>
 
+    <!-- h3: sección Postres -->
     <h3 id="postres">Postres</h3>
 
+    <!-- div.recipe-section: contenedor para tarjetas de postres -->
     <div class="recipe-section">
 
         <div class="recipe-card">
@@ -307,11 +363,10 @@
 
     </div>
 
-    <hr>
-
+    <!-- footer: pie de página con créditos y enlaces -->
     <footer>
-        <p>&copy; 2025 Sabores de México. ¡Buen provecho!</p>
-        <p>Contacto: <a href="mailto:info@saboresdemexico.com">info@saboresdemexico.com</a></p>
+        <p>&copy; 2025 Sabores de México. Todos los derechos reservados.</p>
+        <p><a href="#">Contacto</a> | <a href="#">Aviso de privacidad</a></p>
     </footer>
 
 </body>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- Define codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsive -->
   <title>El Diario Digital</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,12 +12,23 @@
       background-color: #f9f9f9;
       color: #222;
     }
+
+    /* 
+      header:
+      Fondo oscuro, texto claro y centrado
+      Proporciona un encabezado visual fuerte
+    */
     header {
       background-color: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
+
+    /* 
+      nav:
+      Menú horizontal centrado con enlaces blancos y espaciado
+    */
     nav {
       background-color: #444;
       color: white;
@@ -25,24 +37,46 @@
       gap: 30px;
       padding: 10px;
     }
+
+    /* 
+      Estilo para enlaces de navegación
+      text-decoration: none → sin subrayado
+      font-weight: bold → énfasis en opciones del menú
+    */
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* 
+      main:
+      Contenedor principal dividido en sección de contenido (section) y barra lateral (aside)
+      display: flex → layout en columnas
+    */
     main {
       display: flex;
       padding: 20px;
       gap: 20px;
     }
+
+    /* section ocupa 3/4 del ancho */
     section {
       flex: 3;
     }
+
+    /* aside ocupa 1/4 del ancho, con fondo gris claro */
     aside {
       flex: 1;
       background-color: #eee;
       padding: 15px;
     }
+
+    /* 
+      article:
+      Contenedor de cada noticia
+      Estilo de tarjeta: fondo blanco, padding interno, sombra sutil
+    */
     article {
       background-color: white;
       padding: 15px;
@@ -50,10 +84,15 @@
       border-radius: 4px;
       box-shadow: 0 0 4px rgba(0,0,0,0.1);
     }
+
     article h2 {
       margin-top: 0;
       color: #003366;
     }
+
+    /* footer:
+      Pie de página con fondo oscuro, texto blanco y centrado
+    */
     footer {
       background-color: #222;
       color: white;
@@ -63,13 +102,22 @@
     }
   </style>
 </head>
+
 <body>
 
+  <!-- 
+    header:
+    Encabezado principal del sitio. Contiene el título y eslogan del diario.
+  -->
   <header>
     <h1>📰 El Diario Digital</h1>
     <p>La verdad, siempre primero.</p>
   </header>
 
+  <!-- 
+    nav:
+    Barra de navegación con enlaces a las secciones principales del sitio.
+  -->
   <nav>
     <a href="#">Inicio</a>
     <a href="#">Política</a>
@@ -78,8 +126,23 @@
     <a href="#">Deportes</a>
   </nav>
 
+  <!-- 
+    main:
+    Contenedor principal de contenido.
+    Incluye: sección de artículos (section) y barra lateral (aside).
+  -->
   <main>
+
+    <!-- 
+      section:
+      Agrupa el contenido editorial principal (noticias).
+    -->
     <section>
+
+      <!-- 
+        article:
+        Cada artículo representa una nota de prensa independiente.
+      -->
       <article>
         <h2>Avances en Inteligencia Artificial</h2>
         <p><strong>05 junio 2025</strong> — Investigadores de OpenAI anuncian una nueva arquitectura capaz de aprender múltiples lenguajes de programación simultáneamente.</p>
@@ -94,8 +157,13 @@
         <h2>La Selección Mexicana se impone en amistoso</h2>
         <p><strong>05 junio 2025</strong> — México venció 3-1 a Colombia en un partido donde brilló el joven delantero Víctor Gómez.</p>
       </article>
+
     </section>
 
+    <!-- 
+      aside:
+      Barra lateral con contenido adicional o secundario (última hora, editorial).
+    -->
     <aside>
       <h3>Último Minuto</h3>
       <ul>
@@ -107,8 +175,13 @@
       <h3>Editorial</h3>
       <p><mark>La importancia de la prensa libre</mark> nunca ha sido más evidente. Vivimos tiempos de cambio y el periodismo debe estar a la altura.</p>
     </aside>
+
   </main>
 
+  <!-- 
+    footer:
+    Pie de página con derechos reservados y año.
+  -->
   <footer>
     <small>© 2025 El Diario Digital — Todos los derechos reservados</small>
   </footer>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsive -->
     <title>Arte Digital - Canvas y SVG</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,7 +19,7 @@
         }
 
         section {
-            margin: 40px auto;
+            margin: 40px auto;  
             max-width: 800px;
             background-color: #ffffff;
             padding: 20px;
@@ -41,65 +42,140 @@
     </style>
 </head>
 <body>
+
     <h1>Galería de Arte Digital</h1>
 
     <section>
         <h2>🎨 Arte con Canvas</h2>
+
+        <!-- 
+            Elemento: <canvas>
+            Función: Área de dibujo en píxeles controlada mediante JavaScript.
+            Atributos:
+                id="myCanvas" → Identificador para acceder desde el script.
+                width="400", height="300" → Tamaño del lienzo en píxeles (no confundir con CSS).
+            Estilo CSS:
+                display: block → Elimina espacio extra alrededor.
+                border: 1px solid #ccc → Borde gris claro para delimitar el área.
+        -->
         <canvas id="myCanvas" width="400" height="300"></canvas>
+
         <p class="caption">Dibujo generado con JavaScript en un elemento Canvas.</p>
     </section>
 
     <section>
         <h2>🖼️ Arte con SVG</h2>
-        <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
-        <!-- Rectángulo -->
-        <rect x="10" y="10" width="100" height="50" fill="#4CAF50" />
 
-        <!-- Círculo -->
-        <circle cx="200" cy="70" r="40" fill="#2196F3" />
+        <!-- 
+            Elemento: <svg>
+            Función: Contenedor para gráficos vectoriales escalables definidos mediante XML.
+            Atributos:
+                width="400" → Ancho del lienzo SVG en píxeles.
+                height="300" → Alto del lienzo SVG en píxeles.
+                xmlns="http://www.w3.org/2000/svg" → Espacio de nombres requerido para que los navegadores interpreten correctamente SVG.
+        -->
+            <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
 
-        <!-- Línea -->
-        <line x1="0" y1="200" x2="400" y2="200" stroke="red" stroke-width="4" />
+            <!-- 
+                Elemento: <rect>
+                Función: Dibuja un rectángulo.
+                Atributos:
+                x="10", y="10" → Posición de la esquina superior izquierda del rectángulo.
+                width="100", height="50" → Dimensiones del rectángulo.
+                fill="#4CAF50" → Color de relleno en formato hexadecimal (verde).
+            -->
+            <rect x="10" y="10" width="100" height="50" fill="#4CAF50" />
 
-        <!-- Texto -->
-        <text x="120" y="270" font-size="20" fill="#333">¡SVG en acción!</text>
+            <!-- 
+                Elemento: <circle>
+                Función: Dibuja un círculo.
+                Atributos:
+                cx="200", cy="70" → Coordenadas del centro del círculo.
+                r="40" → Radio del círculo.
+                fill="#2196F3" → Color de relleno azul.
+            -->
+            <circle cx="200" cy="70" r="40" fill="#2196F3" />
 
-        <!-- Polígono -->
-        <polygon points="300,150 350,250 250,250" fill="#ff9800" />
-        </svg>
+            <!-- 
+                Elemento: <line>
+                Función: Dibuja una línea recta entre dos puntos.
+                Atributos:
+                x1="0", y1="200" → Punto inicial de la línea.
+                x2="400", y2="200" → Punto final de la línea.
+                stroke="red" → Color de la línea.
+                stroke-width="4" → Grosor del trazo.
+            -->
+            <line x1="0" y1="200" x2="400" y2="200" stroke="red" stroke-width="4" />
+
+            <!-- 
+                Elemento: <text>
+                Función: Muestra texto dentro del SVG.
+                Atributos:
+                x="120", y="270" → Posición inicial del texto (parte inferior izquierda de la primera letra).
+                font-size="20" → Tamaño de la fuente en píxeles.
+                fill="#333" → Color del texto (gris oscuro).
+                Contenido: "¡SVG en acción!" → Texto mostrado dentro del gráfico.
+            -->
+            <text x="120" y="270" font-size="20" fill="#333">¡SVG en acción!</text>
+
+            <!-- 
+                Elemento: <polygon>
+                Función: Dibuja una figura cerrada definida por una serie de puntos conectados.
+                Atributos:
+                points="300,150 350,250 250,250" → Lista de coordenadas (x,y) que definen los vértices del polígono.
+                fill="#ff9800" → Color de relleno (naranja brillante).
+                Resultado: Triángulo isósceles orientado hacia arriba.
+            -->
+            <polygon points="300,150 350,250 250,250" fill="#ff9800" />
+
+            </svg>
+
+
         <p class="caption">Formas básicas y texto en SVG.</p>
     </section>
 
+    <!-- 
+        Elemento: <script>
+        Función: Dibuja en el canvas utilizando el API 2D de HTML5.
+        Explicación paso a paso:
+    -->
     <script>
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
+        const canvas = document.getElementById("myCanvas"); 
+        // Obtiene una referencia al elemento <canvas> por su ID
 
-        // Fondo
-        ctx.fillStyle = "#fffbe6";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        const ctx = canvas.getContext("2d"); 
+        // Obtiene el contexto de renderizado 2D. Todas las instrucciones de dibujo se aplican sobre este contexto.
 
-        // Círculo
-        ctx.beginPath();
-        ctx.arc(100, 100, 40, 0, 2 * Math.PI);
-        ctx.fillStyle = "rgb(255, 99, 132)";
-        ctx.fill();
+        // Fondo del lienzo
+        ctx.fillStyle = "#fffbe6";            // Color de relleno en formato hexadecimal (beige claro)
+        ctx.fillRect(0, 0, canvas.width, canvas.height); 
+        // Dibuja un rectángulo que cubre todo el lienzo (desde 0,0 hasta width x height)
 
-        // Rectángulo
-        ctx.fillStyle = "#00BCD4";
-        ctx.fillRect(180, 80, 100, 60);
+        // Dibujo de un círculo
+        ctx.beginPath();                      // Inicia una nueva figura
+        ctx.arc(100, 100, 40, 0, 2 * Math.PI); 
+        // Dibuja un círculo con centro (100, 100), radio 40, desde 0 hasta 2π radianes (círculo completo)
+        ctx.fillStyle = "rgb(255, 99, 132)";  // Color de relleno del círculo (rosa fuerte)
+        ctx.fill();                           // Aplica el relleno
 
-        // Línea
-        ctx.beginPath();
-        ctx.moveTo(50, 200);
-        ctx.lineTo(350, 250);
-        ctx.strokeStyle = "hsl(220, 70%, 40%)";
-        ctx.lineWidth = 4;
-        ctx.stroke();
+        // Dibujo de un rectángulo
+        ctx.fillStyle = "#00BCD4";            // Color de relleno azul claro
+        ctx.fillRect(180, 80, 100, 60);       // Dibuja rectángulo en (180,80) de 100px de ancho y 60px de alto
 
-        // Texto
-        ctx.font = "20px sans-serif";
-        ctx.fillStyle = "#333";
-        ctx.fillText("Canvas en acción", 110, 280);
+        // Dibujo de una línea
+        ctx.beginPath();                      // Comienza una nueva ruta
+        ctx.moveTo(50, 200);                  // Punto inicial de la línea
+        ctx.lineTo(350, 250);                 // Punto final de la línea
+        ctx.strokeStyle = "hsl(220, 70%, 40%)"; // Color azul oscuro (usando HSL)
+        ctx.lineWidth = 4;                    // Grosor de la línea
+        ctx.stroke();                         // Traza la línea
+
+        // Dibujo de texto
+        ctx.font = "20px sans-serif";         // Define la fuente y tamaño
+        ctx.fillStyle = "#333";               // Color del texto (gris oscuro)
+        ctx.fillText("Canvas en acción", 110, 280); 
+        // Dibuja texto en posición (110, 280)
     </script>
+
 </body>
 </html>
