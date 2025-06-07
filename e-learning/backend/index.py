@@ -43,7 +43,12 @@ app.config["JWT_COOKIE_CSRF_PROTECT"] = False  # Protección CSRF desactivada
 
 # Inicializar el gestor JWT
 jwt = JWTManager(app)
-
+CORS(app, 
+     origins=["http://localhost:3000"],  # Tu frontend
+     supports_credentials=True,  # IMPORTANTE: Permite cookies
+     allow_headers=["Content-Type", "Authorization"],
+     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+)
 def slugify(text):
     """Función para convertir texto a formato slug (URL amigable)"""
     text = text.lower()  # Convertir a minúsculas
@@ -499,6 +504,36 @@ def login():
         # Manejo de errores
         return jsonify({"message": "Error en el login", "error": str(e)}), 500
 
+@app.route('/logout', methods=['POST', 'OPTIONS'])
+def logout_user():
+    # Manejar preflight OPTIONS request
+    if request.method == 'OPTIONS':
+        response = make_response()
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+        response.headers.add('Access-Control-Allow-Methods', 'POST,OPTIONS')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        return response
+    
+    # Proceso de logout
+    response = make_response(jsonify({"message": "Logout exitoso"}))
+    
+    # Eliminar la cookie
+    response.delete_cookie(
+        "access_token_cookie",
+        httponly=True,
+        secure=False,
+        samesite="Lax"
+    )
+    
+    # Headers CORS
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
+    response.headers.add('Access-Control-Allow-Credentials', 'true')
+    
+    return response
+
+
+
 @app.route('/me', methods=['GET'])
 @jwt_required()  # Decorador que requiere autenticación JWT
 def me():
@@ -656,14 +691,28 @@ def update_progress():
         # Manejo de errores
         return jsonify({"message": "Error actualizando progreso", "error": str(e)}), 500
 
-@app.route('/logout', methods=['POST'])
-def logout():
-    """Endpoint para cerrar sesión del usuario"""
-    # Crear respuesta de logout exitoso
-    response = make_response(jsonify({"message": "Logout exitoso"}))
-    # Eliminar cookie estableciendo expiración a 0
-    response.set_cookie('access_token_cookie', '', expires=0)
-    return response
+@app.route('/perfil', methods=['GET'])
+@jwt_required()  # Requiere autenticación
+def obtener_perfil():
+    user_id = request.args.get('user_id')  # O puedes extraerlo de JWT si usas autenticación
+    if not user_id:
+        return jsonify({"error": "Falta el parámetro user_id"}), 400
+
+    try:
+        conn = get_connection()
+        cursor = conn.cursor(dictionary=True)  # Para que devuelva un dict en lugar de una tupla
+        cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+        user = cursor.fetchone()
+        conn.close()
+
+        if user:
+            return jsonify(user), 200
+        else:
+            return jsonify({"error": "Usuario no encontrado"}), 404
+    except Exception as e:
+        print(f"Error al obtener perfil: {e}")
+        return jsonify({"error": "Error interno del servidor"}), 500
+
 
 @app.route('/session', methods=['GET'])
 @jwt_required()  # Requiere autenticación
